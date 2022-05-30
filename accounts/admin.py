@@ -1,3 +1,8 @@
 from django.contrib import admin
 
-# Register your models here.
+# Register the models 
+
+from .models import Phase, Project
+
+admin.site.register(Project)
+admin.site.register(Phase)

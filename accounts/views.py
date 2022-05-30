@@ -2,14 +2,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 # views
-def home(request):
+def dashboard(request):
     return render(request, 'accounts/dashboard.html')
 
-def products(request):
-    return HttpResponse("products page")
-
-def profile(request):
-    return HttpResponse("profile page")
-
-def user(request):
-    return HttpResponse("user page")
+def client(request):
+    return HttpResponse("client page")

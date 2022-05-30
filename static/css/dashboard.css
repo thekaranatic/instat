@@ -33,7 +33,7 @@ body{
 .div-logo-head> span > h2{
     position: relative;
     float: left;
-    top: -5px;
+    top: -10px;
     left: 324px;
 
     color: #edededa1;
@@ -45,10 +45,10 @@ body{
 .div-logo-head> span > #logo-banner{
     position: absolute;
     float: left;
-    top: 18px;
+    top: 25px;
     left: 18px;
 
-    width: 140px;
+    width: 100px;
 }
 /* LOGO HEAD END */
 
@@ -103,7 +103,7 @@ body{
 /* searchbar END */
 
 /* profile icon BEGIN*/
-.div-profile-util-outline{
+/* .div-profile-util-outline{
     position: absolute;
     float: right;
     width: 97px;
@@ -114,14 +114,14 @@ body{
     background: rgba(255, 255, 255, 0.53);
     border-radius: 20px;
     z-index: 2;
-}
-.user-icon{
-    /* position: absolute;
+} */
+/* .user-icon{
+    position: absolute;
     width: 40px;
     height: 41.57px;
     left: 1306px;
-    top: 18px; */
-}
+    top: 18px;
+} */
 /* profile icon END*/
 
 /* HOMEBAR END */
@@ -139,7 +139,7 @@ body{
     top: 65px;
     height: 100%;
 
-    background: #F6F6F6;
+    background: rgb(235, 233, 233);
     background-image: url('/static/videos/anim-mesh-gradient-1.mp4');
     background-repeat: no-repeat;
     background-image: cover;
@@ -161,20 +161,27 @@ body{
     position: relative;
     top: 20px;
     text-align: left;
+    left: 3px;
     /* background-color: red; */
 }
 .left-nav-pane-btns > input{
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 20px;
+    font-weight: bolder;
     background-color: transparent;
     border: none;
     padding: 3.5px;
-    padding-left: 20px;
+    padding-left: 25px;
     padding-right: 20px;
+    line-height: 25px;
 }
 .left-nav-pane-btns > input:hover{
-    background-color: #a390f079;
-    border-radius: 10px;
+    transform: scale(1.1);
+    transform: translateX(10px);
+    transition: .5s;
+}
+.left-nav-pane-btns > input:not(hover){
+    transition: .5s;
 }
 
 
@@ -227,7 +234,7 @@ body{
 }
 
 #btn-new-proj-2{
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 20px;
     border: none;
     padding: 3.5px;
@@ -235,7 +242,7 @@ body{
     padding-right: 20px;
     border-radius: 10px;
 
-    background-color: #DA0037;
+    background-color: #FFCB74;
 }
 
 .right-pane{
@@ -281,7 +288,6 @@ body{
 
     background-color: #F6F6F6;
     display: none;
-
     
     margin: auto;
     z-index: 9;

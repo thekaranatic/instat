@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Instat - Dashboard</title>
 
     <!-- bootstrap CDN CSS -->
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
@@ -16,7 +16,9 @@
     <link rel="icon" type="image/x-icon" href="{% static '/images/instat-logo-yellow.ico' %}">
     <link rel="stylesheet" href="{% static '/css/dashboard.css' %}">
     <!-- linking of files  -->
-    
+
+    <!-- google fonts preconnect  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     
 </head>
 <body id="body" onload="alert_No_access_to_mobile()">
@@ -52,10 +54,13 @@
 
     <!-- left-navigation panel BEGIN -->
     <div class="left-nav-pane">
-        <video autoplay muted loop src="/static/videos/anim-mesh-gradient-1.mp4"></video>
+        <!-- <video autoplay muted loop src="/static/videos/anim-mesh-gradient-1.mp4"></video> -->
         <div class="left-nav-pane-btns">
-            <input type="button" value="open recent" id="btn-op-rcnt"> <br>
-            <input type="button" value="new project" id="btn-new-proj">
+            <img style="position:relative; float:left; left:16px; top:4px;" width="25px" height="25px" src="https://img.icons8.com/ios-glyphs/30/000000/add--v1.png"/><input type="button" value="new project" id="btn-new-proj" onclick="showDiv()"> <br>
+            <img style="position:relative; float:left; left:17px; top:4px;" width="24px" height="24px" src="https://img.icons8.com/ios-glyphs/30/000000/statistics--v1.png"/><input type="button" value="mini stats" id="btn-mini-stats"> 
+        </div>
+        <div id="profile-left-pane">
+
         </div>
     </div>
     <!-- left-navigation-panel END -->
@@ -78,11 +83,6 @@
     <!-- center-pane BEGIN-->
     <div class="center-pane">
         
-            <h3>
-                looks like you haven't created <br> a project yet
-            </h3>
-            <input type="button" value="new project" id="btn-new-proj-2" onclick="showDiv()">
-        </center>
     </div>
     <!-- center-pane END-->
 
@@ -100,7 +100,7 @@
                     </tr>
                 </table>
                 <footer id="divsub">
-                    <h2>add new project</h2>
+                    <h2>add new project</h2> 
                     <button type="submit">add project ></button>
                 </footer>
             </form>
