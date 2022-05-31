@@ -35,7 +35,9 @@ function showDiv(){
     b.transform = "scale(1)";
     b.transition = ".3s";
     b.zIndex = "10";
-
+}
+function closeDiv(){
+    var a = document.getElementById("btn-close").style.visibility = "hidden";
 }
 
 

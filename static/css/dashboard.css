@@ -2,8 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body{
+html, body{
+    width: 100%;
     background-color: #FFFFFF; 
 }
 
@@ -32,15 +34,15 @@ body{
 }
 .div-logo-head> span > h2{
     position: relative;
-    float: left;
-    top: -10px;
-    left: 324px;
+    float: right;
+    top: -2px;
+    right: 332px;
 
     color: #edededa1;
 
-    font-size: 30px;
+    font-size: 28px;
     font-family: 'Rubik', sans-serif;
-    font-weight: 500;
+    font-weight: 300;
 }
 .div-logo-head> span > #logo-banner{
     position: absolute;
@@ -139,7 +141,7 @@ body{
     top: 65px;
     height: 100%;
 
-    background: rgb(235, 233, 233);
+    background: rgb(241, 241, 241);
     background-image: url('/static/videos/anim-mesh-gradient-1.mp4');
     background-repeat: no-repeat;
     background-image: cover;
@@ -147,16 +149,14 @@ body{
     
     z-index: 0;
 }
-.left-nav-pane > video{
+/* .left-nav-pane > video{
     object-fit: cover;
     position: absolute;
     width: 100%;
     height: 100%;
     opacity: 0.8;
     transition: 0.3s;
-    
-
-}
+} */
 .left-nav-pane-btns{
     position: relative;
     top: 20px;
@@ -167,7 +167,7 @@ body{
 .left-nav-pane-btns > input{
     font-family: 'Rubik', sans-serif;
     font-size: 20px;
-    font-weight: bolder;
+    font-weight: normal;
     background-color: transparent;
     border: none;
     padding: 3.5px;
@@ -183,7 +183,34 @@ body{
 .left-nav-pane-btns > input:not(hover){
     transition: .5s;
 }
+#left-pane-footer{
+    position: relative;
+    position: fixed;
+    bottom: 0px;
 
+    width: 274px;
+    background-color: rgba(255, 0, 0, 0.205);
+}
+#left-pane-footer > #c_name{
+    position: relative;
+    float: left;
+    left: 20px;
+
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400px;
+    font-size: 22px;
+}
+#left-pane-footer > #icon-logout{
+    position: relative;
+    float: right;
+    top: 22px;
+    right: 30px;
+
+    width: 27px;
+    height: 27px;
+
+    
+}
 
 .mid-panel-head{
     position: absolute;
@@ -196,6 +223,7 @@ body{
     font-style: normal;
     font-weight: 700px;
     font-size: 20px;
+    letter-spacing: -1px;
     line-height: 50px;
     display: flex;
     align-items: center;
@@ -224,12 +252,11 @@ body{
     left: 650px;
     height: 100%;
     
-
     z-index: 4;
 
     font-family: 'Rubik', sans-serif;
     font-weight: 400px;
-
+    
     color: #2F2F2F;
 }
 
@@ -265,7 +292,6 @@ body{
     margin-top: 7px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     user-select: none;
 }
@@ -293,7 +319,7 @@ body{
     z-index: 9;
 }
 
-#divmain > footer{
+#divsub{
     position: absolute;
     bottom: 0px;
     
@@ -303,7 +329,7 @@ body{
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
-#divmain > button{
+#btn-add-new-project{
     position: relative;
     float: right;
     top: 23px;
@@ -323,7 +349,7 @@ body{
     background-color: #FFCB74;
 
 }
-#divmain > h2{
+#label-addnew-proj{
     position: relative;
     float: left;
     top: 0px;
@@ -344,7 +370,7 @@ body{
 }
 
 /* inputs styling */
-#divmain > #proj_name{
+#proj_name{
     position: relative;
     top: 20px;
     left: 30px;
@@ -361,7 +387,7 @@ body{
     font-weight: 400;
 
 }
-#divmain > #client_name{
+#client_name{
     position: relative;
     top: 20px;
     right: 30px;
@@ -379,7 +405,7 @@ body{
     font-weight: 400;
 
 }
-#divmain > #client_email{
+#client_email{
     position: relative;
     top: 40px;
     left: 30px;
@@ -397,7 +423,7 @@ body{
     font-weight: 400;
 
 }
-#divmain > #date_initiated{
+#date_initiated{
     position: relative;
     top: 40px;
     right: 30px;

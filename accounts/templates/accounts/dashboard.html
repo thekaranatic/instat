@@ -59,10 +59,9 @@
             <img style="position:relative; float:left; left:16px; top:4px;" width="25px" height="25px" src="https://img.icons8.com/ios-glyphs/30/000000/add--v1.png"/><input type="button" value="new project" id="btn-new-proj" onclick="showDiv()"> <br>
             <img style="position:relative; float:left; left:17px; top:4px;" width="24px" height="24px" src="https://img.icons8.com/ios-glyphs/30/000000/statistics--v1.png"/><input type="button" value="mini stats" id="btn-mini-stats"> 
         </div>
-        <div id="profile-left-pane">
-            <footer id="left-pane-footer">
-                <h3>Karan Kakati</h3>
-            </footer>
+        <div id="left-pane-footer">
+            <h3 id="c_name">Some Person</h3>
+            <img id="icon-logout" src="https://img.icons8.com/ios-glyphs/30/000000/logout-rounded--v1.png"/>
         </div>
     </div>
     <!-- left-navigation-panel END -->
@@ -93,17 +92,18 @@
             <form action="" method="post">
                 <table>
                     <tr>
-                        <input autofocus="on" placeholder="project name" type="text" name="proj_name" id="proj_name" required>
-                        <input placeholder="client name" type="text" name="client_name" id="client_name" required>
+                        <input autofocus="on" placeholder="project name" type="text" name="proj_name" id="proj_name" >
+                        <input placeholder="client name" type="text" name="client_name" id="client_name" >
                     </tr>
                     <tr>
-                        <input placeholder="client email" type="email" name="client_email" id="client_email" autofocus="on" required>
-                        <input placeholder="date initiated" type="date" name="date_initiated" id="date_initiated" required>
+                        <input placeholder="client email" type="email" name="client_email" id="client_email" autofocus="on" >
+                        <input placeholder="date initiated" type="date" name="date_initiated" id="date_initiated" >
                     </tr>
                 </table>
                 <footer id="divsub">
-                    <h2>add new project</h2> 
-                    <button type="submit">add project ></button>
+                    <h2 id="label-addnew-proj">add new project</h2> 
+                    <button id="btn-add-new-project" type="submit">add project ></button>
+                    <button id="btn-close" type="submit" >&#x2715</button>
                 </footer>
             </form>
         </div>
