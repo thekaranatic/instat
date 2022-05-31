@@ -22,10 +22,15 @@ html, body{
 
     background-color: #111111;
 
-    border-bottom: 1px solid rgba(128, 128, 128, 0.418);
-    /* border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px; */
 }
+/* .div-homebar > video{
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    transition: 0.3s;
+} */
 
 /* LOGO HEAD BEGIN */
 .div-logo-head{
@@ -37,23 +42,23 @@ html, body{
 .div-logo-head> span > h2{
     position: absolute;
     position: fixed;
-    float: right;
-    top: -6px;
-    right: 20px;
+    float: left;
+    top: -7px;
+    left: 57px;
 
-    color: #edededa1;
+    color: #ededed;
 
     font-size: 28px;
     font-family: 'Rubik', sans-serif;
-    font-weight: 300;
+    font-weight: 500;
 }
 .div-logo-head> span > #logo-banner{
     position: absolute;
     float: left;
     top: 25px;
-    left: 18px;
+    left: 26px;
 
-    width: 100px;
+    width: 25px;
 }
 /* LOGO HEAD END */
 
@@ -144,7 +149,7 @@ html, body{
     top: 93px;
     height: 85%;
 
-    background: rgb(241, 241, 241);
+    background: #F6F6F6;
     
     filter: grayscale(1);
     
@@ -233,7 +238,8 @@ html, body{
 
 .mid-panel-head{
     position: absolute;
-    width: 418px;
+    position: fixed;
+    width: 70%;
     height: 90px;
     left: 332px;
     top: 60px;
@@ -249,6 +255,11 @@ html, body{
     text-transform: lowercase;
 
     color: #2F2F2F;
+    background-color: rgba(255, 255, 255, 0.726);
+    box-shadow: 0px 10px 10px 10px rgba(255, 255, 255, 0.712);
+    backdrop-filter: blur(15px);
+
+    z-index: 5;
 }
 
 
@@ -267,9 +278,10 @@ html, body{
 
 .center-pane{
     position: absolute;
-    top: 350px;
-    left: 650px;
-    height: 100%;
+    top: 150px;
+    left: 332px;
+    width: 70%;
+    height: 900px;
     
     z-index: 4;
 
@@ -277,18 +289,7 @@ html, body{
     font-weight: 400px;
     
     color: #2F2F2F;
-}
-
-#btn-new-proj-2{
-    font-family: 'Rubik', sans-serif;
-    font-size: 20px;
-    border: none;
-    padding: 3.5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 10px;
-
-    background-color: #FFCB74;
+    
 }
 
 .right-pane{
@@ -328,8 +329,6 @@ html, body{
     align-items: center;
 
     border-radius: 25px;
-
-    /* box-shadow: 0px 0px 100px 3px rgba(187, 187, 187, 0.582); */
 
     background-color: #F6F6F6;
     display: none;
