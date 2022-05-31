@@ -262,8 +262,6 @@ html, body{
     z-index: 5;
 }
 
-
-
 /* .right-pane{
     position: absolute;
     position: fixed;
@@ -278,7 +276,7 @@ html, body{
 
 .center-pane{
     position: absolute;
-    top: 150px;
+    top: 170px;
     left: 332px;
     width: 70%;
     height: 900px;
@@ -290,6 +288,10 @@ html, body{
     
     color: #2F2F2F;
     
+}
+
+.center-pane > #projects-display-table{
+    font-size: 20px;
 }
 
 .right-pane{

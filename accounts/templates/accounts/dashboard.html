@@ -81,12 +81,19 @@
 
     <!-- center-pane BEGIN-->
     <div class="center-pane">
-        <table>
+        <table id="projects-display-table">
             <tr>
-                <th>karan</th>
-                <th>karan</th>
-                <th>fasg</th>
+                <th>Project</th>
+                <th>Client</th>
+                <th>Initiated on</th>
+                <th>ECT</th>
+                <th>Status</th>
+                <th>Phase</th>
             </tr>
+
+            {% for i in projects %}
+            {{}}
+            {% endfor %}
         </table>
     </div>
     <!-- center-pane END-->
