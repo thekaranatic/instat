@@ -33,7 +33,7 @@ html, body{
     width: 230px;
 }
 .div-logo-head> span > h2{
-    position: relative;
+    position: absolute;
     float: right;
     top: -2px;
     right: 332px;
