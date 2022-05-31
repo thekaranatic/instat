@@ -91,13 +91,14 @@
                 <th>Phase</th>
             </tr>
 
-            {% for i in projects %}
+            {% for project in projects %}
             <tr>
-                <td>{{i.p_name}}</td>
-                <td>{{i.c_name}}</td>
-                <td>{{i.init_date}}</td>
-                <td>{{i.ect}}</td>
-                <td>{{i.status}}</td>
+                <td>{{project.p_name}}</td>
+                <td>{{project.c_name}}</td>
+                <td>{{project.init_date}}</td>
+                <td>{{project.ect}}</td>
+                <td>{{project.status}}</td>
+                <td>{{project.phase}}</td>
             </tr>
             {% endfor %}
         </table>
