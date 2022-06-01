@@ -6,7 +6,11 @@
 
 html, body{
     width: 100%;
-    background-color: #FFFFFF; 
+    background-color: #FFFFFF;
+    user-select: none; 
+}
+*{
+    
 }
 
 /* HOMEBAR  BEGIN */
@@ -314,9 +318,6 @@ html, body{
     margin-top: 7px;
 }
 
-*{
-    user-select: none;
-}
 #divmain{
     position: absolute;
     position: fixed;
@@ -459,4 +460,32 @@ html, body{
     font-size: 20px;
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
+}
+
+/* table styles */
+table{
+    position: relative;
+    color: black;
+    width: 80%;
+    font-size: 30px;
+}
+th{
+    text-align: left;
+}
+td {
+    width: 10%;
+    line-height: 50px;
+    text-align: left;
+    vertical-align: top;
+}
+tr:hover{
+    /* font-weight: bolder; */
+    color: #d38200;
+    transform: scale(1.1);
+    transform: translateX(10px);
+    transition: .3s;
+}
+tr:not(hover){
+    transition: .3s;
+
 }
