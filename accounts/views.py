@@ -1,3 +1,4 @@
+import re
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Project
@@ -10,4 +11,4 @@ def dashboard(request):
 
 
 def client(request):
-    return HttpResponse("client page")
+    return render(request, 'accounts/status.html')

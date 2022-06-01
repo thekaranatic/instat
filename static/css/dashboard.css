@@ -261,7 +261,7 @@ html, body{
     color: #2F2F2F;
     background-color: rgba(255, 255, 255, 0.726);
     box-shadow: 0px 10px 10px 10px rgba(255, 255, 255, 0.712);
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(5px);
 
     z-index: 5;
 }
@@ -463,26 +463,25 @@ html, body{
 }
 
 /* table styles */
+
 table{
     position: relative;
     color: black;
-    width: 80%;
-    font-size: 30px;
+    width: 100%;
 }
 th{
     text-align: left;
+    font-size: 23px;
 }
 td {
     width: 10%;
     line-height: 50px;
     text-align: left;
     vertical-align: top;
+
 }
 tr:hover{
-    /* font-weight: bolder; */
-    color: #d38200;
-    transform: scale(1.1);
-    transform: translateX(10px);
+    transform: translateX(2px);
     transition: .3s;
 }
 tr:not(hover){

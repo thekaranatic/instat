@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* universal settings */
+body{
+    background-color: black;
+    user-select: none;
+}
+*{
+    font-family: 'Inter', sans-serif;
+}
+/* universal settings */
+
+/* background BEGIN*/
+#shape1{
+    position: absolute;
+    position: fixed;
+    float: left;
+    top: -140px;
+    left: -50px;
+
+    height: 100px;
+    width: 300px;
+    
+    transform: rotate(180deg);
+    
+    padding: 170px;
+    
+    border-radius: 150px 200px 0 0;
+    background-color: rgb(117, 1, 30);
+    filter: blur(6rem);
+}
+
+#shape2{
+    position: absolute;
+    position: fixed;
+    float: right;
+    bottom: -140px;
+    right: -50px;
+
+    height: 100px;
+    width: 300px;
+    
+    transform: rotate(deg);
+    
+    padding: 170px;
+    
+    border-radius: 150px 200px 0 0;
+    background-color: #042c4e;
+    filter: blur(6rem);
+}
+/* background END*/
+
+.frame{
+    position: relative;
+    top: 60px;
+
+    width: 50%;
+    height: 650px;
+
+    /* border-color: red; */
+}
+#greeter{
+    position: relative;
+    top: 0px;
+
+    width: 99.6%;
+    height: 95px;
+
+    border: none;
+    border-radius: 20px;
+    /* background-color: rgba(99, 99, 99, 0.226); */
+    border-color: blue;
+
+    /* backdrop-filter: blur(3rem); */
+}
+#greeter > h1{
+    margin-left: 15px;
+    text-align: left;
+    font-weight: 800;
+    font-size: 40px;
+
+    color: white;
+}
+#greeter > p{
+    margin-top: -2%;
+    margin-left: 15px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 25px;
+
+    letter-spacing: -.5px;
+
+    color: rgb(255, 255, 255);
+}
+#frame_body{
+    position: relative;
+    top: 12px;
+
+    width: 99.6%;
+    height: calc(650px - 115px);
+
+    border: none;
+    /* border-color: blue */
+    border-radius: 20px;
+    /* background-color: rgba(128, 128, 128, 0.24); */
+
+    /* backdrop-filter: blur(10px); */
+}
+
+#date{
+    position: relative;
+    top: 20px;
+    left: 15px;
+    width: 30%;
+    height: 30%;
+    float: left;
+    background-color: rgba(128, 128, 128, 0.226);
+    
+    color: rgb(33, 241, 78);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+
+    transition: .3s;
+}
+#date > h1{
+    margin-top: 20px;
+    font-size: 100px;
+    font-weight: 900;
+    transition: .3s;
+}
+sup{
+    transition: .1s;
+    font-size: 50px;
+}
+
+@media all and (max-width: 1999px){
+    
+}
+
+
+/* light mode settings */
+@media screen and (prefers-color-scheme: light) {
+    body {
+      background-color: white;
+      color: black;
+    }
+}
+
+/* dark mode settings */
+@media (prefers-color-scheme: dark) {
+
+}
