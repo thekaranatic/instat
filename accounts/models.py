@@ -1,6 +1,7 @@
 from cmath import phase
 from pyexpat import model
 from django.db import models
+from sqlalchemy import delete
 
 # Projects table 
 class Project(models.Model):
@@ -33,8 +34,7 @@ class Project(models.Model):
     ect = models.DateField(null=True)
     status = models.CharField(max_length=200,null=True, choices=STATUS)
     collabs = models.IntegerField(null=True)
-    phase = models.IntegerField(null=True, choices=PHASE)
-
+    phase = models.CharField(max_length=100,null=True, choices=PHASE)
 
     def __str__(self):
         return self.p_name

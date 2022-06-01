@@ -7,6 +7,5 @@ urlpatterns = [
     path('', views.dashboard),
     path('dashboard/', views.dashboard),
     path('client/', views.client),
-    # path('profile/', views.profile),
-    # path('user/', views.user)
+    
 ]
