@@ -10,5 +10,5 @@ def dashboard(request):
     return render(request, 'accounts/dashboard.html', {'projects':projects})
 
 
-def client(request):
+def project(request):
     return render(request, 'accounts/status.html')

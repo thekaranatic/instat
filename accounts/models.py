@@ -35,6 +35,8 @@ class Project(models.Model):
     status = models.CharField(max_length=200,null=True, choices=STATUS)
     collabs = models.IntegerField(null=True)
     phase = models.CharField(max_length=100,null=True, choices=PHASE)
+    
+    
 
     def __str__(self):
         return self.p_name

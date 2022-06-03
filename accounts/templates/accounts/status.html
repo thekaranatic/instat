@@ -11,18 +11,28 @@
     <link rel="stylesheet" href="{% static '/css/status.css' %}">
     <script src="{% static '/js/status.js' %}"></script>
 </head>
-<body onload="animate()">
+<body >
     <div id="shape1"></div>
     <div id="shape2"></div>
     <center>
         <div class="frame">
             <div id="greeter">
-                <h1>Hi Karan!</h1>
+                <h1>Hi {{ project.c_name }}!</h1>
                 <p>Your project has come this far</p>
             </div>
             <div id="frame_body">
-                <div id="date"><h1>89<sup>%</sup></h1></div>
-                
+                <div id="percentage"><h1 id="receivedVal">80<sup>%</sup></h1></div>
+                <div id="proj-name"><p>Project Name</p></div>
+                <div id="name-of-staff-head"><p>Handled by Some Person</p></div>
+                <div id="temporary">
+                    <p>Status: {{ project.status }}</p> <br>
+                    <p>Phase: {{ project.phase }}</p> <br>
+                    <p>Collaborators: {{ project.collab }}</p> 
+                </div>
+                <div id="payment" onload="showPercentage()">
+                    <p>UPI ID: {{ project.status }}</p> <br>
+                    <p>Crypto Address: {{ project.phase }}</p> <br>
+                </div>
             </div>
         </div>
     </center>

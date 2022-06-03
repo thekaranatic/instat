@@ -18,8 +18,8 @@ body{
     top: -140px;
     left: -50px;
 
-    height: 100px;
-    width: 300px;
+    height: 250px;
+    width: 400px;
     
     transform: rotate(180deg);
     
@@ -37,8 +37,8 @@ body{
     bottom: -140px;
     right: -50px;
 
-    height: 100px;
-    width: 300px;
+    height: 250px;
+    width: 400px;
     
     transform: rotate(deg);
     
@@ -49,6 +49,25 @@ body{
     filter: blur(6rem);
 }
 /* background END*/
+
+/* LEFT NAV BEGIN */
+#left-nav{
+    position: relative;
+    float: left;
+    top: 12px;
+    left: 13px;
+
+    width: 10%;
+    height: calc(650px - 115px);
+
+    border: none;
+    /* border-color: blue; */
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.24);
+
+    /* backdrop-filter: blur(10px); */
+}
+/* LEFT NAV END */
 
 .frame{
     position: relative;
@@ -94,23 +113,25 @@ body{
 }
 #frame_body{
     position: relative;
-    top: 12px;
+    top: 14px;
+    left: 14px;
 
     width: 99.6%;
     height: calc(650px - 115px);
 
     border: none;
-    /* border-color: blue */
+    /* border-color: blue; */
     border-radius: 20px;
     /* background-color: rgba(128, 128, 128, 0.24); */
 
     /* backdrop-filter: blur(10px); */
 }
 
-#date{
-    position: relative;
-    top: 20px;
-    left: 15px;
+/* PERCENTAGE BOX BEGIN */
+#percentage{
+    position: absolute;
+    top: 0px;
+    left: 0px;
     width: 30%;
     height: 30%;
     float: left;
@@ -123,7 +144,7 @@ body{
 
     transition: .3s;
 }
-#date > h1{
+#percentage > h1{
     margin-top: 20px;
     font-size: 100px;
     font-weight: 900;
@@ -133,6 +154,100 @@ sup{
     transition: .1s;
     font-size: 50px;
 }
+/* PERCENTAGE BOX END */
+
+/* PROJECT NAME BEGIN */
+#proj-name{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 63%;
+    height: 11.5%;
+    float: right;
+    background-color: rgba(128, 128, 128, 0.226);
+    
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+
+    transition: .3s;
+}
+/* PROJECT NAME END */
+
+
+
+/* PROJECT HANDLER HEAD BEGIN */
+#name-of-staff-head{
+    position: absolute;
+    top: 99px;
+    right: 0px;
+    width: 63%;
+    height: 11.5%;
+    float: right;
+    background-color: rgba(128, 128, 128, 0.226);
+    
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+
+    transition: .3s;
+}
+/* PROJECT HANDLER HEAD END */
+
+#temporary{
+    display: block;
+
+    position: absolute;
+    top: 199px;
+    /* right: 0px; */
+    width: 97.5%;
+    height: 38%;
+    /* float: right; */
+    background-color: rgba(128, 128, 128, 0.226);
+    
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+
+    text-align: left;
+
+    transition: .3s;
+}
+
+#payment{
+    display: block;
+
+    position: absolute;
+    top: 440px;
+    /* right: 0px; */
+    width: 97.5%;
+    height: 23%;
+    /* float: right; */
+    background-color: rgba(128, 128, 128, 0.226);
+    
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+
+    text-align: left;
+
+    transition: .3s;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 @media all and (max-width: 1999px){
     
@@ -141,7 +256,7 @@ sup{
 
 /* light mode settings */
 @media screen and (prefers-color-scheme: light) {
-    body {
+    * {
       background-color: white;
       color: black;
     }
