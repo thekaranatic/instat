@@ -246,11 +246,12 @@ sup{
 
 /* light mode settings */
 @media screen and (prefers-color-scheme: light) {
-    * {
+    body {
       background-color: white;
       color: black;
     }
 }
+    
 
 /* dark mode settings */
 @media (prefers-color-scheme: dark) {
