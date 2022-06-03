@@ -142,7 +142,16 @@ body{
     border-radius: 10px;
     padding: 10px;
 
-    transition: .3s;
+    animation: percentageAnim 0.5s ease 0s 1 normal forwards;
+}
+@keyframes percentageAnim{
+	0% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(1);
+	}
 }
 #percentage > h1{
     margin-top: 20px;
@@ -170,12 +179,20 @@ sup{
     border: none;
     border-radius: 10px;
     padding: 10px;
+    
+    animation: proj-nameAnim 0.6s ease 0s 1 normal forwards;
 
-    transition: .3s;
+}
+@keyframes proj-nameAnim{
+	0% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(1);
+	}
 }
 /* PROJECT NAME END */
-
-
 
 /* PROJECT HANDLER HEAD BEGIN */
 #name-of-staff-head{
@@ -192,7 +209,16 @@ sup{
     border-radius: 10px;
     padding: 10px;
 
-    transition: .3s;
+    animation: name-of-staff-headAnim 0.6s ease 0s 1 normal forwards;
+}
+@keyframes name-of-staff-headAnim{
+	0% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(1);
+	}
 }
 /* PROJECT HANDLER HEAD END */
 
@@ -214,7 +240,16 @@ sup{
 
     text-align: left;
 
-    transition: .3s;
+    animation: temporaryAnim 0.5s ease 0s 1 normal forwards;
+}
+@keyframes temporaryAnim{
+	0% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(1);
+	}
 }
 
 #payment{
@@ -234,10 +269,18 @@ sup{
     padding: 10px;
 
     text-align: left;
-
-    transition: .3s;
+    
+    animation: paymentAnim 0.5s ease 0s 1 normal forwards;
 }
+@keyframes paymentAnim{
+	0% {
+		transform: scale(0);
+	}
 
+	100% {
+		transform: scale(1);
+	}
+}
 
 @media all and (max-width: 1999px){
     

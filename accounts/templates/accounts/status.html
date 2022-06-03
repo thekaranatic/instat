@@ -6,24 +6,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="hfasidhhfsiiahf">
+    <!-- <meta name="description" content=""> -->
     <title>Status</title>
+    <link rel="icon" type="image/x-icon" href="{% static '/images/instat-logo-yellow.ico' %}">
     <link rel="stylesheet" href="{% static '/css/status.css' %}">
-    <script src="{% static '/js/status.js' %}"></script>
+    <!-- <script src="{% static '/js/status.js' %}"></script> -->
 </head>
-<body >
+<body onload="showPercentage()">
     <div id="shape1"></div>
     <div id="shape2"></div>
     <center>
         <div class="frame">
             <div id="greeter">
-                <h1>Hi {{ project.c_name }}!</h1>
+                <h1>Hello there, Aditya{{ project.c_name }}!</h1>
                 <p>Your project has come this far</p>
             </div>
             <div id="frame_body">
                 <div id="percentage"><h1 id="receivedVal">80<sup>%</sup></h1></div>
                 <div id="proj-name"><p>Project Name</p></div>
-                <div id="name-of-staff-head"><p>Handled by Some Person</p></div>
+                <div id="name-of-staff-head"><p>Handled by Mr. X</p></div>
                 <div id="temporary">
                     <p> {{ project.status }}</p> <br>
                     <p> {{ project.phase }}</p> <br>
