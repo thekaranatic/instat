@@ -12,13 +12,13 @@
     <link rel="stylesheet" href="{% static '/css/status.css' %}">
     <!-- <script src="{% static '/js/status.js' %}"></script> -->
 </head>
-<body onload="showPercentage()">
+<body onload="greet()">
     <div id="shape1"></div>
     <div id="shape2"></div>
     <center>
         <div class="frame">
             <div id="greeter">
-                <h1>Hello there, Aditya{{ project.c_name }}!</h1>
+                <h1 id="name">Hola, Person!</h1>
                 <p>Your project has come this far</p>
             </div>
             <div id="frame_body">

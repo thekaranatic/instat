@@ -29,7 +29,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '127.0.0.1',
     '192.168.43.27',
-     'instat.ml'
+    'instat.ml'
 ]
 
 
