@@ -300,3 +300,7 @@ sup{
 @media (prefers-color-scheme: dark) {
 
 }
+
+p{
+    color: white;
+}
