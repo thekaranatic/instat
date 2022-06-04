@@ -22,17 +22,17 @@
                 <p>Your project has come this far</p>
             </div>
             <div id="frame_body">
-                <div id="percentage"><h1 id="receivedVal">80<sup>%</sup></h1></div>
+                <div id="percentage"><h1 id="receivedVal">{{ project.statusById }}80<sup>%</sup></h1></div>
                 <div id="proj-name"><p>{{projects.p_name}}</p></div>
                 <div id="name-of-staff-head"><p>Handled by Mr. X</p></div>
                 <div id="temporary">
-                    <p>Status {{projects.status}}</p> <br>
-                    <p>Phase {{projects.phase}}</p> <br>
-                    <p>Collaborators {{projects.collab}}</p> 
+                    <p>Status -{{projects.status}}</p> <br>
+                    <p>Phase -{{projects.phase}}</p> <br>
+                    <p>Collaborators -{{projects.collab}}</p> 
                 </div>
                 <div id="payment" onload="showPercentage()">
                     <p>UPI ID {{project.status}}</p> <br>
-                    <p>Crypto Address {{project.phase}}</p> <br>
+                    <!-- <p>Crypto Address {{project.phase}}</p> <br> -->
                 </div>
             </div>
         </div>
