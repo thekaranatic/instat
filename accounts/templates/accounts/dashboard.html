@@ -83,6 +83,7 @@
     <div class="center-pane">
         <table id="projects-display-table">
             <tr>
+                <th></th>
                 <th>Project</th>
                 <th>Client</th>
                 <th>Initiated on</th>
@@ -93,6 +94,7 @@
 
             {% for project in projects %}
             <tr>
+                <td id="id-col">{{project.p_id}}</td>
                 <td>{{ project.p_name }}</td>
                 <td>{{project.c_name}}</td>
                 <td style="color: black;">{{project.init_date}}</td>

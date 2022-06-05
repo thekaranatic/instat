@@ -7,5 +7,4 @@ urlpatterns = [
     path('', views.dashboard),
     path('dashboard/', views.dashboard),
     path('status/<str:no>/', views.status),
-    
 ]

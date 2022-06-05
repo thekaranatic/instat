@@ -471,6 +471,9 @@ th{
     text-align: left;
     font-size: 23px;
 }
+#id-col{
+    width: 2%;
+}
 td {
     width: 10%;
     line-height: 50px;
