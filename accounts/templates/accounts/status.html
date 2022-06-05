@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="{% static '/css/status.css' %}">
     <script src="{% static '/js/status.js' %}"></script>
 </head>
-<body onload="greet()">
+<body >
     <div id="shape1"></div>
     <div id="shape2"></div>
     <center>
@@ -22,7 +22,7 @@
                 <p>Your project has come this far</p>
             </div>
             <div id="frame_body">
-                <div id="percentage"><h1 id="receivedVal">{{ project.statusById }}80<sup>%</sup></h1></div>
+                <div id="percentage"><h1 id="receivedVal" onload="showPercentage()">{{projects.phase}}0<sup>%</sup></h1></div>
                 <div id="proj-name"><p>XXXXXXXXXXX</p></div>
                 <div id="name-of-staff-head"><p>Supervised by Mr. X</p></div>
                 <div id="temporary">

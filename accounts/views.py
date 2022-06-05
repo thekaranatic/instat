@@ -17,4 +17,8 @@ def dashboard(request):
 def status(request, no):
     projects = get_object_or_404(Project, pk=no) 
 
-    return render(request, 'accounts/status.html', {'projects':projects})
+    # phase_no = projects.phase
+    # percentage = phase_no / 10 * 100
+    # context = {"percentage": percentage}
+    
+    return render(request, 'accounts/status.html',{'projects':projects})
