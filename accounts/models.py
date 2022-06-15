@@ -26,7 +26,6 @@ class Project(models.Model):
         (10,"10")
     )
 
-    p_id = models.IntegerField(null=True)
     p_name = models.CharField(max_length=100, null=True)
     c_name = models.CharField(max_length=100, null=True)
     c_mail = models.CharField(max_length=100, null=True)
