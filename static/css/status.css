@@ -142,7 +142,7 @@ body{
     border-radius: 10px;
     padding: 10px;
 
-    animation: percentageAnim 0.4s ease 0s 1 normal forwards;
+    animation: percentageAnim 0.6s ease 0s 1 normal forwards;
 }
 @keyframes percentageAnim{
 	0% {
@@ -180,7 +180,7 @@ sup{
     border-radius: 10px;
     padding: 10px;
     
-    animation: proj-nameAnim 0.5s ease 0s 1 normal forwards;
+    animation: proj-nameAnim 0.7s ease 0s 1 normal forwards;
 
 }
 @keyframes proj-nameAnim{
@@ -209,7 +209,7 @@ sup{
     border-radius: 10px;
     padding: 10px;
 
-    animation: name-of-staff-headAnim 0.5s ease 0s 1 normal forwards;
+    animation: name-of-staff-headAnim 0.7s ease 0s 1 normal forwards;
 }
 @keyframes name-of-staff-headAnim{
 	0% {
@@ -240,7 +240,7 @@ sup{
 
     text-align: left;
 
-    animation: temporaryAnim 0.5s ease 0s 1 normal forwards;
+    animation: temporaryAnim 0.8s ease 0s 1 normal forwards;
 }
 @keyframes temporaryAnim{
 	0% {
@@ -270,7 +270,7 @@ sup{
 
     text-align: left;
     
-    animation: paymentAnim 0.5s ease 0s 1 normal forwards;
+    animation: paymentAnim 0.8s ease 0s 1 normal forwards;
 }
 @keyframes paymentAnim{
 	0% {
@@ -288,12 +288,12 @@ sup{
 
 
 /* light mode settings */
-@media screen and (prefers-color-scheme: light) {
+/* @media screen and (prefers-color-scheme: light) {
     body {
       background-color: white;
       color: black;
     }
-}
+} */
     
 
 /* dark mode settings */
