@@ -94,8 +94,8 @@
 
             {% for project in projects %}
             <tr>
-                <td id="id-col">{{project.p_id}}</td>
-                <td>{{ project.p_name }}</td>
+                <td id="id-col">{{project.id}}</td>
+                <td id="pname-col">{{ project.p_name }}</td>
                 <td>{{project.c_name}}</td>
                 <td style="color: black;">{{project.init_date}}</td>
                 <td style="color: red;">{{project.ect}}</td>

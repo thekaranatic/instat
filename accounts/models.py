@@ -33,7 +33,7 @@ class Project(models.Model):
     ect = models.DateField(null=True)
     status = models.CharField(max_length=200,null=True, choices=STATUS)
     collabs = models.IntegerField(null=True)
-    phase = models.CharField(null=True, max_length=100 ,choices=PHASE)
+    phase = models.IntegerField(null=True,choices=PHASE)
     
     def __str__(self):
         return self.p_name

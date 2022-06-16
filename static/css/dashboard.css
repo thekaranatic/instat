@@ -7,6 +7,7 @@ html, body{
     width: 100%;
     background-color: #FFFFFF;
     user-select: none; 
+    /* height: 9000px; */
 }
 
 
@@ -21,7 +22,7 @@ html, body{
 
     z-index: 10;
 
-    background-color: #111111d7;
+    background-color: rgb(17, 17, 17);
     backdrop-filter: blur(15px);
 
 }
@@ -474,11 +475,18 @@ th{
 #id-col{
     width: 2%;
 }
+#pname-col{
+    
+}
 td {
     width: 10%;
     line-height: 50px;
     text-align: left;
     vertical-align: top;
+
+    font-size: 19px;
+
+    word-wrap: normal;
 
 }
 tr:hover{
