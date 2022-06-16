@@ -90,17 +90,20 @@
                 <th>ECT</th>
                 <th>Status</th>
                 <th>Phase</th>
+                <!-- <th></th>  -->
             </tr>
 
             {% for project in projects %}
             <tr>
                 <td id="id-col">{{project.id}}</td>
                 <td id="pname-col">{{ project.p_name }}</td>
-                <td>{{project.c_name}}</td>
-                <td style="color: black;">{{project.init_date}}</td>
-                <td style="color: red;">{{project.ect}}</td>
+                <td id="cname-col">{{project.c_name}}</td>
+                <td id="init-col" style="color: black;">{{project.init_date}}</td>
+                <td id="ect-col" style="color: red;">{{project.ect}}</td>
                 <td>{{project.status}}</td>
                 <td>{{project.phase}}</td>
+                <td><img id="edit-icn" src="https://img.icons8.com/ios/20/undefined/edit--v1.png"/></td>
+                <td><img id="del-icn" src="https://img.icons8.com/ios/20/undefined/delete--v1.png"/></td>
             </tr>
             {% endfor %}
         </table>

@@ -195,6 +195,7 @@ html, body{
     padding-left: 25px;
     padding-right: 20px;
     line-height: 25px;
+    margin-bottom: 5px;
 }
 .left-nav-pane-btns > input:hover{
     transform: scale(1.1);
@@ -463,6 +464,7 @@ html, body{
 
 /* table styles */
 
+
 table{
     position: relative;
     color: black;
@@ -472,22 +474,31 @@ th{
     text-align: left;
     font-size: 23px;
 }
-#id-col{
-    width: 2%;
-}
-#pname-col{
-    
-}
+
 td {
     width: 10%;
     line-height: 50px;
     text-align: left;
     vertical-align: top;
 
-    font-size: 19px;
+    font-size: 20px;
 
     word-wrap: normal;
-
+}
+#id-col{
+    width: 2%;
+}
+#pname-col{
+    width: 25%;
+}
+#cname-col{
+    width: 14%;
+}
+#init-col{
+    width: 16%;
+}
+#ect-col{
+    width: 16%;
 }
 tr:hover{
     transform: translateX(2px);
@@ -496,4 +507,19 @@ tr:hover{
 tr:not(hover){
     transition: .3s;
 
+}
+#edit-icn{
+    position: relative;
+    top: 2px;
+}
+#edit-icn:hover{
+    transform: rotate(75deg);
+    transition: .3s;
+}
+#edit-icn:not(hover){
+    transition: .3s;
+}
+#del-icn{
+    position: relative;
+    top: 2px;
 }
