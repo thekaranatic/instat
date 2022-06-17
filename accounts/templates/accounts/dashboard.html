@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instat - Dashboard</title>
+    <title>Instat | Dashboard</title>
 
     <!-- linking of files  -->
     <script src="{% static '/js/dashboard.js' %}"></script>
@@ -96,7 +96,7 @@
             {% for project in projects %}
             <tr>
                 <td id="id-col">{{project.id}}</td>
-                <td id="pname-col">{{ project.p_name }}</td>
+                <td id="pname-col"><a href="{% url 'status' project.id %}">{{ project.p_name }}</a></td>
                 <td id="cname-col">{{project.c_name}}</td>
                 <td id="init-col" style="color: black;">{{project.init_date}}</td>
                 <td id="ect-col" style="color: red;">{{project.ect}}</td>
