@@ -54,7 +54,7 @@
         <!-- <video autoplay muted loop src="/static/videos/anim-mesh-gradient-1.mp4"></video> -->
         <!-- <img src="/static/images/left-pane-bg.PNG" alt=""> -->
         <div class="left-nav-pane-btns">
-            <img style="position:relative; float:left; left:16px; top:4px;" width="25px" height="25px" src="https://img.icons8.com/ios-glyphs/30/000000/add--v1.png"/><input type="button" value="new project" id="btn-new-proj" onclick="showDiv()"> <br style="line-height: 3px;">
+            <a href="{% url 'addProject' %}"><img id="add-icon" style="position:relative; float:left; left:16px; top:4px;" width="25px" height="25px" src="https://img.icons8.com/ios-glyphs/30/000000/add--v1.png"/><input type="button" value="new project" id="btn-new-proj"></a> <br style="line-height: 3px;">
             <img style="position:relative; float:left; left:17px; top:4px;" width="24px" height="24px" src="https://img.icons8.com/ios-glyphs/30/000000/statistics--v1.png"/><input type="button" value="mini stats" id="btn-mini-stats"> 
         </div>
         <div id="left-pane-footer">
@@ -109,27 +109,5 @@
         </table>
     </div>
     <!-- center-pane END-->
-
-    <center>
-        <div id="divmain">
-            <form action="" method="post">
-                <table>
-                    <tr>
-                        <input autofocus="on" placeholder="project name" type="text" name="proj_name" id="proj_name" >
-                        <input placeholder="client name" type="text" name="client_name" id="client_name" >
-                    </tr>
-                    <tr>
-                        <input placeholder="client email" type="email" name="client_email" id="client_email" autofocus="on" >
-                        <input placeholder="date initiated" type="date" name="date_initiated" id="date_initiated" >
-                    </tr>
-                </table>
-                <footer id="divsub">
-                    <h2 id="label-addnew-proj">add new project</h2> 
-                    <button id="btn-add-new-project" type="submit">add project ></button>
-                    <button id="btn-close" type="submit" >&#x2715</button>
-                </footer>
-            </form>
-        </div>
-    </center>
 </body>
 </html>

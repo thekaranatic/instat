@@ -1,0 +1,41 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html id="html" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instat | Add Project</title>
+
+    <!-- linking of files  -->
+    <!-- <script src="{% static '/js/dashboard.js' %}"></script> -->
+    <link rel="icon" type="image/x-icon" href="{% static '/images/instat-logo-yellow.ico' %}">
+    <link rel="stylesheet" href="{% static '/css/dashboard.css' %}">
+    <!-- linking of files  -->
+
+    <!-- google fonts preconnect  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+</head>
+<body>
+    <center>
+        <div id="divmain">
+            <form action="" method="post">
+                <table>
+                    <tr>
+                        <input autofocus="on" placeholder="project name" type="text" name="proj_name" id="proj_name" >
+                        <input placeholder="client name" type="text" name="client_name" id="client_name" >
+                    </tr>
+                    <tr>
+                        <input placeholder="client email" type="email" name="client_email" id="client_email" autofocus="on" >
+                        <input placeholder="date initiated" type="date" name="date_initiated" id="date_initiated" >
+                    </tr>
+                </table>
+                <footer id="divsub">
+                    <h2 id="label-addnew-proj">add new project</h2> 
+                    <button id="btn-add-new-project" type="submit" ></button>
+                </footer>
+            </form>
+        </div>
+    </center>
+</body>

@@ -186,7 +186,7 @@ html, body{
     left: 3px;
     /* background-color: red; */
 }
-.left-nav-pane-btns > input{
+.left-nav-pane-btns > a > input{
     font-family: 'Rubik', sans-serif;
     font-size: 20px;
     font-weight: normal;
@@ -198,12 +198,12 @@ html, body{
     line-height: 25px;
     margin-bottom: 5px;
 }
-.left-nav-pane-btns > input:hover{
+.left-nav-pane-btns > a > input:hover{
     transform: scale(1.1);
     transform: translateX(10px);
     transition: .5s;
 }
-.left-nav-pane-btns > input:not(hover){
+.left-nav-pane-btns > a > input:not(hover){
     transition: .5s;
 }
 #left-pane-footer{

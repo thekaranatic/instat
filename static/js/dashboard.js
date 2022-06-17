@@ -1,9 +1,9 @@
-function status(){
-    if(navigator.onLine)
-        alert("Browser online")
-    else
-        alert("Browser offline")
-}
+// function status(){
+//     if(navigator.onLine)
+//         alert("Browser online")
+//     else
+//         alert("Browser offline")
+// }
 
 // function alert_No_access_to_mobile(){
 //     /* Storing user's device details in a variable*/
@@ -25,19 +25,6 @@ function status(){
 //     }
 // }
 
-function showDiv(){
-    var a = document.getElementById("html").style;
-    var b = document.getElementById("divmain").style.display = "block";
 
-    b.display = "block";
-    b.backdropFilter = "blur(5px)";
-
-    b.transform = "scale(1)";
-    b.transition = ".3s";
-    b.zIndex = "10";
-}
-function closeDiv(){
-    var a = document.getElementById("btn-close").style.visibility = "hidden";
-}
 
 

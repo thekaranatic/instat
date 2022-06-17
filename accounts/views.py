@@ -18,3 +18,6 @@ def status(request, no):
     projects = get_object_or_404(Project, pk=no) 
     
     return render(request, 'accounts/status.html',{'projects':projects})
+
+def addProject(request):
+    return render(request, 'accounts/addProject.html')
