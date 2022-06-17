@@ -24,7 +24,3 @@
 //         alert("You are using Desktop");
 //     }
 // }
-
-
-
-
