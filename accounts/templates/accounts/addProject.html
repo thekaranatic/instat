@@ -16,14 +16,18 @@
 
     <!-- google fonts preconnect  -->
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
     <center>
         <div id="divmain">
-            <form action="" method="post">
-                <table>
+            <form action="{% url 'addProject' %}" method="get">
+                {% csrf_token %}
+                <table> -->
                     <tr>
-                        <input autofocus="on" placeholder="project name" type="text" name="proj_name" id="proj_name" >
+                        <input autofocus="on" placeholder="project name" type="text" name="proj_name" id="proj_name"    >
                         <input placeholder="client name" type="text" name="client_name" id="client_name" >
                     </tr>
                     <tr>
