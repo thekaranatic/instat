@@ -24,14 +24,21 @@ def status(request, no):
 
 def addProject(request): 
 
-    form = ProjectForm()
-    if request.method == 'GET':   
-        # print("Printing POST:", request.POST)
-        form = ProjectForm(request.GET)
-        if form.is_valid():
-            form.save()
-            return redirect('/dashboard')
+    
+    if request.method == 'POST':   
+        if request.POST.get('proj_name') and request.POST.get('client_name') and request.POST.get('client_email') and request.POST.get('date_initiated') and request.POST.get('ect') and request.POST.get('status') and request.POST.get('collab') and request.POST.get('phase'):
+            Project = Project
+            Project.p_name = request.POST.get('proj_name')
+            Project.c_name = request.POST.get('client_name')
+            Project.c_mail = request.POST.get('client_email')
+            Project.init_date = request.POST.get('date_initiated')
+            Project.ect = request.POST.get('ect')
+            Project.status = request.POST.get('status')
+            Project.collab = request.POST.get('collab')
+            Project.phase = request.POST.get('phase')
+            
+            Project.save()
 
-
-    context = {'form': form}
-    return render(request, 'accounts/addProject.html', context)
+            return render(request, 'accounts/addProject.html')
+    else:
+        return render(request, 'accounts/addProject.html')
