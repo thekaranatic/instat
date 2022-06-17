@@ -501,7 +501,7 @@ td {
     width: 16%;
 }
 tr:hover{
-    transform: translateX(2px);
+    /* transform: translateX(2px); */
     transition: .3s;
 }
 tr:not(hover){
@@ -513,8 +513,8 @@ tr:not(hover){
     top: 2px;
 }
 #edit-icn:hover{
-    transform: rotate(75deg);
-    transition: .3s;
+    transform: rotate(30deg);
+    transition: .2s;
 }
 #edit-icn:not(hover){
     transition: .3s;
@@ -522,4 +522,11 @@ tr:not(hover){
 #del-icn{
     position: relative;
     top: 2px;
+}
+#del-icn:hover{
+    transform: rotate(30deg);
+    transition: .2s;
+}
+#del-icn:not(hover){
+    transition: .3s;
 }
