@@ -1,4 +1,4 @@
-# Project Procosta
+# Project Instat
 
 A platform for designers and other similar professionals which acts as a one-click field to display the clients' project completion status. This platform helps maintain a positive designer-client relationship.
 
