@@ -31,7 +31,7 @@ class Project(models.Model):
     c_mail = models.CharField(max_length=100, null=True)
     init_date = models.DateField(null=True)
     ect = models.DateField(null=True)
-    status = models.CharField(max_length=200,null=True, choices=STATUS, default='Initiated')
+    p_status = models.CharField(max_length=200,null=True, choices=STATUS, default='Initiated')
     collabs = models.IntegerField(null=True, default=0)
     phase = models.IntegerField(null=True,choices=PHASE, default=1)
     

@@ -21,7 +21,7 @@
 <body>
     <center>
         <div id="divmain">
-            <form method="POST">
+            <form method="POST" action="{% url 'addProject' %}">
                 {% csrf_token %}
                 <table> 
                     <tr>

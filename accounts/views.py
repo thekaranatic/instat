@@ -8,7 +8,7 @@ from .models import Project
 from django.shortcuts import get_object_or_404
 from .models import *
 from .forms import ProjectForm
-
+import time
 
 # views
 def dashboard(request):
@@ -16,29 +16,39 @@ def dashboard(request):
 
     return render(request, 'accounts/dashboard.html', {'projects':projects})
 
-
 def status(request, no):
     projects = get_object_or_404(Project, pk=no) 
     
     return render(request, 'accounts/status.html',{'projects':projects})
 
 def addProject(request): 
-
-    
     if request.method == 'POST':   
-        if request.POST.get('proj_name') and request.POST.get('client_name') and request.POST.get('client_email') and request.POST.get('date_initiated') and request.POST.get('ect') and request.POST.get('status') and request.POST.get('collab') and request.POST.get('phase'):
-            Project = Project
-            Project.p_name = request.POST.get('proj_name')
-            Project.c_name = request.POST.get('client_name')
-            Project.c_mail = request.POST.get('client_email')
-            Project.init_date = request.POST.get('date_initiated')
-            Project.ect = request.POST.get('ect')
-            Project.status = request.POST.get('status')
-            Project.collab = request.POST.get('collab')
-            Project.phase = request.POST.get('phase')
-            
-            Project.save()
+        p_name = request.POST['proj_name']
+        c_name = request.POST['client_name']
+        c_mail = request.POST['client_email']
+        init_date = request.POST['date_initiated']
+        ect = request.POST['ect']
+        p_status = request.POST['status']
+        collabs = request.POST['collab']
+        phase = request.POST['phase']
 
-            return render(request, 'accounts/addProject.html')
-    else:
-        return render(request, 'accounts/addProject.html')
+        proj  = Project(
+            p_name=p_name,
+            c_name=c_name,
+            c_mail=c_mail,
+            init_date=init_date,
+            ect=ect,
+            p_status=p_status,
+            collabs=collabs,
+            phase=phase,
+        )
+
+        proj.save()
+
+        # return HttpResponse("Project added!")
+        return render(request, 'accounts/projectAdded.html')
+    
+    return redirect('/dashboard')
+
+    # else:
+    #     return render(request, 'accounts/addProject.html')
