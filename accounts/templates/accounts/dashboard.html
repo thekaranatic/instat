@@ -102,7 +102,7 @@
                 <td id="ect-col" style="color: red;">{{project.ect}}</td>
                 <td>{{project.p_status}}</td>
                 <td>{{project.phase}}</td>
-                <td><a href=""><img id="edit-icn" src="https://img.icons8.com/ios/20/undefined/edit--v1.png"/></a></td>
+                <td><a href="{% url 'updateProject' project.id %}"><img id="edit-icn" src="https://img.icons8.com/ios/20/undefined/edit--v1.png"/></a></td>
                 <td><a href=""><img id="del-icn" src="https://img.icons8.com/ios/20/undefined/delete--v1.png"/></a></td>
             </tr>
             {% endfor %}

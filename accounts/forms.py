@@ -9,11 +9,5 @@ class ProjectForm(ModelForm):
         model = Project
         fields = '__all__'
 
-        widgets = {
-            'p_name': forms.TextInput(attrs={'class':'form-control'}),
-            'c_name': forms.TextInput(attrs={'class':'form-control'}),
-            'c_mail': forms.EmailInput(attrs={'class':'form-control'}),
-            'c_mail': forms.EmailInput(attrs={'class':'form-control'}),
-        }
 
 

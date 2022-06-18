@@ -47,8 +47,12 @@ def addProject(request):
 
         # return HttpResponse("Project added!")
         return render(request, 'accounts/projectAdded.html')
-    
-    return redirect('/dashboard')
 
-    # else:
-    #     return render(request, 'accounts/addProject.html')
+    else:
+        return render(request, 'accounts/addProject.html')
+
+def updateProject(request, no):
+    proj = Project.objects.get(id=no)
+    form  = ProjectForm(instance=proj)
+    context = {'form':form}
+    return render(request, 'accounts/addProject.html', context)
