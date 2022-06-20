@@ -22,6 +22,8 @@ def status(request, no):
     return render(request, 'accounts/status.html',{'projects':projects})
 
 def addProject(request): 
+
+    form = ProjectForm()
     if request.method == 'POST':   
         p_name = request.POST['proj_name']
         c_name = request.POST['client_name']
