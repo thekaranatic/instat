@@ -9,6 +9,7 @@ from django.shortcuts import get_object_or_404
 from .models import *
 from .forms import ProjectForm
 import time
+from django.core.mail import send_mail
 
 # views
 def dashboard(request):
@@ -56,5 +57,7 @@ def addProject(request):
 def updateProject(request, no):
     proj = Project.objects.get(id=no)
     form  = ProjectForm(instance=proj)
-    context = {'form':form}
-    return render(request, 'accounts/addProject.html', context)
+    
+    return render(request, 'accounts/addProject.html', {'form':form})
+
+    

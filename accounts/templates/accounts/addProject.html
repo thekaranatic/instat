@@ -23,7 +23,8 @@
         <div id="divmain">
             <form method="POST" action="{% url 'addProject' %}">
                 {% csrf_token %}
-                <table> 
+                {{ form.as_p }}
+                <!-- <table> 
                     <tr>
                         <input autofocus="on" placeholder="project name" type="text" name="proj_name" id="proj_name">
                         <input placeholder="client name" type="text" name="client_name" id="client_name">
@@ -47,7 +48,7 @@
                         <td id="collab-label">Collaborations</td><input type="number" min="0" max="50" name="collab" id="collab">
                         <td id="phase-label">Phase</td><input type="number" min="1" max="10" name="phase" id="phase">
                     </tr>
-                </table>
+                </table> -->
                 <footer id="divsub">
                     <h2 id="label-addnew-proj">add new project</h2> 
                     <button id="btn-add-new-project" type="submit">add project ></button>

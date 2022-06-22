@@ -44,6 +44,7 @@ INSTALLED_APPS = [
 
     # main app folder 
     'accounts',
+    'send',
 ]
 
 MIDDLEWARE = [
@@ -136,3 +137,9 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+EMAIL_HOST = 'smtp.hostmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'instat.onboard@gmail.com'
+#EMAIL_HOST_PASSWORD = ''
