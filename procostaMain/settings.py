@@ -44,7 +44,7 @@ INSTALLED_APPS = [
 
     # main app folder 
     'accounts',
-    'send',
+    # 'send',
 ]
 
 MIDDLEWARE = [
@@ -143,3 +143,5 @@ EMAIL_HOST = 'smtp.hostmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'instat.onboard@gmail.com'
 #EMAIL_HOST_PASSWORD = ''
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False

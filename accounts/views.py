@@ -14,6 +14,14 @@ from django.core.mail import send_mail
 # views
 def dashboard(request):
     projects = Project.objects.all()
+    
+    send_mail(
+            'hello from instat onboarding bot',
+            'KAY KAY LAVDYA | GENERATED FROM DJANGO WSGI SERVER',
+            'instat.onboard@gmail.com',
+            ['karankakati24@gmail.com'],
+            fail_silently=False
+        )
 
     return render(request, 'accounts/dashboard.html', {'projects':projects})
 
@@ -50,6 +58,8 @@ def addProject(request):
 
         # return HttpResponse("Project added!")
         return render(request, 'accounts/projectAdded.html')
+
+        
 
     else:
         return render(request, 'accounts/addProject.html')
