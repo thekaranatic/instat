@@ -29,7 +29,7 @@ class Project(models.Model):
     project_name = models.CharField(max_length=100, null=True)
     client_name = models.CharField(max_length=100, null=True)
     client_mail = models.CharField(max_length=100, null=True)
-    date_initialised = models.DateField(null=True)
+    project_initiated_on = models.DateField(null=True)
     ect = models.DateField(null=True)
     project_status = models.CharField(max_length=200,null=True, choices=STATUS, default='Initiated')
     collaborations = models.IntegerField(null=True, default=0)
