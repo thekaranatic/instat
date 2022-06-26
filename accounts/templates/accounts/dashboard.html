@@ -96,11 +96,11 @@
             {% for project in projects %}
             <tr>
                 <td id="id-col">{{project.id}}</td>
-                <td id="pname-col"><a href="{% url 'status' project.id %}">{{ project.p_name }}</a></td>
-                <td id="cname-col">{{project.c_name}}</td>
-                <td id="init-col" style="color: black;">{{project.init_date}}</td>
+                <td id="pname-col"><a href="{% url 'status' project.id %}">{{ project.project_name }}</a></td>
+                <td id="cname-col">{{project.client_name}}</td>
+                <td id="init-col" style="color: black;">{{project.project_initiated_on}}</td>
                 <td id="ect-col" style="color: red;">{{project.ect}}</td>
-                <td>{{project.p_status}}</td>
+                <td>{{project.project_status}}</td>
                 <td>{{project.phase}}</td>
                 <td><a href="{% url 'updateProject' project.id %}"><img id="edit-icn" src="https://img.icons8.com/ios/20/undefined/edit--v1.png"/></a></td>
                 <td><a href=""><img id="del-icn" src="https://img.icons8.com/ios/20/undefined/delete--v1.png"/></a></td>

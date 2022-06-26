@@ -327,8 +327,8 @@ html, body{
     top: 0px;
     bottom: 0px;
 
-    width: 80%;
-    height: 350px;
+    width: 50%;
+    height: 430px;
 
     align-items: center;
 
@@ -370,6 +370,7 @@ html, body{
     background-color: #FFCB74;
 
 }
+
 #label-addnew-proj{
     position: relative;
     float: left;
