@@ -26,13 +26,13 @@ class Project(models.Model):
         (10,"10")
     )
 
-    p_name = models.CharField(max_length=100, null=True)
-    c_name = models.CharField(max_length=100, null=True)
-    c_mail = models.CharField(max_length=100, null=True)
-    init_date = models.DateField(null=True)
+    project_name = models.CharField(max_length=100, null=True)
+    client_name = models.CharField(max_length=100, null=True)
+    client_mail = models.CharField(max_length=100, null=True)
+    date_initialised = models.DateField(null=True)
     ect = models.DateField(null=True)
-    p_status = models.CharField(max_length=200,null=True, choices=STATUS, default='Initiated')
-    collabs = models.IntegerField(null=True, default=0)
+    project_status = models.CharField(max_length=200,null=True, choices=STATUS, default='Initiated')
+    collaborations = models.IntegerField(null=True, default=0)
     phase = models.IntegerField(null=True,choices=PHASE, default=1)
     
     def __str__(self):
