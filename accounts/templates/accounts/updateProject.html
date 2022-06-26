@@ -17,11 +17,26 @@
     <!-- google fonts preconnect  -->
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 
+    <style>
+        footer{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 10%;
+            padding-top: 10px;
+            /* background-color: rgba(206, 206, 206, 0.301); */
+            color: rgb(134, 134, 134);
+            text-align: center;
+            font-size: 23px;
+        }
+    </style>
+
 </head>
 <body>
     <center>
         <div id="divmain">
-            <form method="POST" action="{% url 'addProject' %}">
+            <form method="POST" action="">
                 {% csrf_token %}
                 {{ form.as_p }}
                 <!-- <table> 
@@ -50,10 +65,13 @@
                     </tr>
                 </table> -->
                 <footer id="divsub">
-                    <h2 id="label-addnew-proj">add new project</h2> 
+                    <h2 id="label-addnew-proj">update project</h2> 
                     <button id="btn-add-new-project" type="submit">update project ></button>
                 </footer>
             </form>
         </div>
     </center>
+    <footer>
+        &larr; <a href="{% url 'dashboard' %}">Go back</a> to Dashboard
+    </footer>
 </body>

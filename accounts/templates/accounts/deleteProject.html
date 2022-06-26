@@ -1,0 +1,136 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="{% static '/images/instat-logo-yellow.ico' %}">
+    <title>Delete Project?</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body{
+            user-select: none;
+        }
+        div{
+           position: absolute;
+            position: fixed;
+            left: 0px;
+            right: 0px;
+            top: -40px;
+            bottom: 0px;
+
+            width: 33%;
+            height: 184px;
+            margin: auto;
+
+            align-items: center;
+            text-align: center;
+
+            font-family: 'Rubik', sans-serif;
+            font-weight: 400;
+            font-size: 25px;
+
+            border-radius: 10px;
+
+            background-color: #F6F6F6;
+            animation: projectDelAnim .5s ease 0s 1 normal forwards;
+        }
+        @keyframes projectDelAnim{
+            0% {
+                transition: .1s;
+                transform: scale(0);
+            }
+            50% {
+                transition: .1s;
+                transform: scale(1.1);
+                /* background-color: rgb(59, 172, 59); */
+            }
+            100% {
+                transition: .7s;
+                transform: scale(1);
+                /* background-color: rgb(59, 172, 59); */
+            }
+        }
+        h3{
+            font-size: 20px;
+        }
+        img{
+            float: right;
+            position: relative;
+            top: -120px;
+            left: 10px;
+        }
+        span{
+            position: relative;
+            top: 2px;
+            left: 17px;
+        }
+        #del{
+            position: relative;
+            float: left;
+            left: 20px;
+            background-color: tomato;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-family: 'Rubik', sans-serif;
+            font-size: 20px;
+            width: 40%;
+            padding: 4px;
+            padding-left: 7px;
+            padding-right: 7px;
+        }
+        #del:hover{
+            background-color: rgba(255, 99, 71, 0.473);
+            color: black;
+            /* border: 1px solid tomato; */
+            transition: .2s;
+        }
+        #del:not(hover){
+            transition: .2s;
+        }
+       
+        #cancel{
+            position: relative;
+            float: right;
+            right: 50px;
+            background-color: gray;
+            color: white;
+            border-width: thin;
+            border: none;
+            border-radius: 5px;
+            font-family: 'Rubik', sans-serif;
+            font-size: 20px;
+            width: 40%;
+            padding: 4px;
+            padding-left: 7px;
+            padding-right: 7px;
+        }
+        #cancel:hover{
+            background-color: #FFCB74;
+            color: black;
+            transition: .2s;
+        }
+        #cancel:not(hover){
+            transition: .2s;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="d1">
+        <h3>WARNING</h3>
+        <p>Are you sure you want to delete?</p>
+        <img style="display: none;" src="https://img.icons8.com/ios/30/000000/cancel.png"/>
+        <span>
+            <form action="" method="POST">
+                <button id="del" type="disabled">Yes</button>
+                <button id="cancel" type="reset">No, keep it</button>
+            </form>
+        </span>
+    </div>
+</body>
+</html>

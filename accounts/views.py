@@ -1,16 +1,9 @@
-from cmath import phase
-from multiprocessing import context
-import re
-from unicodedata import name
 from django.shortcuts import render, redirect
-from django.http import HttpResponse
-from sqlalchemy import true
+# from django.http import HttpResponseRedirect
 from .models import Project
 from django.shortcuts import get_object_or_404
 from .models import *
 from .forms import ProjectForm
-import time
-from django.core.mail import send_mail
 
 # views
 def dashboard(request):
@@ -23,14 +16,16 @@ def status(request, no):
 
 def addProject(request): 
     form = ProjectForm()
-
     if request.method == 'POST':
+        # print('printing post:', request.POST)
         form = ProjectForm(request.POST)
         if form.is_valid():
-            form. save()
+            form.save()
+            # return redirect('/dashboard')
+
             return render(request, 'accounts/projectAdded.html')
 
-    context={'form':form}
+    context = {'form':form}
     return render(request, 'accounts/addProject.html', context)
 
 
@@ -41,10 +36,11 @@ def updateProject(request, no):
     if request.method == 'POST':
         form = ProjectForm(request.POST, instance=proj)
         if form.is_valid():
-            form. save()
-            return redirect('/dashboard')
+            form.save()
+            # return redirect('/dashboard')
+            return render(request, 'accounts/projectUpdated.html')
     
-    context={'form':form}
+    context = {'form':form}
     return render(request, 'accounts/updateProject.html', context)
 
     

@@ -244,7 +244,7 @@ html, body{
 .mid-panel-head{
     position: absolute;
     position: fixed;
-    width: 70%;
+    width: 80%;
     height: 90px;
     left: 332px;
     top: 60px;
@@ -335,6 +335,7 @@ html, body{
     border-radius: 25px;
 
     background-color: #F6F6F6;
+    box-shadow: 0px 0px 100px 3px rgba(187, 187, 187, 0.582);
     
     margin: auto;
     z-index: 9;
@@ -566,11 +567,6 @@ html, body{
 }
 
 
-
-
-
-
-
 /* table styles */
 
 
@@ -595,19 +591,32 @@ td {
     word-wrap: normal;
 }
 #id-col{
-    width: 2%;
+    width: 4%;
 }
 #pname-col{
-    width: 25%;
+    width: 31%;
 }
 #cname-col{
-    width: 14%;
+    width: 15%;
 }
 #init-col{
-    width: 16%;
+    width: 17%;
 }
 #ect-col{
+    width: 17%;
+}
+#pStatus-col{
     width: 16%;
+}
+#phase-col{
+    
+    width: 20%; 
+}
+#ops-icons{
+    position: relative;
+    left: 30px;
+    margin-left: 15px;
+       
 }
 tr:hover{
     /* transform: translateX(2px); */
@@ -623,7 +632,7 @@ tr:not(hover){
     top: 2px;
 }
 #edit-icn:hover{
-    transform: rotate(30deg);
+    transform: scale(0.8);
     transition: .2s;
 }
 #edit-icn:not(hover){
@@ -634,9 +643,20 @@ tr:not(hover){
     top: 2px;
 }
 #del-icn:hover{
-    transform: rotate(30deg);
+    transform: scale(0.8);
     transition: .2s;
 }
 #del-icn:not(hover){
+    transition: .3s;
+}
+#expand-icn{
+    position: relative;
+    top: 3px;
+}
+#expand-icn:hover{
+    transform: scale(0.8);
+    transition: .2s;
+}
+#expand-icn:not(hover){
     transition: .3s;
 }
