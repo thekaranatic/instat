@@ -43,4 +43,13 @@ def updateProject(request, no):
     context = {'form':form}
     return render(request, 'accounts/updateProject.html', context)
 
-    
+def deleteProject(request, no):
+    proj = Project.objects.get(id=no)
+
+    if request.method == 'POST':
+        proj.delete()
+        return redirect('/dashboard')
+
+
+    context = {'item':proj}
+    return render(request, 'accounts/deleteProject.html', context)
