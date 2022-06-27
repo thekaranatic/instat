@@ -1,3 +1,5 @@
+from importlib.resources import contents
+from multiprocessing import context
 from django.shortcuts import render, redirect
 # from django.http import HttpResponseRedirect
 from .models import Project
@@ -6,6 +8,15 @@ from .models import *
 from .forms import ProjectForm
 
 # views
+def register(request):
+    context = {}
+    return render(request, 'accounts/register.html', context)
+
+def login(request):
+    context = {}
+    return render(request, 'accounts/login.html', context)
+
+
 def dashboard(request):
     projects = Project.objects.all()
     return render(request, 'accounts/dashboard.html', {'projects':projects})
@@ -27,7 +38,6 @@ def addProject(request):
 
     context = {'form':form}
     return render(request, 'accounts/addProject.html', context)
-
 
 def updateProject(request, no):
     proj = Project.objects.get(id=no)
