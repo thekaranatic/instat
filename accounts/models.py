@@ -36,7 +36,7 @@ class Project(models.Model):
     phase = models.IntegerField(null=True,choices=PHASE, default=1)
     
     def __str__(self):
-        return self.p_name
+        return self.project_name
 
     @property
     def phase_percentage(self):
