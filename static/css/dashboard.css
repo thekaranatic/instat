@@ -3,12 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-
 html, body{
     width: 100%;
-    background-color: #FFFFFF;
+    background-color: white;
     /* user-select: none;  */
     /* height: 9000px; */
+    cursor: url('/static/images/cursor-instat.cur'),auto;
 }
 
 
@@ -23,7 +23,9 @@ html, body{
 
     z-index: 10;
 
-    background-color: rgb(17, 17, 17);
+    border-bottom: 1px solid rgb(48, 47, 47);
+
+    background-color: #171717;
     backdrop-filter: blur(15px);
 
 }
@@ -67,9 +69,17 @@ html, body{
 /* LOGO HEAD END */
 
 /* searchbar BEGIN */
-/* .div-searchbar{
+.div-searchbar{
     margin: auto;
-} */
+    opacity: .2;
+}
+.div-searchbar:hover{
+    transition: .5s;
+    opacity: 100;
+}
+.div-searchbar:not(hover){
+    transition: .5s;
+}
 
 #id-searchbar-txt{
     position: absolute;
@@ -212,7 +222,7 @@ html, body{
     bottom: 0px;
 
     width: 274px;
-    border-top: .5px solid #afafaf;
+    border-top: .5px solid gray;
 
     background: rgba(241, 241, 241, 0.24);
     border-bottom-left-radius: 30px;
@@ -238,7 +248,6 @@ html, body{
     width: 27px;
     height: 27px;
 
-    
 }
 
 .mid-panel-head{
@@ -253,7 +262,7 @@ html, body{
     font-style: normal;
     font-weight: 700px;
     font-size: 20px;
-    letter-spacing: -1px;
+    letter-spacing: .5px;
     line-height: 50px;
     display: flex;
     align-items: center;
@@ -330,7 +339,7 @@ html, body{
     width: 50%;
     height: 430px;
 
-    align-items: center;
+    /* align-items: center; */
 
     border-radius: 25px;
 

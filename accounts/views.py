@@ -5,17 +5,24 @@ from django.shortcuts import render, redirect
 from .models import Project
 from django.shortcuts import get_object_or_404
 from .models import *
-from .forms import ProjectForm
+from .forms import ProjectForm, CreateUserForm
+from django.contrib.auth.forms import UserCreationForm
 
 # views
 def register(request):
-    context = {}
+    form = CreateUserForm()
+
+    if request.method == 'POST':
+        form = CreateUserForm(request.POST)
+        if form.is_valid():
+            form.save()
+
+    context = {'form': form}
     return render(request, 'accounts/register.html', context)
 
 def login(request):
     context = {}
     return render(request, 'accounts/login.html', context)
-
 
 def dashboard(request):
     projects = Project.objects.all()
