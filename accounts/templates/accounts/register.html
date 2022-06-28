@@ -11,6 +11,7 @@
   <link rel="icon" type="image/x-icon" href="{% static '/images/instat-logo-yellow.ico' %}">
 
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   
@@ -30,11 +31,11 @@
                 <img src="{% static 'images/logo-instat-dark.png' %}" alt="logo" class="logo">
               </div>
               <p class="login-card-description">Create your account</p>
-              <form action="#!">
+              <form action="" method="POST">
                   <div class="form-group">
                     <label for="username" class="sr-only">Username</label>
                     <input type="text" name="username" id="username" class="form-control" placeholder="Username">
-                  </div>
+                </div>
                   <div class="form-group">
                     <label for="email" class="sr-only">Email</label>
                     <input type="email" name="email" id="email" class="form-control" placeholder="Email address">
@@ -47,7 +48,7 @@
                     <label for="password" class="sr-only">Confirm your Password</label>
                     <input type="password" name="password" id="password" class="form-control" placeholder="Confirm your Password">
                   </div>
-                  <input name="register" id="register" class="btn btn-block login-btn mb-4" type="button" value="Register">
+                  <input name="register" id="register" class="btn btn-block login-btn mb-4" type="submit" value="Register">
                 </form>
                 <!-- <a href="#!" class="forgot-password-link">Forgot password?</a> -->
 
