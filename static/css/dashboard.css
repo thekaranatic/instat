@@ -6,7 +6,7 @@
 html, body{
     width: 100%;
     background-color: white;
-    /* user-select: none;  */
+    user-select: none; 
     /* height: 9000px; */
     cursor: url('/static/images/cursor-instat.cur'),auto;
 }
@@ -116,8 +116,8 @@ html, body{
 #id-searchbar-txt:focus::placeholder{
     transition: .3s;
     font-size: 22px;
-    transform: translateY(-40px);
-    color: transparent;
+    transform: translateX(-190px);
+    /* color: transparent; */
 }
 #id-searchbar-txt:not(focus)::placeholder{
     transition: .3s;
@@ -239,7 +239,7 @@ html, body{
     font-weight: 400px;
     font-size: 22px;
 }
-#left-pane-footer > #icon-logout{
+#icon-logout{
     position: relative;
     float: right;
     top: 22px;
@@ -247,7 +247,13 @@ html, body{
 
     width: 27px;
     height: 27px;
-
+}
+#icon-logout:hover{
+    transition: .3s;
+    transform: scale(0.9);
+}
+#icon-logout:not(hover){
+    transition: .3s;
 }
 
 .mid-panel-head{

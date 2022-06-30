@@ -1,0 +1,11 @@
+1. ERROR: password fields are not rendering in django forms
+SOL: password1 and password2 are "custom" fields on the UserCreationForm since they do not exist as model fields on the User model. Meta.widgets will not work for these custom fields, you will need to redefine these fields and their widgets in your form
+
+ password1 = forms.CharField(
+        label="Password",
+        widget=forms.PasswordInput(attrs={'class':'form-control', 'placeholder':'Password'}),
+    )
+    password2 = forms.CharField(
+        label="Confirm password",
+        widget=forms.PasswordInput(attrs={'class':'form-control', 'placeholder':'Re-enter password'}),
+    )
