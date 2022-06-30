@@ -53,9 +53,9 @@ def logoutUser(request):
     return redirect('login')
 
 def confirmLogout(request):
-    return render(request, 'accounts/logoutUser.html')
+    return render(request, 'prompt/logoutUser.html')
 
-@login_required(login_url='login')
+# @login_required(login_url='login')
 def dashboard(request):
     projects = Project.objects.all()
     return render(request, 'accounts/dashboard.html', {'projects':projects})
@@ -64,7 +64,7 @@ def status(request, no):
     projects = get_object_or_404(Project, pk=no) 
     return render(request, 'accounts/status.html',{'projects':projects})
 
-@login_required(login_url='login')
+# @login_required(login_url='login')
 def addProject(request): 
     form = ProjectForm()
     if request.method == 'POST':
@@ -74,12 +74,12 @@ def addProject(request):
             form.save()
             # return redirect('/dashboard')
 
-            return render(request, 'accounts/projectAdded.html')
+            return render(request, 'messages/projectAdded.html')
 
     context = {'form':form}
-    return render(request, 'accounts/addProject.html', context)
+    return render(request, 'forms/addProject.html', context)
 
-@login_required(login_url='login')
+# @login_required(login_url='login')
 def updateProject(request, no):
     proj = Project.objects.get(id=no)
     form  = ProjectForm(instance=proj)
@@ -89,12 +89,12 @@ def updateProject(request, no):
         if form.is_valid():
             form.save()
             # return redirect('/dashboard')
-            return render(request, 'accounts/projectUpdated.html')
+            return render(request, 'messages/projectUpdated.html')
     
     context = {'form':form}
-    return render(request, 'accounts/updateProject.html', context)
+    return render(request, 'forms/updateProject.html', context)
 
-@login_required(login_url='login')
+# @login_required(login_url='login')
 def deleteProject(request, no):
     proj = Project.objects.get(id=no)
 
@@ -104,4 +104,4 @@ def deleteProject(request, no):
 
 
     context = {'item':proj}
-    return render(request, 'accounts/deleteProject.html', context)
+    return render(request, 'prompt/deleteProject.html', context)

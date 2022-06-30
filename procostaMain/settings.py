@@ -29,7 +29,6 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '127.0.0.1',
     '192.168.43.27',
-    '192.168.137.196',
     'instat.ml'
 ]
 
@@ -46,7 +45,7 @@ INSTALLED_APPS = [
 
     # main app folder 
     'accounts',
-    # 'send',
+    
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
