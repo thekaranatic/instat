@@ -60,9 +60,9 @@ body {
     color: #000;
     margin-bottom: 24px; }
     .login-card .login-btn:hover {
-      border: 1px solid #000;
-      background-color: transparent;
-      color: #000; }
+      /* border: 1px solid #000; */
+      background-color: #000;
+      color: white; }
   .login-card .forgot-password-link {
     font-size: 14px;
     color: #919aa3;

@@ -9,7 +9,7 @@ urlpatterns = [
     path('logout/', views.logoutUser, name="logout"),
     path('confirmLogout/', views.confirmLogout, name="confirmLogout"),
 
-    # path('', views.dashboard, name="dashboard"),
+    path('', views.dashboard, name="dashboard"),
     path('dashboard/', views.dashboard, name="dashboard"),
     path('status/<str:no>/', views.status, name="status"),
 
