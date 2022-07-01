@@ -114,7 +114,7 @@ html, body{
     transition: color .3s ease;
 }
 #id-searchbar-txt:focus::placeholder{
-    transition: .3s;
+    transition: .5s;
     font-size: 22px;
     transform: translateX(-190px);
     /* color: transparent; */
