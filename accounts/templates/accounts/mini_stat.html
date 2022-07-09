@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  color: white;
+}
+
+.item1 { grid-area: header;
+background-color: rgb(243, 235, 13); }
+.item2 { grid-area: menu;
+background-color: rgb(55, 117, 232); }
+.item3 { grid-area: main;
+background-color: rgb(111, 105, 105); }
+.item4 { grid-area: right;
+background-color: rgb(19, 135, 19); }
+.item5 { grid-area: footer;
+background-color: rgb(216, 14, 14); }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header menu menu menu'
+    'main main right right footer footer';
+    gap:10px;
+
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 70px 0;
+  font-size: 30px;
+  border-radius: 20px;
+  opacity: 0.8;
+ 
+}
+body{
+    margin-top: 150px;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: #111112;
+
+}
+h1{
+    color: aliceblue;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+    <h1>Mini Stat</h1>
+
+<div class="grid-container">
+  <div class="item1">In progress<br>8</div>
+  <div class="item2">Initiated<br>4</div>
+  <div class="item3">Paused<br>2</div>  
+  <div class="item4">Completed<br>3</div>
+  <div class="item5">Aborted<br>1</div>
+</div>
+
+</body>
+</html>
