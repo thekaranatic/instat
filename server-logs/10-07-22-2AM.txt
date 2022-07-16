@@ -1,0 +1,4 @@
+Microsoft Windows [Version 10.0.19044.1706]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\mekar>[Errno 11001] getaddrinfo failed

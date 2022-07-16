@@ -1,0 +1,33 @@
+Microsoft Windows [Version 10.0.19044.1706]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\mekar>d:
+
+D:\>cd procostamain
+
+D:\procostaMain>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 10, 2022 - 11:57:29
+Django version 4.0.4, using settings 'procostaMain.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[10/Jul/2022 11:57:37] "GET / HTTP/1.1" 302 0
+[10/Jul/2022 11:57:37] "GET /login/?next=/ HTTP/1.1" 200 4826
+[10/Jul/2022 11:57:41] "GET /register/ HTTP/1.1" 200 6405
+Printing post: <QueryDict: {'csrfmiddlewaretoken': ['qCp3DsFW44tcJzFYmfaXgjiTUXE58A62tqCaqwtUaS5EwXprXB0vwD6gqyzx44B1'], 'username': ['neeled_it'], 'first_name': ['Neel'], 'last_name': ['Dhuttargi'], 'email': ['neeldhuttargi@gmail.com'], 'password1': ['sha256!@#_!'], 'password2': ['sha256!@#_!'], 'register': ['Register']}>
+[10/Jul/2022 12:01:29] "POST /register/ HTTP/1.1" 302 0
+[10/Jul/2022 12:01:29] "GET /login/ HTTP/1.1" 200 4938
+[10/Jul/2022 12:02:50] "POST /login/ HTTP/1.1" 200 4940
+[10/Jul/2022 12:03:01] "POST /login/ HTTP/1.1" 200 4940
+[10/Jul/2022 12:03:32] "POST /login/ HTTP/1.1" 302 0
+[10/Jul/2022 12:03:32] "GET /dashboard/ HTTP/1.1" 200 4420
+[10/Jul/2022 12:09:29] "GET /updateProject/128/ HTTP/1.1" 200 6691
+Not Found: /favicon.ico
+[10/Jul/2022 12:22:49] "GET /favicon.ico HTTP/1.1" 404 3905
+[10/Jul/2022 12:23:01] "GET /status/128/ HTTP/1.1" 200 1736
+[10/Jul/2022 12:30:46] "GET /confirmLogout/ HTTP/1.1" 200 3966
+[10/Jul/2022 12:30:48] "POST /logout/ HTTP/1.1" 302 0
+[10/Jul/2022 12:30:48] "GET /login/ HTTP/1.1" 200 4826

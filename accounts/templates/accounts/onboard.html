@@ -1,14 +1,5 @@
+    
 
-{% block html %}
-
-<!DOCTYPE html>
-<html id="html" lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
     Welcome {{fname}}!
     Thank you for joining Instat Beta.
 
@@ -16,45 +7,10 @@
     Your email address: {{reg_email}}
 
     Log in and have fun using Instat! 
-    Get Started: https://thekaranatic.github.io/procosta-test/
+    Get Started: https://thekaranatic.github.io/instat-homepage/under_dev.html
     
     Regards, 
     Instat Onboarding Team
 
-    <code>
-        PLEASE DO NOT REPLY TO THIS EMAIL <br> This is an automated email from Django Server. Copyright 2022, Instat
-    </code>
-
-    def registerPage(request):
-    if request.user.is_authenticated:
-        return redirect('dashboard')
-    else:
-        form = CreateUserForm()
-
-        if request.method == 'POST':
-            print('Printing post:', request.POST)
-            form = CreateUserForm(request.POST)
-            if form.is_valid():
-                form.save()
-
-                fname = form.cleaned_data.get('first_name')
-                reg_email = form.cleaned_data.get('email')
-                reg_username = form.cleaned_data.get('username')
-                messages.success(request, 'Account created. Welcome, ' + fname + '!')
-
-                # send mail to confirm the user of his successful registration
-                template = render_template('accounts/onboard.html', form=form)
-                
-                email = EmailMessage(
-                    'Welcome aboard' + ' ' + fname + '!',
-                    template,
-                    settings.EMAIL_HOST_USER,
-                    [reg_email],
-                )
-
-                email.fail_silently = False
-                email.send()
-
-                return redirect('login')
-</body>
-</html>
+    
+    PLEASE DO NOT REPLY TO THIS EMAIL. This is an automated email from Django Development Server. Copyright 2022, Instat
