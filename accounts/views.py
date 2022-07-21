@@ -3,6 +3,8 @@ import profile
 from re import template
 from winsound import PlaySound
 from django.shortcuts import render, redirect
+
+from accounts.decorators import unauthenticated_user
 from .models import Project
 from django.shortcuts import get_object_or_404
 from .models import *
@@ -14,56 +16,53 @@ from django.core.mail import EmailMessage
 from django.conf import settings
 from django.template.loader import render_to_string
 
+from .decorators import allowed_users, unauthenticated_user
+
 # views
-
+@unauthenticated_user
 def registerPage(request):
-    if request.user.is_authenticated:
-        return redirect('dashboard')
-    else:
-        form = CreateUserForm()
+    form = CreateUserForm()
 
-        if request.method == 'POST':
-            print('Printing post:', request.POST)
-            form = CreateUserForm(request.POST)
-            if form.is_valid():
-                form.save()
+    if request.method == 'POST':
+        print('Printing post:', request.POST)
+        form = CreateUserForm(request.POST)
+        if form.is_valid():
+            form.save()
 
-                fname = form.cleaned_data.get('first_name')
-                reg_email = form.cleaned_data.get('email')
-                reg_username = form.cleaned_data.get('username')
-                messages.success(request, 'Account created. Welcome, ' + fname + '!')
+            fname = form.cleaned_data.get('first_name')
+            reg_email = form.cleaned_data.get('email')
+            reg_username = form.cleaned_data.get('username')
+            messages.success(request, 'Account created. Welcome, ' + fname + '!')
 
-                # send mail to confirm the user of his successful registration
-                template = render_to_string('accounts/onboard.html', {'fname':fname, 'reg_email':reg_email, 'reg_username':reg_username})
-                
-                email = EmailMessage(
-                    'Welcome aboard' + ' ' + fname + '!',
-                    template,
-                    settings.EMAIL_HOST_USER,
-                    [reg_email],
-                )
-                email.fail_silently = False
-                email.send()
-                return redirect('login')
+            # send mail to confirm the user of his successful registration
+            template = render_to_string('accounts/onboard.html', {'fname':fname, 'reg_email':reg_email, 'reg_username':reg_username})
+            
+            email = EmailMessage(
+                'Welcome aboard' + ' ' + fname + '!',
+                template,
+                settings.EMAIL_HOST_USER,
+                [reg_email],
+            )
+            email.fail_silently = False
+            email.send()
+            return redirect('login')
 
     context = {'form': form}
     return render(request, 'accounts/register.html', context)
 
+@unauthenticated_user
 def loginPage(request):
-    if request.user.is_authenticated:
-        return redirect('dashboard')
-    else:
-        if request.method == 'POST':
-            username = request.POST.get('username')
-            password = request.POST.get('password')
+    if request.method == 'POST':
+        username = request.POST.get('username')
+        password = request.POST.get('password')
 
-            user = authenticate(request, username=username, password=password)
+        user = authenticate(request, username=username, password=password)
 
-            if user is not None:
-                login(request, user)
-                return redirect('dashboard')
-            else:
-                messages.info(request, 'Username or password is incorrect')
+        if user is not None:
+            login(request, user)
+            return redirect('dashboard')
+        else:
+            messages.info(request, 'Username or password is incorrect')
 
     context = {}
     return render(request, 'accounts/login.html', context)
@@ -74,6 +73,9 @@ def logoutUser(request):
 
 def confirmLogout(request):
     return render(request, 'prompt/logoutUser.html')
+
+def userPage(request):
+    return render(request, 'accounts/user.html')
 
 @login_required(login_url='login')
 def dashboard(request):

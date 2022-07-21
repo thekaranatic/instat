@@ -10,7 +10,6 @@ urlpatterns = [
     path('confirmLogout/', views.confirmLogout, name="confirmLogout"),
     path('user/', views.userPage, name="userPage"),
     
-
     path('', views.dashboard, name="dashboard"),
     path('dashboard/', views.dashboard, name="dashboard"),
     path('status/<str:no>/', views.status, name="status"),
