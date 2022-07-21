@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html, body{
+    color: black;
+    background-color: white;
+    user-select: none; 
+}
+*{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 800;
+    cursor: url('/static/images/cursor-instat.cur'),auto;
+}
+
+body{
+    margin-top: 185px;
+    margin-left: 335px;
+    margin-right: 140px;
+}
+
+.item1 { grid-area: header;
+background-color: rgb(243, 235, 13); }
+.item2 { grid-area: menu;
+background-color: #3775e8; }
+.item3 { grid-area: main;
+background-color: #6f6969; }
+.item4 { grid-area: right;
+background-color: #138713; }
+.item5 { grid-area: footer;
+background-color: #d80e0e; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'header header header menu menu menu'
+    'main main right right footer footer';
+    gap:10px;
+
+}
+
+.grid-container > div {
+    text-align: center;
+    padding: 70px 0;
+    font-size: 30px;
+    border-radius: 20px;
+    opacity: 0.8;
+
+}
+
+/* HOMEBAR  BEGIN */
+.div-homebar{
+    position: absolute;
+    position: fixed;
+    width: 100%;
+    height: 65px;
+    left: 0px;
+    top: 0px;
+
+    z-index: 10;
+
+    border-bottom: 1px solid rgb(48, 47, 47);
+
+    background-color: #171717;
+    backdrop-filter: blur(15px);
+
+}
+
+/* LOGO HEAD BEGIN */
+.div-logo-head{
+    position: absolute;
+    top: -5px;
+    height: 77px;
+    width: 230px;
+    
+}
+.div-logo-head> span > h2{
+    position: absolute;
+    position: fixed;
+    float: left;
+    top: -7px;
+    left: 57px;
+
+    color: #ededed;
+
+    font-size: 28px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+.div-logo-head> span > #logo-banner{
+    position: absolute;
+    float: left;
+    top: 25px;
+    left: 26px;
+
+    width: 25px;
+}
+/* LOGO HEAD END */
+/* HOMEBAR END */
+
+/* LEFT NAV PANEL BEGIN */
+.left-nav-pane{
+    position: absolute;
+    position: fixed;
+    float: left;
+    width: 274px;
+    height: 100%;
+    left: 22px;
+    top: 93px;
+    height: 85%;
+
+    background: #F6F6F6;
+    
+    filter: grayscale(1);
+    
+    border-radius: 30px;
+
+    z-index: 0;
+}
+
+.left-nav-pane-btns{
+    position: relative;
+    top: 20px;
+    text-align: left;
+    left: 3px;
+    /* background-color: red; */
+}
+.left-nav-pane-btns > a > input{
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    background-color: transparent;
+    border: none;
+    padding: 3.5px;
+    padding-left: 25px;
+    padding-right: 20px;
+    line-height: 25px;
+    margin-bottom: 5px;
+}
+.left-nav-pane-btns > a > input:hover{
+    transform: scale(1.1);
+    transform: translateX(10px);
+    transition: .5s;
+}
+.left-nav-pane-btns > a > input:not(hover){
+    transition: .5s;
+}
+#left-pane-footer{
+    position: relative;
+    position: fixed;
+    bottom: 0px;
+
+    width: 274px;
+    border-top: .5px solid gray;
+
+    background: rgba(241, 241, 241, 0.24);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+    backdrop-filter: blur(20px);
+}
+#left-pane-footer > #c_name{
+    position: relative;
+    float: left;
+    left: 20px;
+
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400px;
+    font-size: 22px;
+}
+#icon-logout{
+    position: relative;
+    float: right;
+    top: 22px;
+    right: 30px;
+
+    width: 27px;
+    height: 27px;
+}
+#icon-logout:hover{
+    transition: .3s;
+    transform: scale(0.9);
+}
+#icon-logout:not(hover){
+    transition: .3s;
+}
+
+/* MID PANEL BEGIN */
+.mid-panel-head{
+    position: absolute;
+    position: fixed;
+    width: 80%;
+    height: 90px;
+    left: 332px;
+    top: 65px;
+
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600px !important;
+    font-size: 20px;
+    letter-spacing: .5px;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    text-transform: lowercase;
+
+    color: #2F2F2F;
+    background-color: rgba(255, 255, 255, 0.726);
+
+    z-index: 5;
+}
+/* MID PANEL END */
