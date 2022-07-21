@@ -1,6 +1,6 @@
 from django.urls import path 
 
-# import form /procostaMain/accounts/views.py
+# import form /instatMain/accounts/views.py
 from . import views
 
 urlpatterns = [

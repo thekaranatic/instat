@@ -3,15 +3,15 @@ Microsoft Windows [Version 10.0.19044.1706]
 
 C:\Users\mekar>d:
 
-D:\>cd procostamain
+D:\>cd instatmain
 
-D:\procostaMain>python manage.py runserver
+D:\instatMain>python manage.py runserver
 Watching for file changes with StatReloader
 Performing system checks...
 
 System check identified no issues (0 silenced).
 July 10, 2022 - 11:57:29
-Django version 4.0.4, using settings 'procostaMain.settings'
+Django version 4.0.4, using settings 'instatMain.settings'
 Starting development server at http://127.0.0.1:8000/
 Quit the server with CTRL-BREAK.
 [10/Jul/2022 11:57:37] "GET / HTTP/1.1" 302 0

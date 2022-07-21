@@ -1,6 +1,7 @@
 import email
 import profile
 from re import template
+from winsound import PlaySound
 from django.shortcuts import render, redirect
 from flask import render_template, render_template_string
 from .models import Project
@@ -40,25 +41,6 @@ def registerPage(request):
                 # send mail to confirm the user of his successful registration
                 template = render_to_string('accounts/onboard.html', {'fname':fname, 'reg_email':reg_email, 'reg_username':reg_username})
                 
-                # from templated_email import get_templated_mail
-
-                # get_templated_mail(
-                #     template_name='Welcome aboard' + ' ' + fname + '!',
-                #     from_email=settings.EMAIL_HOST_USER,
-                #     to=[reg_email],
-                #     context={
-                #         'reg_username':request.user.username,
-                #         'fname':request.user.first_name,
-                #         'reg_email':request.user.email
-                #     },
-                #     # Optional:
-                #     # cc=['cc@example.com'],
-                #     # bcc=['bcc@example.com'],
-                #     # headers={'My-Custom-Header':'Custom Value'},
-                #     # template_prefix="my_emails/",
-                #     # template_suffix="email",
-                # )
-
                 email = EmailMessage(
                     'Welcome aboard' + ' ' + fname + '!',
                     template,

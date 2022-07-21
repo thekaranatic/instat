@@ -3,18 +3,18 @@ Microsoft Windows [Version 10.0.19044.1706]
 
 C:\Users\mekar>d:
 
-D:\>cd procostamain
+D:\>cd instatmain
 
-D:\procostaMain>python manage.pt runserver
-python: can't open file 'D:\procostaMain\manage.pt': [Errno 2] No such file or directory
+D:\instatMain>python manage.pt runserver
+python: can't open file 'D:\instatMain\manage.pt': [Errno 2] No such file or directory
 
-D:\procostaMain>python manage.py runserver
+D:\instatMain>python manage.py runserver
 Watching for file changes with StatReloader
 Performing system checks...
 
 System check identified no issues (0 silenced).
 July 14, 2022 - 13:58:46
-Django version 4.0.4, using settings 'procostaMain.settings'
+Django version 4.0.4, using settings 'instatMain.settings'
 Starting development server at http://127.0.0.1:8000/
 Quit the server with CTRL-BREAK.
 [14/Jul/2022 13:58:48] "GET / HTTP/1.1" 302 0
