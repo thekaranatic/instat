@@ -3,66 +3,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
+  <title>Instat | Mini Stat</title>
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-*{
-  font-family: 'Inter', sans-serif;
-  font-weight: 800;
-  color: white;
-}
-
-.item1 { grid-area: header;
-background-color: rgb(243, 235, 13); }
-.item2 { grid-area: menu;
-background-color: rgb(55, 117, 232); }
-.item3 { grid-area: main;
-background-color: rgb(111, 105, 105); }
-.item4 { grid-area: right;
-background-color: rgb(19, 135, 19); }
-.item5 { grid-area: footer;
-background-color: rgb(216, 14, 14); }
-
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    'header header header menu menu menu'
-    'main main right right footer footer';
-    gap:10px;
-
-}
-
-.grid-container > div {
-  text-align: center;
-  padding: 70px 0;
-  font-size: 30px;
-  border-radius: 20px;
-  opacity: 0.8;
- 
-}
-body{
-    margin-top: 150px;
-    margin-left: 200px;
-    margin-right: 200px;
-    background-color: #111112;
-
-}
-h1{
-    color: aliceblue;
-    text-align: center;
-}
-</style>
+    <link rel="icon" type="image/x-icon" href="{% static '/images/instat-logo-yellow.ico' %}">
+    <link rel="stylesheet" href="{% static '/css/mini_stats.css' %}">
 </head>
 <body>
-    <h1>Mini Stat</h1>
+   <!-- homebar begin -->
+   <div class="div-homebar">
+    <div class="div-logo-head">
+        <span>
+            <img id="logo-banner" src="{% static '/images/logo-banner-yellow-tsprnt-2.png' %}" alt="logo-banner">
+            <h2>mini stats</h2>
+        </span>
+    </div>
+</div>
+<!-- homebar end -->
+
+<!-- left-navigation panel BEGIN -->
+    <div class="left-nav-pane">
+      <!-- <video autoplay muted loop src="/static/videos/anim-mesh-gradient-1.mp4"></video> -->
+      <!-- <img src="/static/images/left-pane-bg.PNG" alt=""> -->
+      <div class="left-nav-pane-btns">
+          <!-- <a href="{% url 'addProject' %}"><img id="add-icon" style="position:relative; float:left; left:16px; top:4px;" width="25px" height="25px" src="https://img.icons8.com/ios-glyphs/30/000000/add--v1.png"/><input type="button" value="new project" id="btn-new-proj"></a> <br style="line-height: 3px;"> -->
+          <a href="{% url 'dashboard' %}"><img style="position:relative; float:left; left:17px; top:4px;" width="24px" height="24px" src="https://img.icons8.com/ios-filled/30/000000/back.png"/><input type="button" value="dashboard" id="btn-mini-stats"></a>  
+      </div>
+      <div id="left-pane-footer">
+          <h3 id="c_name">{{user.first_name}}</h3>
+          <a href="{% url 'confirmLogout' %}"><img id="icon-logout" src="https://img.icons8.com/ios-glyphs/30/000000/logout-rounded--v1.png"/></a>
+      </div>
+    </div>
+<!-- left-navigation-panel END -->
+
+<!-- mid-panel BEGIN -->
+<div class="mid-panel-head">
+  <h1 style="position: fixed;font-weight: 700px;">about your projects</h1>
+</div>
+<!-- mid-panel END -->
 
 <div class="grid-container">
-  <div class="item1">In progress<br>{{in_progressCount}}</div>
-  <div class="item2">Initiated<br>{{initiatedCount}}</div>
-  <div class="item3">Paused<br>{{pausedCount}}</div>  
-  <div class="item4">Completed<br>{{completedCount}}</div>
-  <div class="item5">Aborted<br>{{abortedCount}}</div>
+  <div class="item1">In progress<br><span style="font-size: 55px;">{{in_progressCount}}</span></div>
+  <div class="item2">Initiated<br><span style="font-size: 55px;">{{initiatedCount}}</span></div>
+  <div class="item3">Paused<br><span style="font-size: 55px;">{{pausedCount}}</span></div>  
+  <div class="item4">Completed<br><span style="font-size: 55px;">{{completedCount}}</span></div>
+  <div class="item5">Aborted<br><span style="font-size: 55px;">{{abortedCount}}</span></div>
 </div>
 
 </body>
