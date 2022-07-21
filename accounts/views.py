@@ -3,23 +3,18 @@ import profile
 from re import template
 from winsound import PlaySound
 from django.shortcuts import render, redirect
-from flask import render_template, render_template_string
 from .models import Project
 from django.shortcuts import get_object_or_404
 from .models import *
 from .forms import ProjectForm, CreateUserForm
-from django.contrib.auth.forms import UserCreationForm
 from django.contrib import messages
-
 from django.contrib.auth import authenticate, login, logout 
 from django.contrib.auth.decorators import login_required
-
-# views
-
-
 from django.core.mail import EmailMessage
 from django.conf import settings
 from django.template.loader import render_to_string
+
+# views
 
 def registerPage(request):
     if request.user.is_authenticated:
@@ -47,13 +42,9 @@ def registerPage(request):
                     settings.EMAIL_HOST_USER,
                     [reg_email],
                 )
-
                 email.fail_silently = False
                 email.send()
-
                 return redirect('login')
-
-    
 
     context = {'form': form}
     return render(request, 'accounts/register.html', context)
@@ -86,12 +77,25 @@ def confirmLogout(request):
 
 @login_required(login_url='login')
 def dashboard(request):
-    projects = Project.objects.all()
+    # '-id' stores greatestToLeast ordered projects
+    projects = Project.objects.all().order_by('-id') 
     return render(request, 'accounts/dashboard.html', {'projects':projects})
 
 def status(request, no):
-    projects = get_object_or_404(Project, pk=no) 
+    projects = get_object_or_404(Project, pk=no)
     return render(request, 'accounts/status.html',{'projects':projects})
+
+@login_required(login_url='login')
+def miniStats(request):
+    from django.db.models import Count #library to count items 
+
+    initiatedCount = Project.objects.filter(project_status="Initiated").count()
+    in_progressCount = Project.objects.filter(project_status="In progress").count()
+    pausedCount = Project.objects.filter(project_status="Paused").count()
+    abortedCount = Project.objects.filter(project_status="Aborted").count()
+    completedCount = Project.objects.filter(project_status="Completed").count()
+
+    return render(request, 'accounts/mini_stats.html', {'initiatedCount':initiatedCount, 'in_progressCount':in_progressCount, 'pausedCount':pausedCount, 'abortedCount':abortedCount, 'completedCount':completedCount})
 
 @login_required(login_url='login')
 def addProject(request): 
