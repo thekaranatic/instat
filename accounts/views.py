@@ -16,7 +16,7 @@ from django.core.mail import EmailMessage
 from django.conf import settings
 from django.template.loader import render_to_string
 
-from .decorators import allowed_users, unauthenticated_user
+from .decorators import unauthenticated_user
 
 # views
 @unauthenticated_user
