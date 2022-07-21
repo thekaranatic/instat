@@ -6,7 +6,7 @@ from sqlalchemy import delete
 
 class Project(models.Model):
     STATUS = (
-        ('Inititated', 'Inititated'),
+        ('Initiated', 'Initiated'),
         ('Paused', 'Paused'),
         ('In progress', 'In progress'),
         ('Aborted', 'Aborted'),
