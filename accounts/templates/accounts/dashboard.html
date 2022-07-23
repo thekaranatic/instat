@@ -13,11 +13,18 @@
     <link rel="icon" type="image/x-icon" href="{% static '/images/instat-logo-yellow.ico' %}">
     <link rel="stylesheet" href="{% static '/css/dashboard.css' %}">
     <!-- linking of files  -->
+    <script type="text/javascript">
+        function change_bg_on_hover(){
+            let a = document.getElementsByClassName("bodySel").style;
+            a.backgroundColor = "blue";  
+            a.transition = ".3s";  
+        }
+    </script>
 
     <!-- google fonts preconnect  -->
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 </head>
-<body id="body" onload="alert_No_access_to_mobile()">
+<body id="b">
 
     <!-- homebar begin -->
     <div class="div-homebar">
@@ -88,7 +95,7 @@
                 <td id="ect-col" style="color: red;">{{project.ect}}</td>
                 <td id="pStatus-col">{{project.project_status}}</td>
                 <td id="phase-col">{{project.phase}}</td>
-                <td><a id="ops-icons" href="{% url 'updateProject' project.id %}"><img id="edit-icn" src="https://img.icons8.com/ios/25/undefined/edit--v1.png"/></a></td>
+                <td><a id="ops-icons" href="{% url 'updateProject' project.id %}"><img onmouseover="change_bg_on_hover()" class="edit-icn" id="edit-icn" src="https://img.icons8.com/ios/25/undefined/edit--v1.png"/></a></td>
                 <td><a id="ops-icons" href="{% url 'status' project.id %}"><img id="expand-icn" src="https://img.icons8.com/ios/25/000000/expand--v1.png"/></a></td>
                 <td><a id="ops-icons" href="{% url 'deleteProject' project.id %}"><img id="del-icn" src="https://img.icons8.com/ios/25/undefined/delete--v1.png"/></a></td>
             </tr>

@@ -3,7 +3,6 @@ import profile
 from re import template
 from winsound import PlaySound
 from django.shortcuts import render, redirect
-
 from accounts.decorators import unauthenticated_user
 from .models import Project
 from django.shortcuts import get_object_or_404
@@ -30,12 +29,14 @@ def registerPage(request):
             form.save()
 
             fname = form.cleaned_data.get('first_name')
+            lname = form.cleaned_data.get('last_name')
+            full_name = fname + lname 
             reg_email = form.cleaned_data.get('email')
             reg_username = form.cleaned_data.get('username')
             messages.success(request, 'Account created. Welcome, ' + fname + '!')
 
             # send mail to confirm the user of his successful registration
-            template = render_to_string('accounts/onboard.html', {'fname':fname, 'reg_email':reg_email, 'reg_username':reg_username})
+            template = render_to_string('accounts/onboard.html', {'fname':fname, 'reg_email':reg_email, 'reg_username':reg_username, 'full_name':full_name})
             
             email = EmailMessage(
                 'Welcome aboard' + ' ' + fname + '!',

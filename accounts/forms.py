@@ -12,9 +12,18 @@ class ProjectForm(ModelForm):
         model = Project
         fields = '__all__'
 
-class CreateUserForm(UserCreationForm):
+        widgets = {
+            'project_name': forms.TextInput(attrs={'class': 'form', 'id':'proj_name', 'required':'required'}),
+            'client_name': forms.TextInput(attrs={'class': 'form', 'id':'client_name','required':'required'}),
+            'client_mail': forms.EmailInput(attrs={'class': 'form', 'id':'client_email','required':'required'}),
+            'project_initiated_on': forms.DateInput(attrs={'class': 'form','id':'date_initiated', 'required':'required'}),
+            'ect': forms.DateInput(attrs={'class': 'form', 'id':'ect','required':'required'}),
+            'project_status': forms.TextInput(attrs={'class': 'form', 'id':'status-dropdown','required':'required'}),
+            'collaborations': forms.NumberInput(attrs={'class': 'form', 'id':'collab','required':'required'}),
+            'phase': forms.NumberInput(attrs={'class': 'form', 'id':'phase','required':'required'}),
+        }
 
-    
+class CreateUserForm(UserCreationForm):
     password1 = forms.CharField(
         label="Password",
         widget=forms.PasswordInput(attrs={'class':'form-control', 'placeholder':'Password'}),

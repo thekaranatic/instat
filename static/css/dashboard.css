@@ -9,8 +9,11 @@
 
 html, body{
     width: 100%;
-    background-color: white;
+    
     user-select: none; 
+}
+#body{
+    background-color: white;
 }
 
 /* HOMEBAR  BEGIN */
@@ -357,6 +360,7 @@ html, body{
     z-index: 9;
 }
 
+
 #divsub{
     position: absolute;
     bottom: 0px;
@@ -650,6 +654,7 @@ tr:not(hover){
     transform: scale(0.8);
     transition: .2s;
 }
+
 #edit-icn:not(hover){
     transition: .3s;
 }
