@@ -1,0 +1,1315 @@
+Microsoft Windows [Version 10.0.19044.1826]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\mekar>d:
+
+D:\>cd instatmain
+
+D:\instatMain>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 23, 2022 - 10:35:34
+Django version 4.0.4, using settings 'instatMain.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[23/Jul/2022 10:35:40] "GET / HTTP/1.1" 200 4932
+[23/Jul/2022 10:35:42] "GET /static/css/dashboard.css HTTP/1.1" 304 0
+[23/Jul/2022 10:35:46] "GET /status/133/ HTTP/1.1" 200 1438
+[23/Jul/2022 10:39:44] "GET /status/133/ HTTP/1.1" 200 1459
+[23/Jul/2022 10:40:57] "GET /status/133/ HTTP/1.1" 200 1293
+[23/Jul/2022 10:42:01] "GET /status/133/ HTTP/1.1" 200 1413
+[23/Jul/2022 10:43:36] "GET /status/133/ HTTP/1.1" 200 1410
+[23/Jul/2022 10:43:52] "GET /status/133/ HTTP/1.1" 200 1410
+[23/Jul/2022 10:44:52] "GET /status/133/ HTTP/1.1" 200 1403
+[23/Jul/2022 10:45:30] "GET /status/133/ HTTP/1.1" 200 1403
+[23/Jul/2022 10:45:32] "GET /status/133/ HTTP/1.1" 200 1403
+[23/Jul/2022 10:45:33] "GET /static/css/status.css HTTP/1.1" 200 6051
+[23/Jul/2022 10:45:33] "GET /static/images/instat-logo-yellow.ico HTTP/1.1" 200 184699
+[23/Jul/2022 10:45:33] "GET /static/images/instat-logo-yellow.ico HTTP/1.1" 200 184699
+[23/Jul/2022 10:46:02] "GET /status/133/ HTTP/1.1" 200 1403
+[23/Jul/2022 10:46:02] "GET /static/css/status.css HTTP/1.1" 200 6550
+[23/Jul/2022 10:46:34] "GET /status/133/ HTTP/1.1" 200 1403
+[23/Jul/2022 10:46:34] "GET /static/css/status.css HTTP/1.1" 200 6556
+[23/Jul/2022 10:46:47] "GET /status/133/ HTTP/1.1" 200 1403
+[23/Jul/2022 10:46:47] "GET /static/css/status.css HTTP/1.1" 200 6556
+[23/Jul/2022 10:47:31] "GET /status/133/ HTTP/1.1" 200 1403
+[23/Jul/2022 10:47:31] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 10:51:14] "GET /status/133/ HTTP/1.1" 200 1403
+[23/Jul/2022 10:51:14] "GET /static/css/status.css HTTP/1.1" 200 6666
+[23/Jul/2022 10:51:56] "GET /status/133/ HTTP/1.1" 200 1403
+[23/Jul/2022 10:51:56] "GET /static/css/status.css HTTP/1.1" 200 6667
+[23/Jul/2022 10:52:16] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 10:52:21] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 10:53:02] "GET /status/133/ HTTP/1.1" 200 1403
+[23/Jul/2022 10:53:02] "GET /static/css/status.css HTTP/1.1" 200 6666
+[23/Jul/2022 10:53:14] "GET /updateProject/133/ HTTP/1.1" 200 6181
+[23/Jul/2022 10:53:21] "POST /updateProject/133/ HTTP/1.1" 200 2523
+[23/Jul/2022 10:53:22] "GET /dashboard/ HTTP/1.1" 200 4932
+[23/Jul/2022 10:53:49] "GET /status/133/ HTTP/1.1" 200 1403
+[23/Jul/2022 10:53:49] "GET /status/133/ HTTP/1.1" 200 1403
+[23/Jul/2022 10:53:49] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 10:54:51] "GET /status/133/ HTTP/1.1" 200 1432
+[23/Jul/2022 10:54:51] "GET /static/css/status.css HTTP/1.1" 200 6689
+[23/Jul/2022 10:54:52] "GET /status/133/ HTTP/1.1" 200 1432
+[23/Jul/2022 10:54:52] "GET /static/css/status.css HTTP/1.1" 200 6711
+[23/Jul/2022 10:55:08] "GET /status/133/ HTTP/1.1" 200 1432
+[23/Jul/2022 10:55:08] "GET /static/css/status.css HTTP/1.1" 200 6725
+[23/Jul/2022 10:55:09] "GET /status/133/ HTTP/1.1" 200 1432
+[23/Jul/2022 10:55:09] "GET /static/css/status.css HTTP/1.1" 200 6728
+[23/Jul/2022 10:55:10] "GET /status/133/ HTTP/1.1" 200 1432
+[23/Jul/2022 10:55:10] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 10:55:11] "GET /status/133/ HTTP/1.1" 200 1432
+[23/Jul/2022 10:55:11] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 10:55:11] "GET /status/133/ HTTP/1.1" 200 1432
+[23/Jul/2022 10:55:11] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 10:55:11] "GET /status/133/ HTTP/1.1" 200 1432
+[23/Jul/2022 10:55:11] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 10:55:27] "GET /status/133/ HTTP/1.1" 200 1432
+[23/Jul/2022 10:55:27] "GET /static/css/status.css HTTP/1.1" 200 6787
+[23/Jul/2022 10:55:29] "GET /status/133/ HTTP/1.1" 200 1432
+[23/Jul/2022 10:55:29] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 10:56:04] "GET /status/133/ HTTP/1.1" 200 1432
+[23/Jul/2022 10:56:04] "GET /static/css/status.css HTTP/1.1" 200 6822
+[23/Jul/2022 10:56:05] "GET /status/133/ HTTP/1.1" 200 1432
+[23/Jul/2022 10:56:05] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 10:56:07] "GET /status/133/ HTTP/1.1" 200 1432
+[23/Jul/2022 10:56:07] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 10:56:17] "GET /status/133/ HTTP/1.1" 200 1432
+[23/Jul/2022 10:56:17] "GET /static/css/status.css HTTP/1.1" 200 6828
+[23/Jul/2022 10:56:19] "GET /status/133/ HTTP/1.1" 200 1432
+[23/Jul/2022 10:56:19] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 10:56:59] "GET /status/133/ HTTP/1.1" 200 1432
+[23/Jul/2022 10:56:59] "GET /static/css/status.css HTTP/1.1" 200 6826
+[23/Jul/2022 10:57:00] "GET /status/133/ HTTP/1.1" 200 1432
+[23/Jul/2022 10:57:00] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 10:57:01] "GET /status/133/ HTTP/1.1" 200 1432
+[23/Jul/2022 10:57:01] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 10:57:01] "GET /status/133/ HTTP/1.1" 200 1432
+[23/Jul/2022 10:57:02] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 10:57:02] "GET /status/133/ HTTP/1.1" 200 1432
+[23/Jul/2022 10:57:02] "GET /status/133/ HTTP/1.1" 200 1432
+[23/Jul/2022 10:57:02] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 10:57:02] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 10:57:02] "GET /status/133/ HTTP/1.1" 200 1432
+[23/Jul/2022 10:57:02] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 10:57:02] "GET /status/133/ HTTP/1.1" 200 1432
+[23/Jul/2022 10:57:02] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 10:57:03] "GET /status/133/ HTTP/1.1" 200 1432
+[23/Jul/2022 10:57:03] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 10:58:07] "GET /status/133/ HTTP/1.1" 200 1432
+[23/Jul/2022 10:58:07] "GET /static/css/status.css HTTP/1.1" 200 6845
+[23/Jul/2022 10:58:08] "GET /status/133/ HTTP/1.1" 200 1432
+[23/Jul/2022 10:58:08] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 10:58:20] "GET /status/133/ HTTP/1.1" 200 1432
+[23/Jul/2022 10:58:20] "GET /static/css/status.css HTTP/1.1" 200 6820
+[23/Jul/2022 10:58:21] "GET /status/133/ HTTP/1.1" 200 1432
+[23/Jul/2022 10:58:21] "GET /static/css/status.css HTTP/1.1" 200 6828
+[23/Jul/2022 10:58:22] "GET /status/133/ HTTP/1.1" 200 1432
+[23/Jul/2022 10:58:22] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 10:58:50] "GET /status/133/ HTTP/1.1" 200 1436
+[23/Jul/2022 10:58:50] "GET /static/css/status.css HTTP/1.1" 200 6809
+[23/Jul/2022 10:58:51] "GET /status/133/ HTTP/1.1" 200 1436
+[23/Jul/2022 10:58:57] "GET /status/133/ HTTP/1.1" 200 1432
+[23/Jul/2022 10:58:57] "GET /static/css/status.css HTTP/1.1" 200 6809
+[23/Jul/2022 10:58:57] "GET /static/images/instat-logo-yellow.ico HTTP/1.1" 200 184699
+[23/Jul/2022 10:58:58] "GET /static/images/instat-logo-yellow.ico HTTP/1.1" 200 184699
+[23/Jul/2022 11:16:31] "GET /status/133/ HTTP/1.1" 200 1432
+[23/Jul/2022 11:16:31] "GET /static/css/status.css HTTP/1.1" 200 6818
+[23/Jul/2022 11:16:32] "GET /status/133/ HTTP/1.1" 200 1432
+[23/Jul/2022 11:16:32] "GET /static/css/status.css HTTP/1.1" 200 6830
+[23/Jul/2022 11:17:37] "GET /status/133/ HTTP/1.1" 200 1403
+[23/Jul/2022 11:17:37] "GET /static/css/status.css HTTP/1.1" 200 6809
+[23/Jul/2022 11:17:39] "GET /status/133/ HTTP/1.1" 200 1420
+[23/Jul/2022 11:18:31] "GET /status/133/ HTTP/1.1" 200 1428
+[23/Jul/2022 11:18:31] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 11:18:32] "GET /status/133/ HTTP/1.1" 200 1437
+[23/Jul/2022 11:21:02] "GET /status/133/ HTTP/1.1" 200 1440
+[23/Jul/2022 11:21:02] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 11:21:03] "GET /status/133/ HTTP/1.1" 200 1447
+[23/Jul/2022 11:22:56] "GET /status/133/ HTTP/1.1" 200 1462
+[23/Jul/2022 11:22:56] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 11:26:51] "GET /status/133/ HTTP/1.1" 200 1462
+[23/Jul/2022 11:26:51] "GET /static/css/status.css HTTP/1.1" 200 6829
+[23/Jul/2022 11:26:52] "GET /status/133/ HTTP/1.1" 200 1462
+[23/Jul/2022 11:26:52] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 11:27:36] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 11:28:16] "GET /status/133/ HTTP/1.1" 200 1437
+[23/Jul/2022 11:28:16] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 11:28:17] "GET /status/133/ HTTP/1.1" 200 1437
+[23/Jul/2022 11:28:44] "GET /status/133/ HTTP/1.1" 200 1427
+[23/Jul/2022 11:28:44] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 11:28:46] "GET /status/133/ HTTP/1.1" 200 1427
+[23/Jul/2022 11:29:11] "GET /status/133/ HTTP/1.1" 200 1419
+[23/Jul/2022 11:29:11] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 11:29:12] "GET /status/133/ HTTP/1.1" 200 1426
+[23/Jul/2022 11:29:21] "GET /status/133/ HTTP/1.1" 200 1427
+[23/Jul/2022 11:29:22] "GET /status/133/ HTTP/1.1" 200 1427
+[23/Jul/2022 11:29:22] "GET /status/133/ HTTP/1.1" 200 1426
+[23/Jul/2022 11:29:28] "GET /status/133/ HTTP/1.1" 200 1426
+[23/Jul/2022 11:29:29] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 11:29:29] "GET /status/133/ HTTP/1.1" 200 1426
+[23/Jul/2022 11:29:30] "GET /status/133/ HTTP/1.1" 200 1426
+[23/Jul/2022 11:29:31] "GET /status/133/ HTTP/1.1" 200 1426
+[23/Jul/2022 11:29:31] "GET /status/133/ HTTP/1.1" 200 1426
+[23/Jul/2022 11:29:31] "GET /status/133/ HTTP/1.1" 200 1426
+[23/Jul/2022 11:29:33] "GET /status/133/ HTTP/1.1" 200 1426
+[23/Jul/2022 11:29:33] "GET /static/css/status.css HTTP/1.1" 200 6809
+[23/Jul/2022 11:29:33] "GET /static/images/instat-logo-yellow.ico HTTP/1.1" 200 184699
+[23/Jul/2022 11:29:34] "GET /static/images/instat-logo-yellow.ico HTTP/1.1" 200 184699
+[23/Jul/2022 11:29:53] "GET /status/133/ HTTP/1.1" 200 1415
+[23/Jul/2022 11:29:53] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 11:30:08] "GET /status/133/ HTTP/1.1" 200 1412
+[23/Jul/2022 11:30:08] "GET /static/css/status.css HTTP/1.1" 304 0
+D:\instatMain\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 23, 2022 - 11:32:24
+Django version 4.0.4, using settings 'instatMain.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+D:\instatMain\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 23, 2022 - 11:32:28
+Django version 4.0.4, using settings 'instatMain.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+D:\instatMain\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\threading.py", line 973, in _bootstrap_inner
+    self.run()
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\threading.py", line 910, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\site-packages\django\utils\autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\management\commands\runserver.py", line 134, in inner_run
+    self.check(display_num_errors=True)
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\management\base.py", line 487, in check
+    all_issues = checks.run_checks(
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\checks\registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\checks\urls.py", line 14, in check_url_config
+    return check_resolver(resolver)
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\checks\urls.py", line 24, in check_resolver
+    return check_method()
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\resolvers.py", line 480, incheck
+    for pattern in self.url_patterns:
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\site-packages\django\utils\functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\resolvers.py", line 696, inurl_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\site-packages\django\utils\functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\resolvers.py", line 689, inurlconf_module
+    return import_module(self.urlconf_name)
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "D:\instatMain\instatMain\urls.py", line 22, in <module>
+    path('', include('accounts.urls'))
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "D:\instatMain\accounts\urls.py", line 4, in <module>
+    from . import views
+  File "D:\instatMain\accounts\views.py", line 88
+    return render(request, 'accounts/status.html',{'projects':projects})
+    ^
+SyntaxError: 'return' outside function
+D:\instatMain\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 23, 2022 - 11:35:08
+Django version 4.0.4, using settings 'instatMain.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[23/Jul/2022 11:37:36] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 11:38:59] "GET /status/133/ HTTP/1.1" 200 1412
+[23/Jul/2022 11:39:00] "GET /static/css/status.css HTTP/1.1" 200 6785
+[23/Jul/2022 11:39:05] "GET /static/css/status.css HTTP/1.1" 304 0
+
+D:\instatMain>python manage.py runserver 192.168.43.27:8000
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 23, 2022 - 11:43:26
+Django version 4.0.4, using settings 'instatMain.settings'
+Starting development server at http://192.168.43.27:8000/
+Quit the server with CTRL-BREAK.
+Error: That IP address can't be assigned to.
+
+D:\instatMain>python manage.py runserver 192.168.43.27
+CommandError: "192.168.43.27" is not a valid port number or address:port pair.
+
+D:\instatMain>python manage.py runserver 192.168.43.27:8000
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 23, 2022 - 11:44:19
+Django version 4.0.4, using settings 'instatMain.settings'
+Starting development server at http://192.168.43.27:8000/
+Quit the server with CTRL-BREAK.
+Error: That IP address can't be assigned to.
+
+D:\instatMain>python manage.py runserver 192.168.43.229:8000
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 23, 2022 - 11:44:53
+Django version 4.0.4, using settings 'instatMain.settings'
+Starting development server at http://192.168.43.229:8000/
+Quit the server with CTRL-BREAK.
+[23/Jul/2022 11:45:03] "GET / HTTP/1.1" 302 0
+[23/Jul/2022 11:45:03] "GET /login/?next=/ HTTP/1.1" 200 4816
+[23/Jul/2022 11:45:04] "GET /static/css/login.css HTTP/1.1" 200 2123
+[23/Jul/2022 11:45:05] "GET /static/images/instat-logo-yellow.ico HTTP/1.1" 200 184699
+[23/Jul/2022 11:45:05] "GET /static/images/mesh2.jpg HTTP/1.1" 200 34845
+[23/Jul/2022 11:45:05] "GET /static/images/logo-instat-dark.png HTTP/1.1" 200 43562
+[23/Jul/2022 11:45:18] "POST /login/?next=/ HTTP/1.1" 200 4930
+[23/Jul/2022 11:45:27] "POST /login/?next=/ HTTP/1.1" 200 4930
+[23/Jul/2022 11:45:37] "POST /login/?next=/ HTTP/1.1" 302 0
+[23/Jul/2022 11:45:37] "GET /dashboard/ HTTP/1.1" 200 4932
+[23/Jul/2022 11:45:37] "GET /static/css/dashboard.css HTTP/1.1" 200 11977
+[23/Jul/2022 11:45:37] "GET /static/images/logo-banner-yellow-tsprnt-2.png HTTP/1.1" 200 24043
+[23/Jul/2022 11:45:37] "GET /static/js/dashboard.js HTTP/1.1" 404 1809
+[23/Jul/2022 11:45:37] "GET /static/images/cursor-instat.cur HTTP/1.1" 200 4286
+[23/Jul/2022 11:45:45] "GET /status/133/ HTTP/1.1" 200 1412
+[23/Jul/2022 11:45:45] "GET /static/css/status.css HTTP/1.1" 200 6886
+[23/Jul/2022 11:46:28] "GET / HTTP/1.1" 302 0
+[23/Jul/2022 11:47:22] "GET /login/?next=/ HTTP/1.1" 200 4816
+[23/Jul/2022 11:48:13] "GET /status/133 HTTP/1.1" 301 0
+[23/Jul/2022 11:48:13] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 11:48:13] "GET /static/css/status.css HTTP/1.1" 200 6886
+[23/Jul/2022 11:48:14] "GET /static/images/instat-logo-yellow.ico HTTP/1.1" 200 184699
+[23/Jul/2022 11:48:49] "GET /updateProject/133/ HTTP/1.1" 200 6181
+[23/Jul/2022 11:48:49,479] - Broken pipe from ('192.168.43.229', 51372)
+
+[23/Jul/2022 11:48:56] "POST /updateProject/133/ HTTP/1.1" 200 2523
+[23/Jul/2022 11:48:57] "GET /static/images/icons8-loading-circle.gif HTTP/1.1" 200 19144
+[23/Jul/2022 11:48:58] "GET /dashboard/ HTTP/1.1" 200 4932
+[23/Jul/2022 11:48:58] "GET /static/js/dashboard.js HTTP/1.1" 404 1809
+[23/Jul/2022 11:49:01] "GET /status/133/ HTTP/1.1" 200 1412
+[23/Jul/2022 11:49:01] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 11:49:06] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 11:49:06] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 11:50:33] "GET /static/css/status.css HTTP/1.1" 200 14625
+[23/Jul/2022 11:52:02] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 11:52:02] "GET /static/css/status.css HTTP/1.1" 200 14628
+[23/Jul/2022 11:52:53] "GET /status/133/ HTTP/1.1" 200 1412
+[23/Jul/2022 11:52:53] "GET /static/css/status.css HTTP/1.1" 200 14625
+[23/Jul/2022 11:53:25] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 11:53:25] "GET /static/css/status.css HTTP/1.1" 200 14625
+[23/Jul/2022 11:53:39] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 11:53:39] "GET /static/css/status.css HTTP/1.1" 200 14624
+[23/Jul/2022 11:53:41] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 11:53:42] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 11:54:13] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 11:54:13] "GET /static/css/status.css HTTP/1.1" 200 14636
+[23/Jul/2022 11:54:15] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 11:54:15] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 11:54:31] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 11:54:31] "GET /static/css/status.css HTTP/1.1" 200 14636
+[23/Jul/2022 11:54:36] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 11:54:36] "GET /static/css/status.css HTTP/1.1" 200 14638
+[23/Jul/2022 11:55:32] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 11:55:32] "GET /static/css/status.css HTTP/1.1" 200 14638
+[23/Jul/2022 11:55:53] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 11:55:53] "GET /static/css/status.css HTTP/1.1" 200 14638
+[23/Jul/2022 11:56:13] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 11:56:14] "GET /static/css/status.css HTTP/1.1" 200 14638
+[23/Jul/2022 11:58:14] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 11:58:14] "GET /static/css/status.css HTTP/1.1" 200 14636
+[23/Jul/2022 11:58:19] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 11:58:19] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 11:58:25] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 11:58:25] "GET /static/css/status.css HTTP/1.1" 200 14636
+[23/Jul/2022 12:00:17] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:00:17] "GET /static/css/status.css HTTP/1.1" 200 14636
+[23/Jul/2022 12:00:19] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:00:19] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 12:00:36] "GET /status/133/ HTTP/1.1" 200 1412
+[23/Jul/2022 12:00:36] "GET /static/css/status.css HTTP/1.1" 200 14636
+[23/Jul/2022 12:01:02] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:01:02] "GET /static/css/status.css HTTP/1.1" 200 14636
+[23/Jul/2022 12:01:14] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:01:14] "GET /static/css/status.css HTTP/1.1" 200 14635
+[23/Jul/2022 12:01:17] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:01:17] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 12:01:21] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:01:21] "GET /static/css/status.css HTTP/1.1" 200 14635
+[23/Jul/2022 12:01:37] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:01:37] "GET /static/css/status.css HTTP/1.1" 200 14635
+[23/Jul/2022 12:01:58] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:01:58] "GET /static/css/status.css HTTP/1.1" 200 14635
+[23/Jul/2022 12:02:04] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:02:04] "GET /static/css/status.css HTTP/1.1" 200 14635
+[23/Jul/2022 12:02:12] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:02:12] "GET /static/css/status.css HTTP/1.1" 200 14635
+[23/Jul/2022 12:02:19] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:02:19] "GET /static/css/status.css HTTP/1.1" 200 14635
+[23/Jul/2022 12:15:16] "GET /static/css/status.css HTTP/1.1" 200 14635
+[23/Jul/2022 12:15:35] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:15:35] "GET /static/css/status.css HTTP/1.1" 200 14635
+[23/Jul/2022 12:15:57] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:15:58] "GET /static/css/status.css HTTP/1.1" 200 14635
+[23/Jul/2022 12:17:05] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:17:06] "GET /static/css/status.css HTTP/1.1" 200 14635
+[23/Jul/2022 12:17:30] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:17:30] "GET /static/css/status.css HTTP/1.1" 200 14637
+[23/Jul/2022 12:17:39] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:17:39] "GET /static/css/status.css HTTP/1.1" 200 14638
+[23/Jul/2022 12:17:59] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:17:59] "GET /static/css/status.css HTTP/1.1" 200 14638
+[23/Jul/2022 12:18:06] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:18:07] "GET /static/css/status.css HTTP/1.1" 200 14638
+[23/Jul/2022 12:18:27] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:18:27] "GET /static/css/status.css HTTP/1.1" 200 14638
+[23/Jul/2022 12:18:31] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:18:31] "GET /static/css/status.css HTTP/1.1" 200 14638
+[23/Jul/2022 12:18:34] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:18:34] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 12:18:41] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:18:41] "GET /static/css/status.css HTTP/1.1" 200 14640
+[23/Jul/2022 12:18:46] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:18:47] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 12:19:11] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:19:11] "GET /static/css/status.css HTTP/1.1" 200 14664
+[23/Jul/2022 12:19:19] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:19:19] "GET /static/css/status.css HTTP/1.1" 200 14670
+[23/Jul/2022 12:19:33] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:19:33] "GET /static/css/status.css HTTP/1.1" 200 14672
+[23/Jul/2022 12:20:00] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:20:00] "GET /static/css/status.css HTTP/1.1" 200 14677
+[23/Jul/2022 12:20:02] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:20:02] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 12:20:47] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:20:47] "GET /static/css/status.css HTTP/1.1" 200 14646
+[23/Jul/2022 12:21:02] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:21:02] "GET /static/css/status.css HTTP/1.1" 200 14644
+[23/Jul/2022 12:21:03] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:21:03] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 12:21:09] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:21:09] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 12:21:16] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:21:16] "GET /static/css/status.css HTTP/1.1" 200 14650
+[23/Jul/2022 12:21:18] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:21:18] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 12:21:19] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:21:19] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 12:21:28] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:21:28] "GET /static/css/status.css HTTP/1.1" 200 14650
+[23/Jul/2022 12:21:44] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:21:44] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 12:21:54] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:21:54] "GET /static/css/status.css HTTP/1.1" 200 14649
+[23/Jul/2022 12:22:02] "GET /status/133 HTTP/1.1" 301 0
+[23/Jul/2022 12:22:02] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:22:02] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 12:22:12] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:22:12] "GET /static/css/status.css HTTP/1.1" 200 14650
+[23/Jul/2022 12:22:14] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:22:14] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 12:22:18] "GET /status/133 HTTP/1.1" 301 0
+[23/Jul/2022 12:22:18] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:22:18] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 12:22:58] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:22:58] "GET /static/css/status.css HTTP/1.1" 200 14684
+[23/Jul/2022 12:23:00] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:23:00] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 12:23:15] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:23:15] "GET /static/css/status.css HTTP/1.1" 200 14687
+[23/Jul/2022 12:23:17] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:23:17] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 12:23:23] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:23:23] "GET /static/css/status.css HTTP/1.1" 200 14687
+[23/Jul/2022 12:23:34] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:23:34] "GET /static/css/status.css HTTP/1.1" 200 14646
+
+D:\instatMain>python manage.py runserver 192.168.43.229:8000
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 23, 2022 - 12:24:06
+Django version 4.0.4, using settings 'instatMain.settings'
+Starting development server at http://192.168.43.229:8000/
+Quit the server with CTRL-BREAK.
+[23/Jul/2022 12:24:07] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:24:07] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 12:24:50] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:24:51] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 12:25:25] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:25:25] "GET /static/css/status.css HTTP/1.1" 200 14643
+[23/Jul/2022 12:25:36] "GET /status/133/ HTTP/1.1" 200 1412
+[23/Jul/2022 12:25:36] "GET /static/css/status.css HTTP/1.1" 200 14643
+[23/Jul/2022 12:25:38] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:25:38] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 12:25:44] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:25:44] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 12:26:55] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:26:55] "GET /static/css/status.css HTTP/1.1" 200 14644
+[23/Jul/2022 12:29:30] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:29:31] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 12:30:56] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:30:56] "GET /static/css/status.css HTTP/1.1" 200 14645
+[23/Jul/2022 12:31:17] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:31:17] "GET /static/css/status.css HTTP/1.1" 200 14646
+[23/Jul/2022 12:31:29] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:31:29] "GET /static/css/status.css HTTP/1.1" 200 14646
+[23/Jul/2022 12:31:33] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:31:33] "GET /static/css/status.css HTTP/1.1" 200 14646
+[23/Jul/2022 12:31:43] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:31:43] "GET /static/css/status.css HTTP/1.1" 200 14646
+[23/Jul/2022 12:31:47] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:31:47] "GET /static/css/status.css HTTP/1.1" 200 14645
+[23/Jul/2022 12:31:52] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:31:53] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 12:31:55] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:31:55] "GET /static/css/status.css HTTP/1.1" 200 14646
+[23/Jul/2022 12:32:05] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:32:05] "GET /static/css/status.css HTTP/1.1" 200 14652
+[23/Jul/2022 12:32:18] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:32:18] "GET /static/css/status.css HTTP/1.1" 200 14578
+[23/Jul/2022 12:32:51] "GET /status/133/ HTTP/1.1" 200 1405
+[23/Jul/2022 12:32:51] "GET /static/css/status.css HTTP/1.1" 200 14544
+[23/Jul/2022 12:33:01] "GET /status/133/ HTTP/1.1" 200 1412
+[23/Jul/2022 12:33:02] "GET /static/css/status.css HTTP/1.1" 200 14544
+[23/Jul/2022 12:33:04] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:33:04] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 12:33:14] "GET /status/133/ HTTP/1.1" 200 1405
+[23/Jul/2022 12:33:14] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 12:33:14] "GET /status/133/ HTTP/1.1" 200 1405
+[23/Jul/2022 12:33:15] "GET /status/133/ HTTP/1.1" 200 1405
+[23/Jul/2022 12:33:15] "GET /status/133/ HTTP/1.1" 200 1405
+[23/Jul/2022 12:33:15] "GET /status/133/ HTTP/1.1" 200 1405
+[23/Jul/2022 12:33:17] "GET /status/133/ HTTP/1.1" 200 1400
+[23/Jul/2022 12:33:17] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 12:33:19] "GET /status/133/ HTTP/1.1" 200 1400
+[23/Jul/2022 12:33:33] "GET /status/133/ HTTP/1.1" 200 1400
+[23/Jul/2022 12:33:33] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 12:36:07] "GET /status/133/ HTTP/1.1" 200 1400
+[23/Jul/2022 12:36:07] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 12:37:36] "GET /status/133/ HTTP/1.1" 200 1406
+[23/Jul/2022 12:37:36] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 12:37:44] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:37:47] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:39:57] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:39:57] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 12:43:40] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:43:40] "GET /static/css/status.css HTTP/1.1" 200 14526
+[23/Jul/2022 12:43:42] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:43:42] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 12:43:49] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:43:49] "GET /static/css/status.css HTTP/1.1" 200 14526
+[23/Jul/2022 12:43:51] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:43:51] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 12:43:57] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:43:57] "GET /static/css/status.css HTTP/1.1" 200 14526
+[23/Jul/2022 12:43:59] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:43:59] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 12:44:15] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:44:15] "GET /static/css/status.css HTTP/1.1" 200 14509
+[23/Jul/2022 12:44:28] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:44:28] "GET /static/css/status.css HTTP/1.1" 200 14510
+[23/Jul/2022 12:44:34] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:44:34] "GET /static/css/status.css HTTP/1.1" 200 14510
+[23/Jul/2022 12:46:04] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:46:04] "GET /static/css/status.css HTTP/1.1" 200 14955
+[23/Jul/2022 12:46:20] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:46:20] "GET /static/css/status.css HTTP/1.1" 200 14955
+[23/Jul/2022 12:46:27] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:46:27] "GET /static/css/status.css HTTP/1.1" 200 14955
+[23/Jul/2022 12:46:29] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:46:29] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 12:46:43] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:46:43] "GET /static/css/status.css HTTP/1.1" 200 14956
+[23/Jul/2022 12:46:56] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:46:56] "GET /static/css/status.css HTTP/1.1" 200 14955
+[23/Jul/2022 12:47:19] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:47:19] "GET /static/css/status.css HTTP/1.1" 200 14956
+[23/Jul/2022 12:47:29] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:47:29] "GET /static/css/status.css HTTP/1.1" 200 14956
+[23/Jul/2022 12:47:36] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:47:36] "GET /static/css/status.css HTTP/1.1" 200 14956
+[23/Jul/2022 12:47:43] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:47:43] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 12:47:49] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:47:49] "GET /static/css/status.css HTTP/1.1" 200 14955
+[23/Jul/2022 12:48:03] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:48:03] "GET /static/css/status.css HTTP/1.1" 200 14956
+[23/Jul/2022 12:48:21] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:48:21] "GET /static/css/status.css HTTP/1.1" 200 14955
+[23/Jul/2022 12:48:31] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:48:32] "GET /static/css/status.css HTTP/1.1" 200 14955
+[23/Jul/2022 12:51:21] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:51:21] "GET /static/css/status.css HTTP/1.1" 200 15629
+[23/Jul/2022 12:51:25] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:51:26] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 12:51:36] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:51:36] "GET /static/css/status.css HTTP/1.1" 200 15635
+[23/Jul/2022 12:51:44] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:51:44] "GET /static/css/status.css HTTP/1.1" 200 15641
+[23/Jul/2022 12:52:17] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:52:17] "GET /static/css/status.css HTTP/1.1" 200 15677
+[23/Jul/2022 12:53:11] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:53:11] "GET /static/css/status.css HTTP/1.1" 200 15678
+[23/Jul/2022 12:54:29] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:54:29] "GET /static/css/status.css HTTP/1.1" 200 15458
+[23/Jul/2022 12:54:44] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:54:44] "GET /static/css/status.css HTTP/1.1" 200 15464
+[23/Jul/2022 12:55:52] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:55:52] "GET /static/css/status.css HTTP/1.1" 200 15412
+[23/Jul/2022 12:56:05] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:56:05] "GET /static/css/status.css HTTP/1.1" 200 15412
+[23/Jul/2022 12:56:16] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:56:16] "GET /static/css/status.css HTTP/1.1" 200 15412
+[23/Jul/2022 12:56:21] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:56:22] "GET /static/css/status.css HTTP/1.1" 200 15412
+[23/Jul/2022 12:56:39] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:56:39] "GET /static/css/status.css HTTP/1.1" 200 15412
+[23/Jul/2022 12:56:47] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:56:47] "GET /static/css/status.css HTTP/1.1" 200 15412
+[23/Jul/2022 12:57:11] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:57:11] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 12:57:31] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:57:31] "GET /static/css/status.css HTTP/1.1" 200 15410
+[23/Jul/2022 12:57:43] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:57:44] "GET /static/css/status.css HTTP/1.1" 200 15412
+[23/Jul/2022 12:57:53] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:57:53] "GET /static/css/status.css HTTP/1.1" 200 15411
+[23/Jul/2022 12:58:08] "GET /static/css/status.css HTTP/1.1" 200 15411
+[23/Jul/2022 12:58:12] "GET /static/js/dashboard.js HTTP/1.1" 404 1809
+[23/Jul/2022 12:58:22] "GET /updateProject/133/ HTTP/1.1" 200 6181
+[23/Jul/2022 12:58:27] "POST /updateProject/133/ HTTP/1.1" 200 2523
+[23/Jul/2022 12:58:27] "GET /static/images/icons8-loading-circle.gif HTTP/1.1" 200 19144
+[23/Jul/2022 12:58:29] "GET /dashboard/ HTTP/1.1" 200 4932
+[23/Jul/2022 12:58:29] "GET /static/js/dashboard.js HTTP/1.1" 404 1809
+[23/Jul/2022 12:58:32] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 12:58:32] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 12:59:09] "GET /updateProject/133/ HTTP/1.1" 200 6181
+[23/Jul/2022 12:59:18] "POST /updateProject/133/ HTTP/1.1" 200 2523
+[23/Jul/2022 12:59:20] "GET /dashboard/ HTTP/1.1" 200 4933
+[23/Jul/2022 12:59:20] "GET /static/js/dashboard.js HTTP/1.1" 404 1809
+[23/Jul/2022 12:59:21] "GET /status/133/ HTTP/1.1" 200 1403
+[23/Jul/2022 12:59:22] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 12:59:37] "GET /status/133/ HTTP/1.1" 200 1403
+[23/Jul/2022 12:59:38] "GET /static/css/status.css HTTP/1.1" 200 15411
+[23/Jul/2022 12:59:40] "GET /status/133/ HTTP/1.1" 200 1403
+[23/Jul/2022 12:59:40] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 12:59:44] "GET /status/133/ HTTP/1.1" 200 1403
+[23/Jul/2022 12:59:44] "GET /static/css/status.css HTTP/1.1" 200 15411
+[23/Jul/2022 13:00:04] "GET /status/133/ HTTP/1.1" 200 1403
+[23/Jul/2022 13:00:04] "GET /static/css/status.css HTTP/1.1" 200 15031
+[23/Jul/2022 13:00:22] "GET /status/133/ HTTP/1.1" 200 1403
+[23/Jul/2022 13:00:22] "GET /static/css/status.css HTTP/1.1" 200 15032
+[23/Jul/2022 13:00:28] "GET /status/133/ HTTP/1.1" 200 1403
+[23/Jul/2022 13:00:28] "GET /static/css/status.css HTTP/1.1" 200 15033
+[23/Jul/2022 13:00:38] "GET /status/133/ HTTP/1.1" 200 1403
+[23/Jul/2022 13:00:38] "GET /static/css/status.css HTTP/1.1" 200 15032
+[23/Jul/2022 13:00:59] "GET /updateProject/133/ HTTP/1.1" 200 6182
+[23/Jul/2022 13:01:07] "POST /updateProject/133/ HTTP/1.1" 200 2523
+[23/Jul/2022 13:01:09] "GET /dashboard/ HTTP/1.1" 200 4932
+[23/Jul/2022 13:01:09] "GET /static/js/dashboard.js HTTP/1.1" 404 1809
+[23/Jul/2022 13:01:11] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 13:01:11] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 13:01:13] "GET /updateProject/133/ HTTP/1.1" 200 6181
+[23/Jul/2022 13:01:18] "POST /updateProject/133/ HTTP/1.1" 200 2523
+[23/Jul/2022 13:01:20] "GET /dashboard/ HTTP/1.1" 200 4932
+[23/Jul/2022 13:01:20] "GET /static/js/dashboard.js HTTP/1.1" 404 1809
+[23/Jul/2022 13:01:49] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 13:01:49] "GET /static/css/status.css HTTP/1.1" 200 15033
+[23/Jul/2022 13:01:51] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 13:01:51] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 13:01:55] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 13:01:55] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 13:01:57] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 13:01:57] "GET /static/css/status.css HTTP/1.1" 200 15033
+[23/Jul/2022 13:02:01] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 13:02:01] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 13:02:04] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 13:02:05] "GET /static/css/status.css HTTP/1.1" 200 15033
+[23/Jul/2022 13:03:50] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 13:03:50] "GET /static/css/status.css HTTP/1.1" 200 15044
+[23/Jul/2022 13:04:03] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 13:04:04] "GET /static/css/status.css HTTP/1.1" 200 15048
+[23/Jul/2022 13:04:26] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 13:04:26] "GET /static/css/status.css HTTP/1.1" 200 15048
+[23/Jul/2022 13:04:40] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 13:04:40] "GET /static/css/status.css HTTP/1.1" 200 15042
+[23/Jul/2022 13:04:52] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 13:04:52] "GET /static/css/status.css HTTP/1.1" 200 15042
+[23/Jul/2022 13:05:17] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 13:05:17] "GET /static/css/status.css HTTP/1.1" 200 15031
+[23/Jul/2022 13:05:44] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 13:05:44] "GET /static/css/status.css HTTP/1.1" 200 15048
+[23/Jul/2022 13:05:59] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 13:05:59] "GET /static/css/status.css HTTP/1.1" 200 15033
+[23/Jul/2022 13:06:29] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 13:06:29] "GET /static/css/status.css HTTP/1.1" 200 15033
+[23/Jul/2022 13:06:31] "GET /status/133/ HTTP/1.1" 200 1401
+[23/Jul/2022 13:06:31] "GET /static/css/status.css HTTP/1.1" 200 15033
+[23/Jul/2022 13:08:01] "GET /status/133/ HTTP/1.1" 200 1412
+[23/Jul/2022 13:08:01] "GET /static/css/status.css HTTP/1.1" 200 15410
+[23/Jul/2022 13:08:42,416] - Broken pipe from ('192.168.43.1', 41642)
+
+[23/Jul/2022 13:11:33] "GET /updateProject/133/ HTTP/1.1" 200 6181
+[23/Jul/2022 13:11:44] "POST /updateProject/133/ HTTP/1.1" 200 2523
+[23/Jul/2022 13:11:46] "GET /dashboard/ HTTP/1.1" 200 4933
+[23/Jul/2022 13:11:46] "GET /static/js/dashboard.js HTTP/1.1" 404 1809
+[23/Jul/2022 13:11:48] "GET /status/133/ HTTP/1.1" 200 1413
+[23/Jul/2022 13:11:48] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 13:12:35] "GET /static/css/status.css HTTP/1.1" 200 15410
+[23/Jul/2022 13:13:29] "GET /status/133/ HTTP/1.1" 200 1402
+[23/Jul/2022 13:13:29] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 13:13:59] "GET /updateProject/133/ HTTP/1.1" 200 6182
+[23/Jul/2022 13:14:10] "POST /updateProject/133/ HTTP/1.1" 200 2523
+[23/Jul/2022 13:14:11] "GET /dashboard/ HTTP/1.1" 200 4929
+[23/Jul/2022 13:14:11] "GET /static/js/dashboard.js HTTP/1.1" 404 1809
+[23/Jul/2022 13:14:12] "GET /status/133/ HTTP/1.1" 200 1398
+[23/Jul/2022 13:14:12] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 13:14:16] "GET /status/133/ HTTP/1.1" 200 1409
+[23/Jul/2022 13:14:16] "GET /static/css/status.css HTTP/1.1" 304 0
+D:\instatMain\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 23, 2022 - 13:14:36
+Django version 4.0.4, using settings 'instatMain.settings'
+Starting development server at http://192.168.43.229:8000/
+Quit the server with CTRL-BREAK.
+D:\instatMain\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 23, 2022 - 13:14:42
+Django version 4.0.4, using settings 'instatMain.settings'
+Starting development server at http://192.168.43.229:8000/
+Quit the server with CTRL-BREAK.
+D:\instatMain\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 23, 2022 - 13:14:47
+Django version 4.0.4, using settings 'instatMain.settings'
+Starting development server at http://192.168.43.229:8000/
+Quit the server with CTRL-BREAK.
+D:\instatMain\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 23, 2022 - 13:14:50
+Django version 4.0.4, using settings 'instatMain.settings'
+Starting development server at http://192.168.43.229:8000/
+Quit the server with CTRL-BREAK.
+D:\instatMain\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\threading.py", line 973, in _bootstrap_inner
+    self.run()
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\threading.py", line 910, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\site-packages\django\utils\autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\management\commands\runserver.py", line 134, in inner_run
+    self.check(display_num_errors=True)
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\management\base.py", line 487, in check
+    all_issues = checks.run_checks(
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\checks\registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\checks\urls.py", line 14, in check_url_config
+    return check_resolver(resolver)
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\checks\urls.py", line 24, in check_resolver
+    return check_method()
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\resolvers.py", line 480, incheck
+    for pattern in self.url_patterns:
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\site-packages\django\utils\functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\resolvers.py", line 696, inurl_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\site-packages\django\utils\functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\resolvers.py", line 689, inurlconf_module
+    return import_module(self.urlconf_name)
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "D:\instatMain\instatMain\urls.py", line 22, in <module>
+    path('', include('accounts.urls'))
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "D:\instatMain\accounts\urls.py", line 4, in <module>
+    from . import views
+  File "D:\instatMain\accounts\views.py", line 34
+    name =
+           ^
+SyntaxError: invalid syntax
+D:\instatMain\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\threading.py", line 973, in _bootstrap_inner
+    self.run()
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\threading.py", line 910, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\site-packages\django\utils\autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\management\commands\runserver.py", line 134, in inner_run
+    self.check(display_num_errors=True)
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\management\base.py", line 487, in check
+    all_issues = checks.run_checks(
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\checks\registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\checks\urls.py", line 14, in check_url_config
+    return check_resolver(resolver)
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\checks\urls.py", line 24, in check_resolver
+    return check_method()
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\resolvers.py", line 480, incheck
+    for pattern in self.url_patterns:
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\site-packages\django\utils\functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\resolvers.py", line 696, inurl_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\site-packages\django\utils\functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\resolvers.py", line 689, inurlconf_module
+    return import_module(self.urlconf_name)
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "D:\instatMain\instatMain\urls.py", line 22, in <module>
+    path('', include('accounts.urls'))
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "C:\Users\mekar\AppData\Local\Programs\Python\Python39\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "D:\instatMain\accounts\urls.py", line 4, in <module>
+    from . import views
+  File "D:\instatMain\accounts\views.py", line 34
+    full_name =
+                ^
+SyntaxError: invalid syntax
+D:\instatMain\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 23, 2022 - 13:15:08
+Django version 4.0.4, using settings 'instatMain.settings'
+Starting development server at http://192.168.43.229:8000/
+Quit the server with CTRL-BREAK.
+D:\instatMain\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 23, 2022 - 13:15:29
+Django version 4.0.4, using settings 'instatMain.settings'
+Starting development server at http://192.168.43.229:8000/
+Quit the server with CTRL-BREAK.
+[23/Jul/2022 13:15:42] "GET /status/133/ HTTP/1.1" 200 1397
+[23/Jul/2022 13:15:42] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 13:17:59] "GET /status/133/ HTTP/1.1" 200 1397
+[23/Jul/2022 13:17:59] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 13:18:19] "GET /status/133/ HTTP/1.1" 200 1397
+[23/Jul/2022 13:18:39] "GET /status/133/ HTTP/1.1" 200 1402
+[23/Jul/2022 13:18:57] "GET /status/133/ HTTP/1.1" 200 1409
+[23/Jul/2022 13:19:01] "GET /status/133/ HTTP/1.1" 200 1398
+[23/Jul/2022 13:19:01] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 13:20:59] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 13:21:40] "GET /status/133/ HTTP/1.1" 200 1398
+[23/Jul/2022 13:21:43] "GET /status/133/ HTTP/1.1" 200 1398
+[23/Jul/2022 13:21:45] "GET /status/133/ HTTP/1.1" 200 1398
+[23/Jul/2022 13:21:48] "GET /status/133/ HTTP/1.1" 200 1398
+
+D:\instatMain>python manage.py runserver 192.168.43.229:8000
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 23, 2022 - 13:21:55
+Django version 4.0.4, using settings 'instatMain.settings'
+Starting development server at http://192.168.43.229:8000/
+Quit the server with CTRL-BREAK.
+[23/Jul/2022 13:21:57] "GET /status/133/ HTTP/1.1" 200 1398
+[23/Jul/2022 13:21:59] "GET /status/133/ HTTP/1.1" 200 1398
+[23/Jul/2022 13:22:15] "GET /status/133/ HTTP/1.1" 200 1398
+[23/Jul/2022 13:22:19] "GET /status/133/ HTTP/1.1" 200 1398
+[23/Jul/2022 13:22:21] "GET /status/133/ HTTP/1.1" 200 1398
+[23/Jul/2022 13:22:56] "GET /status/133/ HTTP/1.1" 200 1407
+[23/Jul/2022 13:22:56] "GET /static/css/status.css HTTP/1.1" 200 7167
+[23/Jul/2022 13:23:02] "GET /status/133/ HTTP/1.1" 200 1398
+[23/Jul/2022 13:23:13] "GET /status/133/ HTTP/1.1" 200 1397
+[23/Jul/2022 13:23:13] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 13:23:19] "GET /status/133/ HTTP/1.1" 200 1408
+[23/Jul/2022 13:23:19] "GET /static/css/status.css HTTP/1.1" 200 7167
+[23/Jul/2022 13:23:22] "GET /status/133/ HTTP/1.1" 200 1397
+[23/Jul/2022 13:23:29] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 13:24:17] "GET /status/133/ HTTP/1.1" 200 1398
+[23/Jul/2022 13:24:17] "GET /static/css/status.css HTTP/1.1" 304 0
+
+D:\instatMain>python manage.py runserver 192.168.43.229:8000
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 23, 2022 - 13:24:52
+Django version 4.0.4, using settings 'instatMain.settings'
+Starting development server at http://192.168.43.229:8000/
+Quit the server with CTRL-BREAK.
+[23/Jul/2022 13:24:53] "GET /status/133/ HTTP/1.1" 200 1398
+[23/Jul/2022 13:24:53] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 13:24:57] "GET /status/133/ HTTP/1.1" 200 1398
+[23/Jul/2022 13:26:12] "GET /status/133/ HTTP/1.1" 200 1398
+[23/Jul/2022 13:26:12] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 13:26:59] "GET /status/133/ HTTP/1.1" 200 1398
+[23/Jul/2022 13:26:59] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 13:27:07] "GET /status/133/ HTTP/1.1" 200 1398
+[23/Jul/2022 13:27:09] "GET /status/133/ HTTP/1.1" 200 1398
+[23/Jul/2022 13:27:13] "GET /status/133/ HTTP/1.1" 200 1398
+[23/Jul/2022 13:27:15] "GET /status/133/ HTTP/1.1" 200 1398
+[23/Jul/2022 13:27:19] "GET /status/133/ HTTP/1.1" 200 1398
+[23/Jul/2022 13:27:26] "GET /status/133/ HTTP/1.1" 200 1398
+[23/Jul/2022 13:27:27] "GET /status/133/ HTTP/1.1" 200 1398
+[23/Jul/2022 13:27:40] "GET /status/133/ HTTP/1.1" 200 1398
+[23/Jul/2022 13:27:41] "GET /static/css/status.css HTTP/1.1" 200 15410
+[23/Jul/2022 13:27:57] "GET /status/133/ HTTP/1.1" 200 1409
+[23/Jul/2022 13:27:57] "GET /static/css/status.css HTTP/1.1" 200 15410
+[23/Jul/2022 13:28:04] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 13:28:32] "GET /status/133/ HTTP/1.1" 200 1398
+[23/Jul/2022 13:28:32] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 13:29:34] "GET /updateProject/133/ HTTP/1.1" 200 6178
+[23/Jul/2022 13:29:46] "POST /updateProject/133/ HTTP/1.1" 200 2523
+[23/Jul/2022 13:29:47] "GET /dashboard/ HTTP/1.1" 200 4947
+[23/Jul/2022 13:29:48] "GET /static/js/dashboard.js HTTP/1.1" 404 1809
+[23/Jul/2022 13:29:52] "GET /status/133/ HTTP/1.1" 200 1445
+[23/Jul/2022 13:29:52] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 13:29:54] "GET /status/133/ HTTP/1.1" 200 1434
+[23/Jul/2022 13:29:54] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 13:30:34] "GET /status/133/ HTTP/1.1" 200 1434
+[23/Jul/2022 13:30:34] "GET /static/css/status.css HTTP/1.1" 200 15439
+[23/Jul/2022 13:30:41] "GET /status/133/ HTTP/1.1" 200 1434
+[23/Jul/2022 13:30:41] "GET /static/css/status.css HTTP/1.1" 200 15440
+[23/Jul/2022 13:30:48] "GET /status/133/ HTTP/1.1" 200 1434
+[23/Jul/2022 13:30:48] "GET /static/css/status.css HTTP/1.1" 200 15410
+[23/Jul/2022 13:31:56] "GET /status/133/ HTTP/1.1" 200 1434
+[23/Jul/2022 13:31:56] "GET /static/css/status.css HTTP/1.1" 200 15334
+D:\instatMain\instatMain\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 23, 2022 - 13:32:41
+Django version 4.0.4, using settings 'instatMain.settings'
+Starting development server at http://192.168.43.229:8000/
+Quit the server with CTRL-BREAK.
+
+D:\instatMain>python manage.py runserver 192.168.43.229:8000
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 23, 2022 - 13:34:56
+Django version 4.0.4, using settings 'instatMain.settings'
+Starting development server at http://192.168.43.229:8000/
+Quit the server with CTRL-BREAK.
+[23/Jul/2022 13:34:57] "GET /status/133/ HTTP/1.1" 200 1434
+[23/Jul/2022 13:34:57] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 13:34:59] "GET /status/133/ HTTP/1.1" 200 1434
+[23/Jul/2022 13:35:00] "GET /status/133/ HTTP/1.1" 200 1434
+[23/Jul/2022 13:35:02] "GET /status/133/ HTTP/1.1" 200 1434
+[23/Jul/2022 13:35:03] "GET /status/133/ HTTP/1.1" 200 1434
+[23/Jul/2022 13:35:33] "GET /status/133/ HTTP/1.1" 200 1434
+[23/Jul/2022 13:35:33] "GET /static/css/status.css HTTP/1.1" 200 15328
+[23/Jul/2022 14:02:01] "GET /status/133/ HTTP/1.1" 200 1434
+[23/Jul/2022 14:02:01] "GET /static/css/status.css HTTP/1.1" 200 15352
+[23/Jul/2022 14:09:03] "GET /static/css/status.css HTTP/1.1" 200 15352
+[23/Jul/2022 14:10:51] "GET /static/js/dashboard.js HTTP/1.1" 404 1809
+[23/Jul/2022 14:21:23] "GET /updateProject/133/ HTTP/1.1" 200 6196
+[23/Jul/2022 14:21:52] "GET /updateProject/133/ HTTP/1.1" 200 6205
+[23/Jul/2022 14:22:33] "GET /updateProject/133/ HTTP/1.1" 200 6214
+[23/Jul/2022 14:22:35] "GET /updateProject/133/ HTTP/1.1" 200 6205
+[23/Jul/2022 14:22:44] "POST /updateProject/133/ HTTP/1.1" 200 6874
+[23/Jul/2022 14:23:26] "GET /updateProject/133/ HTTP/1.1" 200 6205
+[23/Jul/2022 14:23:28] "GET /dashboard/ HTTP/1.1" 200 4947
+[23/Jul/2022 14:23:28] "GET /static/js/dashboard.js HTTP/1.1" 404 1809
+[23/Jul/2022 14:23:31] "GET /addProject/ HTTP/1.1" 200 6740
+[23/Jul/2022 14:23:56] "POST /addProject/ HTTP/1.1" 200 7328
+[23/Jul/2022 14:30:17] "GET /static/css/status.css HTTP/1.1" 200 15358
+[23/Jul/2022 14:33:46] "GET /status/133/ HTTP/1.1" 200 1950
+[23/Jul/2022 14:33:46] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 14:36:06] "GET /status/133/ HTTP/1.1" 200 1871
+[23/Jul/2022 14:38:25] "GET /status/133/ HTTP/1.1" 200 2085
+[23/Jul/2022 14:38:25] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 14:39:15] "GET /status/133/ HTTP/1.1" 200 2097
+[23/Jul/2022 14:39:59] "GET /status/133/ HTTP/1.1" 200 2077
+[23/Jul/2022 14:40:00] "GET /status/133/ HTTP/1.1" 200 2077
+[23/Jul/2022 14:40:02] "GET /status/133/ HTTP/1.1" 200 2077
+[23/Jul/2022 14:40:03] "GET /status/133/ HTTP/1.1" 200 2077
+[23/Jul/2022 14:40:05] "GET /status/133/ HTTP/1.1" 200 2077
+[23/Jul/2022 14:40:07] "GET /status/133/ HTTP/1.1" 200 2077
+[23/Jul/2022 14:40:15] "GET /status/133/ HTTP/1.1" 200 2077
+[23/Jul/2022 14:40:23] "GET /status/133/ HTTP/1.1" 200 2077
+[23/Jul/2022 14:41:47] "GET /status/133/ HTTP/1.1" 200 2193
+[23/Jul/2022 14:41:47] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 14:42:12] "GET /status/133/ HTTP/1.1" 200 2193
+[23/Jul/2022 14:42:25] "GET /status/133/ HTTP/1.1" 200 2193
+[23/Jul/2022 14:42:28] "GET /status/133/ HTTP/1.1" 200 2193
+[23/Jul/2022 14:43:24] "GET /status/133/ HTTP/1.1" 200 2195
+[23/Jul/2022 14:43:27] "GET /status/133/ HTTP/1.1" 200 2195
+[23/Jul/2022 14:43:32] "GET /status/133/ HTTP/1.1" 200 2195
+[23/Jul/2022 14:43:47] "GET /status/133/ HTTP/1.1" 200 2198
+[23/Jul/2022 14:44:21] "GET /status/133/ HTTP/1.1" 200 2196
+[23/Jul/2022 14:45:31] "GET /status/133/ HTTP/1.1" 200 2342
+[23/Jul/2022 14:45:31] "GET /static/css/status.css HTTP/1.1" 200 15383
+[23/Jul/2022 14:45:33] "GET /status/133/ HTTP/1.1" 200 2342
+[23/Jul/2022 14:45:37] "GET /status/133/ HTTP/1.1" 200 2342
+[23/Jul/2022 14:45:39] "GET /status/133/ HTTP/1.1" 200 2342
+[23/Jul/2022 14:45:40] "GET /status/133/ HTTP/1.1" 200 2342
+[23/Jul/2022 14:45:47] "GET /status/133/ HTTP/1.1" 200 2342
+[23/Jul/2022 14:45:48] "GET /status/133/ HTTP/1.1" 200 2342
+[23/Jul/2022 14:45:50] "GET /status/133/ HTTP/1.1" 200 2342
+[23/Jul/2022 14:45:50] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 14:45:53] "GET /status/133/ HTTP/1.1" 200 2342
+[23/Jul/2022 14:45:54] "GET /status/133/ HTTP/1.1" 200 2342
+[23/Jul/2022 14:46:11] "GET /status/133/ HTTP/1.1" 200 2342
+[23/Jul/2022 14:46:12] "GET /status/133/ HTTP/1.1" 200 2342
+[23/Jul/2022 14:46:13] "GET /status/133/ HTTP/1.1" 200 2342
+[23/Jul/2022 14:46:14] "GET /static/css/status.css HTTP/1.1" 200 15384
+[23/Jul/2022 14:46:24] "GET /status/133/ HTTP/1.1" 200 2342
+[23/Jul/2022 14:46:24] "GET /static/css/status.css HTTP/1.1" 200 15358
+[23/Jul/2022 14:46:26] "GET /status/133/ HTTP/1.1" 200 2342
+[23/Jul/2022 14:46:26] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 14:46:43] "GET /status/133/ HTTP/1.1" 200 2342
+[23/Jul/2022 14:46:43] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 14:48:48] "GET /status/133/ HTTP/1.1" 200 2672
+[23/Jul/2022 14:48:48] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 14:49:03] "GET /status/133/ HTTP/1.1" 200 2672
+[23/Jul/2022 14:49:03] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 14:49:13] "GET /status/133/ HTTP/1.1" 200 2669
+[23/Jul/2022 14:50:23] "GET /status/133/ HTTP/1.1" 200 2681
+[23/Jul/2022 14:50:23] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 14:50:34] "GET /status/133/ HTTP/1.1" 200 2681
+[23/Jul/2022 14:51:08] "GET /status/133/ HTTP/1.1" 200 2342
+[23/Jul/2022 14:51:08] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 14:51:12] "GET /status/133/ HTTP/1.1" 200 2342
+[23/Jul/2022 14:51:43] "GET /status/133/ HTTP/1.1" 200 2342
+[23/Jul/2022 14:51:43] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 14:51:50] "GET /status/133/ HTTP/1.1" 200 2342
+[23/Jul/2022 14:52:00] "GET /status/133/ HTTP/1.1" 200 2342
+[23/Jul/2022 14:54:31] "GET /status/133/ HTTP/1.1" 200 2339
+[23/Jul/2022 14:54:32] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 14:54:43] "GET /status/133/ HTTP/1.1" 200 2339
+[23/Jul/2022 15:00:09] "GET /status/133/ HTTP/1.1" 200 2339
+[23/Jul/2022 15:00:09] "GET /static/css/status.css HTTP/1.1" 304 0
+[23/Jul/2022 15:00:25] "GET /status/133/ HTTP/1.1" 200 2339
+[23/Jul/2022 15:00:37] "GET /status/133/ HTTP/1.1" 200 2339
+[23/Jul/2022 15:08:08] "GET /dashboard/ HTTP/1.1" 200 4947
+[23/Jul/2022 15:08:08] "GET /static/js/dashboard.js HTTP/1.1" 404 1809
+[23/Jul/2022 15:08:10] "GET /status/133/ HTTP/1.1" 200 2350
+[23/Jul/2022 15:08:10] "GET /static/css/status.css HTTP/1.1" 200 15358
+[23/Jul/2022 15:12:27] "GET /dashboard/ HTTP/1.1" 200 4956
+[23/Jul/2022 15:12:27] "GET /static/js/change_bg_on_hover.js HTTP/1.1" 200 135
+[23/Jul/2022 15:12:30] "GET /dashboard/ HTTP/1.1" 200 4956
+[23/Jul/2022 15:12:30] "GET /static/js/change_bg_on_hover.js HTTP/1.1" 304 0
+[23/Jul/2022 15:12:31] "GET /dashboard/ HTTP/1.1" 200 4956
+[23/Jul/2022 15:12:36] "GET /dashboard/ HTTP/1.1" 200 4956
+[23/Jul/2022 15:12:36] "GET /static/js/change_bg_on_hover.js HTTP/1.1" 304 0
+[23/Jul/2022 15:12:39] "GET /dashboard/ HTTP/1.1" 200 4956
+[23/Jul/2022 15:12:39] "GET /static/js/change_bg_on_hover.js HTTP/1.1" 200 135
+[23/Jul/2022 15:12:39] "GET /static/css/dashboard.css HTTP/1.1" 200 11988
+[23/Jul/2022 15:12:39] "GET /static/images/logo-banner-yellow-tsprnt-2.png HTTP/1.1" 200 24043
+[23/Jul/2022 15:12:39] "GET /static/images/instat-logo-yellow.ico HTTP/1.1" 200 184699
+[23/Jul/2022 15:12:40] "GET /static/images/cursor-instat.cur HTTP/1.1" 200 4286
+[23/Jul/2022 15:12:41] "GET /static/images/instat-logo-yellow.ico HTTP/1.1" 200 184699
+[23/Jul/2022 15:13:00] "GET /dashboard/ HTTP/1.1" 200 4956
+[23/Jul/2022 15:13:00] "GET /static/js/change_bg_on_hover.js HTTP/1.1" 304 0
+[23/Jul/2022 15:13:00] "GET /static/css/dashboard.css HTTP/1.1" 304 0
+[23/Jul/2022 15:13:01] "GET /dashboard/ HTTP/1.1" 200 4956
+[23/Jul/2022 15:13:02] "GET /dashboard/ HTTP/1.1" 200 4956
+[23/Jul/2022 15:13:03] "GET /dashboard/ HTTP/1.1" 200 4956
+[23/Jul/2022 15:13:03] "GET /dashboard/ HTTP/1.1" 200 4956
+[23/Jul/2022 15:13:03] "GET /static/css/dashboard.css HTTP/1.1" 200 11990
+[23/Jul/2022 15:13:11] "GET /dashboard/ HTTP/1.1" 200 4956
+[23/Jul/2022 15:13:11] "GET /static/js/change_bg_on_hover.js HTTP/1.1" 304 0
+[23/Jul/2022 15:13:11] "GET /static/css/dashboard.css HTTP/1.1" 304 0
+[23/Jul/2022 15:13:12] "GET /dashboard/ HTTP/1.1" 200 4956
+[23/Jul/2022 15:13:12] "GET /static/css/dashboard.css HTTP/1.1" 200 11990
+[23/Jul/2022 15:13:21] "GET /dashboard/ HTTP/1.1" 200 4956
+[23/Jul/2022 15:13:21] "GET /static/js/change_bg_on_hover.js HTTP/1.1" 304 0
+[23/Jul/2022 15:13:21] "GET /static/css/dashboard.css HTTP/1.1" 304 0
+[23/Jul/2022 15:13:22] "GET /dashboard/ HTTP/1.1" 200 4956
+[23/Jul/2022 15:13:22] "GET /static/css/dashboard.css HTTP/1.1" 200 11990
+[23/Jul/2022 15:16:11] "GET /dashboard/ HTTP/1.1" 200 4947
+[23/Jul/2022 15:16:11] "GET /static/js/dashboard.js HTTP/1.1" 200 184
+[23/Jul/2022 15:16:11] "GET /static/css/dashboard.css HTTP/1.1" 200 11990
+[23/Jul/2022 15:16:19] "GET /dashboard/ HTTP/1.1" 200 4947
+[23/Jul/2022 15:16:19] "GET /static/js/dashboard.js HTTP/1.1" 304 0
+[23/Jul/2022 15:16:19] "GET /static/css/dashboard.css HTTP/1.1" 304 0
+[23/Jul/2022 15:16:20] "GET /dashboard/ HTTP/1.1" 200 4947
+[23/Jul/2022 15:16:20] "GET /static/css/dashboard.css HTTP/1.1" 200 11990
+[23/Jul/2022 15:16:28] "GET /dashboard/ HTTP/1.1" 200 4947
+[23/Jul/2022 15:16:28] "GET /static/js/dashboard.js HTTP/1.1" 304 0
+[23/Jul/2022 15:16:28] "GET /static/css/dashboard.css HTTP/1.1" 200 11990
+[23/Jul/2022 15:18:33] "GET /dashboard/ HTTP/1.1" 200 5025
+[23/Jul/2022 15:18:33] "GET /static/js/dashboard.js HTTP/1.1" 200 262
+[23/Jul/2022 15:18:33] "GET /static/css/dashboard.css HTTP/1.1" 200 11977
+[23/Jul/2022 15:18:34] "GET /static/images/logo-banner-yellow-tsprnt-2.png HTTP/1.1" 200 24043
+[23/Jul/2022 15:18:34] "GET /static/images/instat-logo-yellow.ico HTTP/1.1" 200 184699
+[23/Jul/2022 15:18:34] "GET /dashboard/ HTTP/1.1" 200 5025
+[23/Jul/2022 15:18:34] "GET /static/js/dashboard.js HTTP/1.1" 304 0
+[23/Jul/2022 15:18:35] "GET /static/images/instat-logo-yellow.ico HTTP/1.1" 200 184699
+[23/Jul/2022 15:18:41] "GET /updateProject/133/ HTTP/1.1" 200 6205
+[23/Jul/2022 15:19:01] "GET /dashboard/ HTTP/1.1" 200 5019
+[23/Jul/2022 15:19:01] "GET /static/js/dashboard.js HTTP/1.1" 200 257
+[23/Jul/2022 15:19:01] "GET /static/css/dashboard.css HTTP/1.1" 200 11977
+[23/Jul/2022 15:19:01] "GET /static/images/logo-banner-yellow-tsprnt-2.png HTTP/1.1" 200 24043
+[23/Jul/2022 15:19:01] "GET /static/images/instat-logo-yellow.ico HTTP/1.1" 200 184699
+[23/Jul/2022 15:19:01] "GET /static/images/cursor-instat.cur HTTP/1.1" 200 4286
+[23/Jul/2022 15:19:02] "GET /static/images/instat-logo-yellow.ico HTTP/1.1" 200 184699
+[23/Jul/2022 15:19:19] "GET /dashboard/ HTTP/1.1" 200 5019
+[23/Jul/2022 15:19:19] "GET /static/js/dashboard.js HTTP/1.1" 200 254
+[23/Jul/2022 15:19:19] "GET /static/css/dashboard.css HTTP/1.1" 304 0
+[23/Jul/2022 15:19:20] "GET /dashboard/ HTTP/1.1" 200 5019
+[23/Jul/2022 15:19:20] "GET /static/js/dashboard.js HTTP/1.1" 200 254
+[23/Jul/2022 15:19:20] "GET /static/css/dashboard.css HTTP/1.1" 200 11977
+[23/Jul/2022 15:19:21] "GET /static/images/logo-banner-yellow-tsprnt-2.png HTTP/1.1" 200 24043
+[23/Jul/2022 15:19:21] "GET /static/images/instat-logo-yellow.ico HTTP/1.1" 200 184699
+[23/Jul/2022 15:19:21] "GET /static/images/cursor-instat.cur HTTP/1.1" 200 4286
+[23/Jul/2022 15:19:21] "GET /static/images/instat-logo-yellow.ico HTTP/1.1" 200 184699
+[23/Jul/2022 15:19:46] "GET /dashboard/ HTTP/1.1" 200 5021
+[23/Jul/2022 15:19:46] "GET /static/js/dashboard.js HTTP/1.1" 200 254
+[23/Jul/2022 15:19:46] "GET /static/css/dashboard.css HTTP/1.1" 200 11977
+[23/Jul/2022 15:19:46] "GET /static/images/logo-banner-yellow-tsprnt-2.png HTTP/1.1" 200 24043
+[23/Jul/2022 15:19:46] "GET /static/images/instat-logo-yellow.ico HTTP/1.1" 200 184699
+[23/Jul/2022 15:19:46] "GET /static/images/cursor-instat.cur HTTP/1.1" 200 4286
+[23/Jul/2022 15:19:47] "GET /static/images/instat-logo-yellow.ico HTTP/1.1" 200 184699
+[23/Jul/2022 15:20:05] "GET /dashboard/ HTTP/1.1" 200 5019
+[23/Jul/2022 15:20:05] "GET /static/js/dashboard.js HTTP/1.1" 200 254
+[23/Jul/2022 15:20:05] "GET /static/css/dashboard.css HTTP/1.1" 200 11977
+[23/Jul/2022 15:20:06] "GET /static/images/logo-banner-yellow-tsprnt-2.png HTTP/1.1" 200 24043
+[23/Jul/2022 15:20:06] "GET /static/images/instat-logo-yellow.ico HTTP/1.1" 200 184699
+[23/Jul/2022 15:20:06] "GET /static/images/cursor-instat.cur HTTP/1.1" 200 4286
+[23/Jul/2022 15:20:07] "GET /static/images/instat-logo-yellow.ico HTTP/1.1" 200 184699
+[23/Jul/2022 15:26:34] "GET /dashboard/ HTTP/1.1" 200 4947
+[23/Jul/2022 15:26:34] "GET /static/js/dashboard.js HTTP/1.1" 200 254
+[23/Jul/2022 15:26:34] "GET /static/css/dashboard.css HTTP/1.1" 200 12056
+[23/Jul/2022 15:26:35] "GET /static/images/logo-banner-yellow-tsprnt-2.png HTTP/1.1" 200 24043
+[23/Jul/2022 15:26:35] "GET /static/images/instat-logo-yellow.ico HTTP/1.1" 200 184699
+[23/Jul/2022 15:26:35] "GET /static/images/cursor-instat.cur HTTP/1.1" 200 4286
+[23/Jul/2022 15:26:36] "GET /static/images/instat-logo-yellow.ico HTTP/1.1" 200 184699
+[23/Jul/2022 15:26:40] "GET /updateProject/133/ HTTP/1.1" 200 6205
+[23/Jul/2022 15:26:40] "GET /static/css/dashboard.css HTTP/1.1" 304 0
+[23/Jul/2022 15:27:55] "GET /dashboard/ HTTP/1.1" 200 4987
+[23/Jul/2022 15:27:55] "GET /static/js/dashboard.js HTTP/1.1" 304 0
+[23/Jul/2022 15:27:55] "GET /static/css/dashboard.css HTTP/1.1" 200 12059
+[23/Jul/2022 15:27:57] "GET /dashboard/ HTTP/1.1" 200 4987
+[23/Jul/2022 15:27:57] "GET /static/js/dashboard.js HTTP/1.1" 200 254
+[23/Jul/2022 15:27:57] "GET /static/css/dashboard.css HTTP/1.1" 200 12059
+[23/Jul/2022 15:27:57] "GET /static/images/logo-banner-yellow-tsprnt-2.png HTTP/1.1" 200 24043
+[23/Jul/2022 15:27:57] "GET /static/images/instat-logo-yellow.ico HTTP/1.1" 200 184699
+[23/Jul/2022 15:27:57] "GET /static/images/cursor-instat.cur HTTP/1.1" 200 4286
+[23/Jul/2022 15:27:58] "GET /static/images/instat-logo-yellow.ico HTTP/1.1" 200 184699
+[23/Jul/2022 15:28:04] "GET /updateProject/133/ HTTP/1.1" 200 6205
+[23/Jul/2022 15:28:04] "GET /static/css/dashboard.css HTTP/1.1" 304 0
+[23/Jul/2022 15:28:28] "GET /dashboard/ HTTP/1.1" 200 4987
+[23/Jul/2022 15:28:28] "GET /static/js/dashboard.js HTTP/1.1" 200 254
+[23/Jul/2022 15:28:28] "GET /static/css/dashboard.css HTTP/1.1" 200 12098
+[23/Jul/2022 15:28:28] "GET /static/images/logo-banner-yellow-tsprnt-2.png HTTP/1.1" 200 24043
+[23/Jul/2022 15:28:28] "GET /static/images/instat-logo-yellow.ico HTTP/1.1" 200 184699
+[23/Jul/2022 15:28:29] "GET /static/images/cursor-instat.cur HTTP/1.1" 200 4286
+[23/Jul/2022 15:28:29] "GET /static/images/instat-logo-yellow.ico HTTP/1.1" 200 184699
+[23/Jul/2022 15:28:33] "GET /updateProject/133/ HTTP/1.1" 200 6205
+[23/Jul/2022 15:28:33] "GET /static/css/dashboard.css HTTP/1.1" 304 0
+[23/Jul/2022 15:31:08] "GET /updateProject/133/ HTTP/1.1" 200 6205
+[23/Jul/2022 15:31:08] "GET /static/css/dashboard.css HTTP/1.1" 200 11977
+[23/Jul/2022 15:31:11] "GET /dashboard/ HTTP/1.1" 200 4987
+[23/Jul/2022 15:31:11] "GET /static/js/dashboard.js HTTP/1.1" 200 254
+[23/Jul/2022 15:31:11] "GET /static/css/dashboard.css HTTP/1.1" 200 11977
+[23/Jul/2022 15:31:11] "GET /static/images/logo-banner-yellow-tsprnt-2.png HTTP/1.1" 200 24043
+[23/Jul/2022 15:31:11] "GET /static/images/instat-logo-yellow.ico HTTP/1.1" 200 184699
+[23/Jul/2022 15:31:12] "GET /static/images/cursor-instat.cur HTTP/1.1" 200 4286
+[23/Jul/2022 15:31:13] "GET /static/images/instat-logo-yellow.ico HTTP/1.1" 200 184699
+[23/Jul/2022 15:34:19] "GET /dashboard/ HTTP/1.1" 200 5313
+[23/Jul/2022 15:34:19] "GET /static/js/dashboard.js HTTP/1.1" 200 137
+[23/Jul/2022 15:34:19] "GET /static/css/dashboard.css HTTP/1.1" 200 11977
+[23/Jul/2022 15:34:19] "GET /static/images/logo-banner-yellow-tsprnt-2.png HTTP/1.1" 200 24043
+[23/Jul/2022 15:34:20] "GET /static/images/cursor-instat.cur HTTP/1.1" 200 4286
+[23/Jul/2022 15:34:20] "GET /static/images/instat-logo-yellow.ico HTTP/1.1" 200 184699
+[23/Jul/2022 15:34:20] "GET /static/images/instat-logo-yellow.ico HTTP/1.1" 200 184699
+
+D:\instatMain>python manage.py runserver 192.168.43.229:8000
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 23, 2022 - 15:34:35
+Django version 4.0.4, using settings 'instatMain.settings'
+Starting development server at http://192.168.43.229:8000/
+Quit the server with CTRL-BREAK.
+[23/Jul/2022 15:34:48] "GET / HTTP/1.1" 200 5313
+[23/Jul/2022 15:34:48] "GET /static/js/dashboard.js HTTP/1.1" 304 0
+[23/Jul/2022 15:35:20] "GET /updateProject/133/ HTTP/1.1" 200 6205
+[23/Jul/2022 15:35:20] "GET /static/css/dashboard.css HTTP/1.1" 304 0
+[23/Jul/2022 15:35:26] "GET /miniStats/ HTTP/1.1" 200 2248
+[23/Jul/2022 15:35:26] "GET /static/css/mini_stats.css HTTP/1.1" 200 4145
+[23/Jul/2022 15:35:29] "GET /dashboard/ HTTP/1.1" 200 5313
+[23/Jul/2022 15:35:29] "GET /static/js/dashboard.js HTTP/1.1" 304 0
+[23/Jul/2022 15:37:17] "GET /dashboard/ HTTP/1.1" 200 5304
+[23/Jul/2022 15:37:18] "GET /static/js/dashboard.js HTTP/1.1" 200 137
+[23/Jul/2022 15:37:18] "GET /static/css/dashboard.css HTTP/1.1" 200 11977
+
+D:\instatMain>python manage.py runserver 192.168.43.229:8000
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 23, 2022 - 15:37:27
+Django version 4.0.4, using settings 'instatMain.settings'
+Starting development server at http://192.168.43.229:8000/
+Quit the server with CTRL-BREAK.
+[23/Jul/2022 15:37:29] "GET / HTTP/1.1" 200 5304
+
+D:\instatMain>
+
+D:\instatMain>
+
+D:\instatMain>
+
+D:\instatMain>
+
+D:\instatMain>
+
+D:\instatMain>
+
+D:\instatMain>
+
+D:\instatMain>
+
+D:\instatMain>python manage.py runserver 192.168.43.229:8000
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 23, 2022 - 15:40:24
+Django version 4.0.4, using settings 'instatMain.settings'
+Starting development server at http://192.168.43.229:8000/
+Quit the server with CTRL-BREAK.
+[23/Jul/2022 15:40:26] "GET / HTTP/1.1" 200 5261
+[23/Jul/2022 15:40:26] "GET /static/js/dashboard.js HTTP/1.1" 304 0
+[23/Jul/2022 15:40:27] "GET /static/css/dashboard.css HTTP/1.1" 200 12028
+[23/Jul/2022 15:40:31] "GET / HTTP/1.1" 200 5261
+[23/Jul/2022 15:40:31] "GET /static/css/dashboard.css HTTP/1.1" 304 0
+[23/Jul/2022 15:40:32] "GET / HTTP/1.1" 200 5261
+[23/Jul/2022 15:40:45] "GET / HTTP/1.1" 200 5261
+[23/Jul/2022 15:40:45] "GET /static/css/dashboard.css HTTP/1.1" 200 12056
+[23/Jul/2022 15:41:04] "GET / HTTP/1.1" 200 5261
+[23/Jul/2022 15:41:04] "GET /static/js/dashboard.js HTTP/1.1" 200 137
+[23/Jul/2022 15:41:04] "GET /static/css/dashboard.css HTTP/1.1" 200 12055
+[23/Jul/2022 15:41:05] "GET /static/images/logo-banner-yellow-tsprnt-2.png HTTP/1.1" 200 24043
+[23/Jul/2022 15:41:05] "GET /static/images/cursor-instat.cur HTTP/1.1" 200 4286
+[23/Jul/2022 15:41:05] "GET /static/images/instat-logo-yellow.ico HTTP/1.1" 200 184699
+[23/Jul/2022 15:41:06] "GET /static/images/instat-logo-yellow.ico HTTP/1.1" 200 184699
+[23/Jul/2022 15:41:37] "GET / HTTP/1.1" 200 5261
+[23/Jul/2022 15:41:37] "GET /static/js/dashboard.js HTTP/1.1" 200 137
+[23/Jul/2022 15:41:37] "GET /static/css/dashboard.css HTTP/1.1" 200 12062
+[23/Jul/2022 15:41:37] "GET /static/images/logo-banner-yellow-tsprnt-2.png HTTP/1.1" 200 24043
+[23/Jul/2022 15:41:38] "GET /static/images/cursor-instat.cur HTTP/1.1" 200 4286
+[23/Jul/2022 15:41:38] "GET /static/images/instat-logo-yellow.ico HTTP/1.1" 200 184699
+[23/Jul/2022 15:41:39] "GET /static/images/instat-logo-yellow.ico HTTP/1.1" 200 184699
+[23/Jul/2022 15:42:01] "GET / HTTP/1.1" 200 5261
+[23/Jul/2022 15:42:01] "GET /static/js/dashboard.js HTTP/1.1" 200 137
+[23/Jul/2022 15:42:01] "GET /static/css/dashboard.css HTTP/1.1" 200 12064
+[23/Jul/2022 15:42:01] "GET /static/images/logo-banner-yellow-tsprnt-2.png HTTP/1.1" 200 24043
+[23/Jul/2022 15:42:01] "GET /static/images/cursor-instat.cur HTTP/1.1" 200 4286
+[23/Jul/2022 15:42:01] "GET /static/images/instat-logo-yellow.ico HTTP/1.1" 200 184699
+[23/Jul/2022 15:42:02] "GET /static/images/instat-logo-yellow.ico HTTP/1.1" 200 184699
+[23/Jul/2022 15:42:57] "GET / HTTP/1.1" 200 5261
+[23/Jul/2022 15:42:57] "GET /static/js/dashboard.js HTTP/1.1" 200 137
+[23/Jul/2022 15:42:57] "GET /static/css/dashboard.css HTTP/1.1" 200 12056
+[23/Jul/2022 15:42:57] "GET /static/images/logo-banner-yellow-tsprnt-2.png HTTP/1.1" 200 24043
+[23/Jul/2022 15:42:57] "GET /static/images/cursor-instat.cur HTTP/1.1" 200 4286
+[23/Jul/2022 15:42:57] "GET /static/images/instat-logo-yellow.ico HTTP/1.1" 200 184699
+[23/Jul/2022 15:42:58] "GET /static/images/instat-logo-yellow.ico HTTP/1.1" 200 184699
+[23/Jul/2022 15:43:32] "GET / HTTP/1.1" 200 5261
+[23/Jul/2022 15:43:32] "GET /static/js/dashboard.js HTTP/1.1" 200 137
+[23/Jul/2022 15:43:32] "GET /static/css/dashboard.css HTTP/1.1" 200 12073
+[23/Jul/2022 15:43:32] "GET /static/images/logo-banner-yellow-tsprnt-2.png HTTP/1.1" 200 24043
+[23/Jul/2022 15:43:32] "GET /static/images/cursor-instat.cur HTTP/1.1" 200 4286
+[23/Jul/2022 15:43:32] "GET /static/images/instat-logo-yellow.ico HTTP/1.1" 200 184699
+[23/Jul/2022 15:43:33] "GET /static/images/instat-logo-yellow.ico HTTP/1.1" 200 184699
+[23/Jul/2022 15:43:41] "GET / HTTP/1.1" 200 5261
+[23/Jul/2022 15:43:41] "GET /static/css/dashboard.css HTTP/1.1" 200 12075
+[23/Jul/2022 15:44:11] "GET / HTTP/1.1" 200 5258
+[23/Jul/2022 15:44:11] "GET /static/js/dashboard.js HTTP/1.1" 200 137
+[23/Jul/2022 15:44:11] "GET /static/css/dashboard.css HTTP/1.1" 200 12072
+[23/Jul/2022 15:44:11] "GET /static/images/logo-banner-yellow-tsprnt-2.png HTTP/1.1" 200 24043
+[23/Jul/2022 15:44:12] "GET /static/images/cursor-instat.cur HTTP/1.1" 200 4286
+[23/Jul/2022 15:44:12] "GET /static/images/instat-logo-yellow.ico HTTP/1.1" 200 184699
+[23/Jul/2022 15:44:12] "GET /static/images/instat-logo-yellow.ico HTTP/1.1" 200 184699
+[23/Jul/2022 15:44:26] "GET / HTTP/1.1" 200 5258
+[23/Jul/2022 15:44:26] "GET /static/js/dashboard.js HTTP/1.1" 200 137
+[23/Jul/2022 15:44:26] "GET /static/css/dashboard.css HTTP/1.1" 200 12078
+[23/Jul/2022 15:44:26] "GET /static/images/logo-banner-yellow-tsprnt-2.png HTTP/1.1" 200 24043
+[23/Jul/2022 15:44:26] "GET /static/images/cursor-instat.cur HTTP/1.1" 200 4286
+[23/Jul/2022 15:44:26] "GET /static/images/instat-logo-yellow.ico HTTP/1.1" 200 184699
+[23/Jul/2022 15:44:27] "GET /static/images/instat-logo-yellow.ico HTTP/1.1" 200 184699
