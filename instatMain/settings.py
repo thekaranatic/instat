@@ -21,14 +21,18 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = ''
+SECRET_KEY = 'django-insecure-vxqe3)bz7usbh1sdx_rhb@@!k*z1m0nzo4kk=-87@1t)9drg!%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
-    '192.168.43.27'
+    '192.168.43.229',
+    '192.168.43.180',
+    '192.168.13.27',
+    '192.168.65.137',
+    '192.168.29.147'
 ]
 
 
@@ -81,7 +85,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'instatMain.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
@@ -91,7 +94,6 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
@@ -145,11 +147,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 TEMPLATED_EMAIL_BACKEND = 'templated_email.backends.vanilla_django.TemplateBackend'
 
-
-
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp-mail.outlook.com'
 EMAIL_PORT = 587
-# EMAIL_HOST_USER = ""
-# EMAIL_HOST_PASSWORD = ''
+EMAIL_HOST_USER = "instat.onboard@outlook.com"
+EMAIL_HOST_PASSWORD = 'Karanspace06'
 EMAIL_USE_TLS = True

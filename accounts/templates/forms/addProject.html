@@ -12,7 +12,7 @@
     <!-- linking of files  -->
     <!-- <script src="{% static '/js/dashboard.js' %}"></script> -->
     <link rel="icon" type="image/x-icon" href="{% static '/images/instat-logo-yellow.ico' %}">
-    <link rel="stylesheet" href="{% static '/css/dashboard.css' %}">
+    <link rel="stylesheet" href="{% static '/css/addProject.css' %}">
     <!-- linking of files  -->
 
     <!-- bootstrap cdn -->
@@ -46,7 +46,7 @@
         <div id="divmain">
             <form method="POST" action="" class="form">
                 {% csrf_token %}
-                {{ form | crispy }}  
+                {{ form.as_p }}  
                 <!-- <table> 
                     <tr>
                         <input autofocus="on" placeholder="project name" type="text" name="proj_name" id="proj_name">
