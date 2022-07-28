@@ -18,6 +18,4 @@ urlpatterns = [
     path('addProject/', views.addProject, name="addProject"),
     path('updateProject/<str:no>/', views.updateProject, name="updateProject"),
     path('deleteProject/<str:no>/', views.deleteProject, name="deleteProject"),
-
-    path('noMobAccess/', views.noMobAccess, name="noMobAccess"),
 ]

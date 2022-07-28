@@ -13,6 +13,6 @@ function alert_No_access_to_mobile(){
     let isMobileDevice = regexp.test(details);
 
     if (isMobileDevice)
-        window.location.href = "{% url 'noMobAccess' %}";
-    return true;
+        alert("Instat isn't developed for smartphone version yet. Please use the desktop version");
+        return false;
 }

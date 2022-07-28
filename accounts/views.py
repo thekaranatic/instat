@@ -162,6 +162,3 @@ def deleteProject(request, no):
 
     context = {'item':proj}
     return render(request, 'prompt/deleteProject.html', context)
-
-def noMobAccess(request):
-    return render('prompt/noMobileAccess.html')
