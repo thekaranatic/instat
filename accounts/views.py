@@ -1,4 +1,5 @@
 import email
+from pickle import NONE
 import profile
 from re import template
 from winsound import PlaySound
@@ -101,7 +102,7 @@ def miniStats(request):
     return render(request, 'accounts/mini_stats.html', {'initiatedCount':initiatedCount, 'in_progressCount':in_progressCount, 'pausedCount':pausedCount, 'abortedCount':abortedCount, 'completedCount':completedCount})
 
 @login_required(login_url='login')
-def addProject(request): 
+def addProject(request):
     form = ProjectForm()
     if request.method == 'POST':
         # print('printing post:', request.POST)
@@ -111,12 +112,12 @@ def addProject(request):
 
             pname = form.cleaned_data.get('project_name')
             c_email = form.cleaned_data.get('client_mail')
-            pid = form.cleaned_data.get('id')
-            template = render_to_string('accounts/client_email.html')
+            template = render_to_string('accounts/client_email.html', {'pname':pname, 'c_email':c_email})
 
             email = EmailMessage(
-                'Your project' + '' + pname + '' + 'is initiated!',
+                'Your project' + ' ' + pname + ' ' + ' is initiated!',
                 template,
+                # 'http://127.0.0.1:8000/status/' + id,
                 settings.EMAIL_HOST_USER,
                 [c_email]
             )
@@ -124,11 +125,16 @@ def addProject(request):
             email.send()
             # return redirect('/dashboard')
 
-            return render(request, 'messages/projectAdded.html', {'pname':pname, 'c_email':c_email})
+            return render(request, 'messages/projectAdded.html')
     
-
     context = {'form':form}
     return render(request, 'forms/addProject.html', context)
+
+def new_func(request):
+    if request.user.is_authenticated():
+        fname = request.user.first_name
+        lname = request.user.first_name
+    return fname,lname
 
 @login_required(login_url='login')
 def updateProject(request, no):
