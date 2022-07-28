@@ -108,9 +108,24 @@ def addProject(request):
         form = ProjectForm(request.POST)
         if form.is_valid():
             form.save()
+
+            pname = form.cleaned_data.get('project_name')
+            c_email = form.cleaned_data.get('client_mail')
+            pid = form.cleaned_data.get('id')
+            template = render_to_string('accounts/client_email.html')
+
+            email = EmailMessage(
+                'Your project' + '' + pname + '' + 'is initiated!',
+                template,
+                settings.EMAIL_HOST_USER,
+                [c_email]
+            )
+            email.fail_silently = False
+            email.send()
             # return redirect('/dashboard')
 
-            return render(request, 'messages/projectAdded.html')
+            return render(request, 'messages/projectAdded.html', {'pname':pname, 'c_email':c_email})
+    
 
     context = {'form':form}
     return render(request, 'forms/addProject.html', context)
