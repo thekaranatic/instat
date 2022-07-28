@@ -9,22 +9,16 @@
     <title>Instat | Dashboard</title>
 
     <!-- linking of files  -->
-    <script src="{% static '/js/dashboard.js' %}"></script>
+    <script src="{% static '/js/prompt.js' %}"></script>
     <link rel="icon" type="image/x-icon" href="{% static '/images/instat-logo-yellow.ico' %}">
     <link rel="stylesheet" href="{% static '/css/dashboard.css' %}">
     <!-- linking of files  -->
-    <script type="text/javascript">
-        function change_bg_on_hover(){
-            let a = document.getElementsByClassName("bodySel").style;
-            a.backgroundColor = "blue";  
-            a.transition = ".3s";  
-        }
-    </script>
+
 
     <!-- google fonts preconnect  -->
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 </head>
-<body id="b">
+<body onload="alert_No_access_to_mobile()">
 
     <!-- homebar begin -->
     <div class="div-homebar">
