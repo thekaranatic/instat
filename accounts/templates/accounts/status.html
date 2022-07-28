@@ -7,32 +7,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <meta name="description" content=""> -->
-    <title>Instat | Status</title>
+    <title>Instat | Status - {{projects.project_name}}</title>
     <link rel="icon" type="image/x-icon" href="{% static '/images/instat-logo-yellow.ico' %}">
     <link rel="stylesheet" href="{% static '/css/status.css' %}">
     <!-- <script src="{% static '/js/status.js' %}"></script> -->
+    <script>
+        detectOrientation();
+        window.onorientationchange = detectOrientation;
+        function detectOrientation(){
+            if(typeof window.onorientationchange != 'undefined'){
+                if ( orientation == 90 ) {
+                    alert("We do not support for landscape mode yet. Please hold your phone vertically");
+                    // return false;
+                    let a = document.getElementById("body").style;
+                    a.display = "none";
+                    document.getElementById("body").innerHTML = "We do not support for landscape mode yet. Please hold your phone vertically";
+                }
+                if ( orientation == 180 ) {
+                    alert("We do not support for landscape mode yet. Please hold your phone vertically");
+                    return false;
+                }
+            }
+        }
+    </script>
 </head>
-<body >
+<body id="body">
     <div id="shape1"></div>
     <div id="shape2"></div>
     <center>
         <div class="frame">
             <div id="greeter">
-                <h1 id="name">Hello, {{projects.c_name}}!</h1>
+                <h1 id="name">Hello, {{projects.client_name}}!</h1>
                 <p>Your project has come this far</p>
             </div>
             <div id="frame_body">
                 <div id="percentage"><h1 id="receivedVal">{{projects.phase_percentage}}<sup>%</sup></h1></div>
-                <div id="proj-name"><p id="proj-name-p">{{projects.p_name}}</p></div>
-                <div id="name-of-staff-head"><p>Supervised by Mr. X</p></div>
-                <div id="temporary">
-                    <p>Status -{{projects.status}}</p> <br>
-                    <p>Phase -{{projects.phase}}</p> <br>
-                    <p>Collaborators -{{projects.collab}}</p> 
+                <div id="proj-name"><p id="proj-name-p">{{projects.project_name}}</p></div>
+                <div id="name-of-staff-head"><p>Project under {{user.first_name}} {{user.last_name}} </p></div>
+                <div id="status">
+                    <p>Status: {{projects.project_status}}</p> <br>
                 </div>
-                <div id="payment" onload="showPercentage()">
-                    <p>UPI ID {{project.status}}</p> <br> 
-                    <p>Crypto Address {{project.phase}}</p> <br>
+                <div id="phase">
+                    <p>Phase: {{projects.phase}}</p> <br>
+                </div>
+                <div id="collab">
+                    <p>{{projects.collaborations}} Collaborators</p> 
                 </div>
             </div>
         </div>
