@@ -1,0 +1,63 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No access</title>
+    <link rel="icon" type="image/x-icon" href="{% static '/images/instat-logo-yellow.ico' %}">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap');
+
+        div{
+            position: relative;
+            top: 100px;
+            width: 50%;
+
+            text-align: center;
+            
+            /* background-color: red; */
+        }
+        h3, p, button{
+            font-family: 'Manrope', sans-serif;
+            font-size: 18px;
+        }
+        h3{
+            color: red;
+            font-weight: 400;
+        }
+        p{
+            font-weight: 800;
+        }
+        button{
+            border: none;
+            border-radius: 20px;
+            width: 100px;
+            height: 35px;
+
+            background-color: rgb(19, 19, 19);
+            color: white;
+            
+            letter-spacing: 1px;
+        }
+
+
+        @media all and (max-width: 576px){
+            div{
+                width: 70%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div>
+            <h3>Attention</h3>
+            <p>Use of Procosta in smartphone is restricted. Please use the desktop version</p>
+            <!-- <button onclick="window.location.href="";>EXIT</button> -->
+        </div>
+    </center>
+</body>
+</html>

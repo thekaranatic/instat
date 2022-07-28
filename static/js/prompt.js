@@ -12,8 +12,7 @@ function alert_No_access_to_mobile(){
     it returns boolean value*/
     let isMobileDevice = regexp.test(details);
 
-    if (isMobileDevice) {
-        window.location.href = 'error.html';
-    } 
+    if (isMobileDevice)
+        window.location.href = "{% url 'noMobAccess' %}";
     return true;
 }
